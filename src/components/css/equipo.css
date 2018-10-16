@@ -1,3 +1,44 @@
+/*////////////////////////////////////equipoContainer/////////////*/
+
+@media screen and (max-width: 605px) {
+  .deck_container {
+    display: block;
+  }
+  .card_container {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 605px) {
+  .deck_container {
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+  }
+  .card_container {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.333333%);
+    margin: 10px 20px 20px 0;
+    margin-left: 10%;
+  }
+  @supports (display: grid) {
+    .deck_container {
+      margin: 0;
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-auto-rows: repeat(auto-fit, minmax(300px, 480px));
+      grid-auto-flow: dense;
+    }
+    .card_container {
+      margin: auto;
+      width: 50%;
+    }
+  }
+}
+/*////////////////////////////////////equipoMember/////////////*/
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1000px;

@@ -29,12 +29,13 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="white" light expand="sm">
+        <Navbar fixed={`top`} color="white" light expand="sm">
+          <NavbarToggler onClick={this.toggle} />
+
           <NavlinkRouter className="navbar-brand" to="/">
             <img src="/logoB.png" height="60" alt="" />
           </NavlinkRouter>
 
-          <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="navbar-nav w-100 justify-content-around">
               <NavItem>

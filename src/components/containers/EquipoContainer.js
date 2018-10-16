@@ -57,8 +57,8 @@ class EquipoContainer extends Component {
     return (
       <div className="deck_container">
         {equipo.map((person, index) => (
-          <div className="card">
-            <EquipoMember key={index} person={person} />
+          <div key={index} className="card_container">
+            <EquipoMember person={person} />
           </div>
         ))}
       </div>

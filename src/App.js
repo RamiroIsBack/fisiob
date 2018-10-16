@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import store from "./stores";
 import { AsyncHome, AsyncEquipo } from "./components/AsyncComponents";
-import NavbarFisioB from "./components/containers/NavbarFisionB";
+import NavbarFisioB from "./components/containers/NavbarFisioB";
 class App extends Component {
   render() {
     return (
@@ -13,8 +13,10 @@ class App extends Component {
         <Router>
           <div>
             <NavbarFisioB />
-            <Route exact path="/" component={AsyncHome} />
-            <Route path="/Equipo" component={AsyncEquipo} />
+            <div style={{ marginTop: "100px" }}>
+              <Route exact path="/" component={AsyncHome} />
+              <Route path="/Equipo" component={AsyncEquipo} />
+            </div>
           </div>
         </Router>
       </Provider>

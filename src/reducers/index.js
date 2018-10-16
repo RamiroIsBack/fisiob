@@ -1,2 +1,3 @@
 import CopyReducer from "./CopyReducer";
-export { CopyReducer };
+import NavbarReducer from "./NavbarReducer";
+export { CopyReducer, NavbarReducer };

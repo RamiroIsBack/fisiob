@@ -12,19 +12,19 @@ import {
   DropdownItem
 } from "reactstrap";
 
-export default class Example extends React.Component {
+import { connect } from "react-redux";
+import actions from "../../actions";
+
+class NavbarFisioB extends React.Component {
   constructor(props) {
     super(props);
 
     this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
   }
   toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+    if (this.props.navigation) {
+      this.props.ToggleMobileTopMenu(!this.props.navigation.mobileTopMenu);
+    }
   }
   render() {
     return (
@@ -36,7 +36,7 @@ export default class Example extends React.Component {
             <img src="/logoB.png" height="60" alt="" />
           </NavlinkRouter>
 
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <Collapse isOpen={this.props.navigation.mobileTopMenu} navbar>
             <Nav className="navbar-nav w-100 justify-content-around">
               <NavItem>
                 <NavlinkRouter className="nav-link" to="/Equipo">
@@ -66,3 +66,18 @@ export default class Example extends React.Component {
     );
   }
 }
+const stateToProps = ({ navigation }) => {
+  return {
+    navigation
+  };
+};
+const dispatchToProps = dispatch => {
+  return {
+    ToggleMobileTopMenu: open => dispatch(actions.ToggleMobileTopMenu(open))
+  };
+};
+
+export default connect(
+  stateToProps,
+  dispatchToProps
+)(NavbarFisioB);

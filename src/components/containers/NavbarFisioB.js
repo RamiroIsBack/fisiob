@@ -23,7 +23,7 @@ class NavbarFisioB extends React.Component {
   }
   toggle() {
     if (this.props.navigation) {
-      this.props.ToggleMobileTopMenu(!this.props.navigation.mobileTopMenu);
+      this.props.toggleMobileTopMenu(!this.props.navigation.mobileTopMenu);
     }
   }
   render() {
@@ -73,7 +73,7 @@ const stateToProps = ({ navigation }) => {
 };
 const dispatchToProps = dispatch => {
   return {
-    ToggleMobileTopMenu: open => dispatch(actions.ToggleMobileTopMenu(open))
+    toggleMobileTopMenu: open => dispatch(actions.toggleMobileTopMenu(open))
   };
 };
 

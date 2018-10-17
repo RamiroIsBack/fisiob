@@ -1,0 +1,21 @@
+.layout__container {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes MoveUpSlowly {
+  from {
+    padding-top: 110px;
+  }
+  to {
+    padding-top: 0;
+  }
+}
+@keyframes moveDownSlowly {
+  from {
+    padding-top: 0;
+  }
+  to {
+    padding-top: 110px;
+  }
+}

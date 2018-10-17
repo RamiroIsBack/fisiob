@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import actions from "../../actions";
 import EquipoContainer from "../containers/EquipoContainer";
+import "../css/layout.css";
 
 class Equipo extends Component {
   closeMenuIfNeeded() {
@@ -12,10 +13,18 @@ class Equipo extends Component {
   }
   render() {
     let spaceForOpenTopMenu = this.props.navigation.mobileTopMenu
-      ? { paddingTop: "110px" }
-      : { paddingTop: 0 };
+      ? { animationName: "moveDownSlowly" }
+      : {
+          "-moz-animation-delay": "0.5s",
+          "-webkit-animation-delay": "0.5s",
+          "-o-animation-delay": "0.5s",
+          "animation-delay": "0.5s",
+          animationName: "moveUpSlowly"
+        };
+
     return (
       <div
+        className="layout__container"
         onClick={this.closeMenuIfNeeded.bind(this)}
         style={spaceForOpenTopMenu}
       >

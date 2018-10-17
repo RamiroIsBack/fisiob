@@ -1,16 +1,15 @@
 /*////////////////////////////////////equipoContainer/////////////*/
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 700px) {
   .deck_container {
     display: block;
   }
   .card_container {
     display: block;
-    margin: auto;
-    width: 50%;
+    margin-left: 10%;
   }
 }
-@media screen and (min-width: 605px) {
+@media screen and (min-width: 700px) {
   .deck_container {
     margin: 0 10px;
     padding: 0;
@@ -32,10 +31,6 @@
       grid-auto-rows: repeat(auto-fit, minmax(300px, 480px));
       grid-auto-flow: dense;
     }
-    .card_container {
-      margin: auto;
-      width: 50%;
-    }
   }
 }
 /*////////////////////////////////////equipoMember/////////////*/
@@ -52,8 +47,8 @@
 .flip-container,
 .front,
 .back {
-  width: 220px;
-  height: 280px;
+  width: 290px;
+  height: 290px;
 }
 
 /* flip speed goes here */

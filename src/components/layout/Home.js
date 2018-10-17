@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
+import "../css/layout.css";
 import actions from "../../actions";
 
 class Home extends Component {
@@ -10,10 +12,17 @@ class Home extends Component {
   }
   render() {
     let spaceForOpenTopMenu = this.props.navigation.mobileTopMenu
-      ? { paddingTop: "110px" }
-      : { paddingTop: 0 };
+      ? { animationName: "moveDownSlowly" }
+      : {
+          "-moz-animation-delay": "0.5s",
+          "-webkit-animation-delay": "0.5s",
+          "-o-animation-delay": "0.5s",
+          "animation-delay": "0.5s",
+          animationName: "moveUpSlowly"
+        };
     return (
       <div
+        className="layout__container"
         onClick={this.closeMenuIfNeeded.bind(this)}
         style={spaceForOpenTopMenu}
       >

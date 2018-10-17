@@ -7,17 +7,23 @@ class EquipoContainer extends Component {
     let equipo = [
       {
         nombre: "Javi",
-        fotoUrl: "https://homepages.cae.wisc.edu/~ece533/images/zelda.png",
+        cargo: "fisioterapeuta",
+        urlPic: "https://homepages.cae.wisc.edu/~ece533/images/zelda.png",
         formacion: [
           {
             estudios: "fisioterapia",
             centroFormativo: "Universidad AlfonsoX el sabio",
+            centroUrlPic: "/logoUax.png",
+            centroUrl: "https://www.uax.es/grado-en-fisioterapia.html",
             fecha: 2002
           },
           {
             estudios: "Ostiopatia",
             centroFormativo: "Universidad de Alcalá de Henares ",
-            fecha: 2002
+            centroUrlPic: "/logoUAH.png",
+            centroUrl:
+              "https://www.uah.es/es/estudios/estudios-propios/posgrados-propios/Master-en-Osteopatia/",
+            fecha: 2008
           }
         ],
         tecnicas: [
@@ -31,25 +37,39 @@ class EquipoContainer extends Component {
       },
       {
         nombre: "Nadia",
-        fotoUrl: "https://homepages.cae.wisc.edu/~ece533/images/barbara.png",
+        cargo: "podologa",
+        urlPic: "https://homepages.cae.wisc.edu/~ece533/images/barbara.png",
         formacion: [
           {
             estudios: "podología",
             centroFormativo: "universidad de A Coruña",
+            centroFormativo: "Universidad AlfonsoX el sabio",
+            centroUrlPic: "/logoUax.png",
             fecha: 2010
           },
           {
-            estudios: "Experto en patología y ortopedia del miembro inferior",
+            estudios: "Patología y ortopedia del miembro inferior",
             centroFormativo: "Universidad Complutense de Madrid",
+            centroUrlPic: "/logoUAH.png",
+            centroUrl:
+              "https://www.uah.es/es/estudios/estudios-propios/posgrados-propios/Master-en-Osteopatia/",
             fecha: 2012
           }
         ],
         tecnicas: [
-          "quiropodias y estudios biomecánicos",
-          "farmacología y pié diabético",
-          "análisis de la pisada y ortesis plantares a medida",
+          "quiropodias",
+          "estudios biomecánicos",
+          "farmacología",
+          "pié diabético",
+          "análisis de la pisada",
+          "protesis plantares",
           "podología 3ª edad",
-          "Tratamiento de patologías como durezas,helomas ,uñas engrosadas,uñas encarnadas,papiloma,hongos..todo ello con la detección de la causa o problema biomecánico que lo produce"
+          "durezas",
+          "helomas ",
+          "uñas engrosadas",
+          "uñas encarnadas",
+          "papiloma",
+          "hongos"
         ]
       }
     ];

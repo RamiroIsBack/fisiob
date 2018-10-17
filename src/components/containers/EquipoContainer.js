@@ -43,8 +43,9 @@ class EquipoContainer extends Component {
           {
             estudios: "podología",
             centroFormativo: "universidad de A Coruña",
-            centroFormativo: "Universidad AlfonsoX el sabio",
             centroUrlPic: "/logoUax.png",
+            centroUrl:
+              "https://www.uah.es/es/estudios/estudios-propios/posgrados-propios/Master-en-Osteopatia/",
             fecha: 2010
           },
           {

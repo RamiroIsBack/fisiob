@@ -14,6 +14,7 @@ import {
 
 import { connect } from "react-redux";
 import actions from "../../actions";
+import history from "../../utils/history";
 
 class NavbarFisioB extends React.Component {
   constructor(props) {
@@ -24,6 +25,21 @@ class NavbarFisioB extends React.Component {
   toggle() {
     if (this.props.navigation) {
       this.props.toggleMobileTopMenu(!this.props.navigation.mobileTopMenu);
+    }
+  }
+  handleOnClick(e) {
+    if (e.target.id === "servicios") {
+      console.log("servicios pressed");
+      history.push("/");
+    }
+    if (e.target.id === "fisioterapia") {
+      console.log("fisioterapia pressed");
+    }
+    if (e.target.id === "ostiopatia") {
+      console.log("ostiopatia pressed");
+    }
+    if (e.target.id === "pilates") {
+      console.log("pilates pressed");
     }
   }
   render() {
@@ -45,18 +61,23 @@ class NavbarFisioB extends React.Component {
               </NavItem>
               <NavItem>
                 <NavlinkRouter className="nav-link" to="/Equipo">
-                  Equipo
+                  Contacto
                 </NavlinkRouter>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
+                <DropdownToggle
+                  nav
+                  caret
+                  id="servicios"
+                  onClick={this.handleOnClick.bind(this)}
+                >
+                  Servicios
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
+                  <DropdownItem>Fisioterapia</DropdownItem>
+                  <DropdownItem>Ostiopatia</DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
+                  <DropdownItem>Pilates</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

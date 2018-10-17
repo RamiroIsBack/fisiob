@@ -14,10 +14,7 @@ class Home extends Component {
     let spaceForOpenTopMenu = this.props.navigation.mobileTopMenu
       ? { animationName: "moveDownSlowly" }
       : {
-          "-moz-animation-delay": "0.5s",
-          "-webkit-animation-delay": "0.5s",
-          "-o-animation-delay": "0.5s",
-          "animation-delay": "0.5s",
+          animationDelay: "0.5s",
           animationName: "moveUpSlowly"
         };
     return (

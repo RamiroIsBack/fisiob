@@ -2,10 +2,40 @@ import React, { Component } from "react";
 import "../css/equipo.css";
 
 class EquipoMember extends Component {
+  constructor() {
+    super();
+    this.state = {
+      flipEffect: {},
+      fliped: false
+    };
+  }
+  flipItBitch(e) {
+    //     /* flip the pane when hovered */
+    // .flip-container:hover .flipper,
+    // .flip-container.hover .flipper {
+    //   transform: rotateY(180deg);
+    if (this.state.fliped) {
+      this.setState({
+        flipEffect: { transform: "rotateY(0deg)" },
+        fliped: false
+      });
+      console.log("flipedBack");
+    } else {
+      this.setState({
+        flipEffect: { transform: "rotateY(180deg)" },
+        fliped: true
+      });
+      console.log("fliped!!");
+    }
+  }
   render() {
     return (
       <div className="flip-container">
-        <div className="flipper">
+        <div
+          className="flipper"
+          style={this.state.flipEffect}
+          onClick={this.flipItBitch.bind(this)}
+        >
           <div className="front">
             <img src={this.props.person.urlPic} width="280" alt="" />
           </div>
@@ -38,13 +68,13 @@ class EquipoMember extends Component {
               </div>
               {this.props.person.formacion.map((estudio, index) => (
                 <div key={index} className="row" id={`estudio${index}`}>
-                  <div className="col-sm-5">
+                  <div className="col-sm-5" style={{ width: "auto" }}>
                     <p style={{ margin: "0 0 1 0" }}>{estudio.estudios}</p>
                   </div>
-                  <div className="col-sm-5">
+                  <div className="col-sm-5" style={{ width: "auto" }}>
                     <img src={estudio.centroUrlPic} width="60" alt="" />
                   </div>
-                  <div className="col-sm-2">
+                  <div className="col-sm-2" style={{ width: "auto" }}>
                     <p style={{ margin: "0 0 1 0" }}>{estudio.fecha}</p>
                   </div>
                 </div>

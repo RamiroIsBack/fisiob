@@ -31,17 +31,15 @@
       grid-auto-rows: repeat(auto-fit, minmax(300px, 480px));
       grid-auto-flow: dense;
     }
+    .card_container {
+      width: auto;
+    }
   }
 }
 /*////////////////////////////////////equipoMember/////////////*/
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1000px;
-}
-/* flip the pane when hovered */
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg);
 }
 
 .flip-container,

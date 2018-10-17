@@ -6,6 +6,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -29,17 +30,16 @@ class NavbarFisioB extends React.Component {
   }
   handleOnClick(e) {
     if (e.target.id === "servicios") {
-      console.log("servicios pressed");
-      history.push("/");
-    }
-    if (e.target.id === "fisioterapia") {
-      console.log("fisioterapia pressed");
-    }
-    if (e.target.id === "ostiopatia") {
-      console.log("ostiopatia pressed");
-    }
-    if (e.target.id === "pilates") {
-      console.log("pilates pressed");
+      history.push("/servicios");
+      this.props.moveToSection("");
+    } else if (e.target.id === "equipo") {
+      history.push("/equipo");
+      this.props.moveToSection("");
+    } else if (e.target.id === "contacto") {
+      history.push("/contacto");
+      this.props.moveToSection("");
+    } else {
+      this.props.moveToSection(e.target.id);
     }
   }
   render() {
@@ -55,14 +55,22 @@ class NavbarFisioB extends React.Component {
           <Collapse isOpen={this.props.navigation.mobileTopMenu} navbar>
             <Nav className="navbar-nav w-100 justify-content-around">
               <NavItem>
-                <NavlinkRouter className="nav-link" to="/Equipo">
-                  Equipo
-                </NavlinkRouter>
+                <NavLink
+                  style={{ cursor: "pointer" }}
+                  id="equipo"
+                  onClick={this.handleOnClick.bind(this)}
+                >
+                  EQUIPO
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavlinkRouter className="nav-link" to="/Equipo">
-                  Contacto
-                </NavlinkRouter>
+                <NavLink
+                  style={{ cursor: "pointer" }}
+                  id="contacto"
+                  onClick={this.handleOnClick.bind(this)}
+                >
+                  CONTACTO
+                </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle
@@ -71,13 +79,28 @@ class NavbarFisioB extends React.Component {
                   id="servicios"
                   onClick={this.handleOnClick.bind(this)}
                 >
-                  Servicios
+                  SERVICIOS
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Fisioterapia</DropdownItem>
-                  <DropdownItem>Ostiopatia</DropdownItem>
+                  <DropdownItem
+                    id="fisioterapia"
+                    onClick={this.handleOnClick.bind(this)}
+                  >
+                    Fisioterapia
+                  </DropdownItem>
+                  <DropdownItem
+                    id="osteopatia"
+                    onClick={this.handleOnClick.bind(this)}
+                  >
+                    Osteopatia
+                  </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>Pilates</DropdownItem>
+                  <DropdownItem
+                    id="pilates"
+                    onClick={this.handleOnClick.bind(this)}
+                  >
+                    Pilates
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
@@ -94,7 +117,8 @@ const stateToProps = ({ navigation }) => {
 };
 const dispatchToProps = dispatch => {
   return {
-    toggleMobileTopMenu: open => dispatch(actions.toggleMobileTopMenu(open))
+    toggleMobileTopMenu: open => dispatch(actions.toggleMobileTopMenu(open)),
+    moveToSection: section => dispatch(actions.moveToSection(section))
   };
 };
 

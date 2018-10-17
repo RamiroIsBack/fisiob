@@ -5,7 +5,12 @@ import history from "./utils/history";
 import "bootstrap/dist/css/bootstrap.css";
 
 import store from "./stores";
-import { AsyncHome, AsyncEquipo } from "./components/AsyncComponents";
+import {
+  AsyncHome,
+  AsyncEquipo,
+  AsyncContacto,
+  AsyncServicios
+} from "./components/AsyncComponents";
 import NavbarFisioB from "./components/containers/NavbarFisioB";
 class App extends Component {
   render() {
@@ -17,6 +22,8 @@ class App extends Component {
             <div style={{ marginTop: "100px" }}>
               <Route exact path="/" component={AsyncHome} />
               <Route path="/Equipo" component={AsyncEquipo} />
+              <Route path="/Servicios" component={AsyncServicios} />
+              <Route path="/Contacto" component={AsyncContacto} />
             </div>
           </div>
         </Router>

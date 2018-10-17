@@ -7,5 +7,11 @@ export default {
       type: constants.TOGGLE_MOBILE_TOP_MENU,
       data: open
     };
+  },
+  moveToSection: service => {
+    return {
+      type: constants.MOVE_TO_SECTION,
+      data: service
+    };
   }
 };

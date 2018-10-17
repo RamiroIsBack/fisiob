@@ -9,7 +9,7 @@ class EquipoMember extends Component {
       fliped: false
     };
   }
-  flipItBitch(e) {
+  flipIt(e) {
     //     /* flip the pane when hovered */
     // .flip-container:hover .flipper,
     // .flip-container.hover .flipper {
@@ -19,13 +19,11 @@ class EquipoMember extends Component {
         flipEffect: { transform: "rotateY(0deg)" },
         fliped: false
       });
-      console.log("flipedBack");
     } else {
       this.setState({
         flipEffect: { transform: "rotateY(180deg)" },
         fliped: true
       });
-      console.log("fliped!!");
     }
   }
   render() {
@@ -34,7 +32,7 @@ class EquipoMember extends Component {
         <div
           className="flipper"
           style={this.state.flipEffect}
-          onClick={this.flipItBitch.bind(this)}
+          onClick={this.flipIt.bind(this)}
         >
           <div className="front">
             <img src={this.props.person.urlPic} width="280" alt="" />

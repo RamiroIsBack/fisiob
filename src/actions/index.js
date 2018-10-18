@@ -13,5 +13,11 @@ export default {
       type: constants.MOVE_TO_SECTION,
       data: service
     };
+  },
+  cierraCookiesAviso: () => {
+    return {
+      type: constants.CIERRA_COOKIES_AVISO,
+      data: false
+    };
   }
 };

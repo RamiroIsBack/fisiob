@@ -3,6 +3,7 @@ import { NavLink as NavlinkRouter } from "react-router-dom";
 import {
   Collapse,
   Navbar,
+  NavbarBrand,
   NavbarToggler,
   Nav,
   NavItem,
@@ -12,10 +13,11 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
-
 import { connect } from "react-redux";
+
 import actions from "../../actions";
 import history from "../../utils/history";
+import TelAndMailContainer from "../containers/TelAndMailContainer";
 
 class NavbarFisioB extends React.Component {
   constructor(props) {
@@ -43,20 +45,41 @@ class NavbarFisioB extends React.Component {
     }
   }
   render() {
+    // <NavlinkRouter className="navbar-brand" to="/">
+    //   <img src="/logoB.png" height="60" alt="" />
+    // </NavlinkRouter>
     return (
       <div>
-        <Navbar fixed={`top`} color="white" light expand="sm">
-          <NavbarToggler onClick={this.toggle} />
+        <Navbar
+          fixed={`top`}
+          style={{ paddingBottom: 1 }}
+          color="white"
+          light
+          expand="sm"
+        >
+          <NavbarToggler
+            style={{ backgroundColor: "#fdb813" }}
+            onClick={this.toggle}
+          />
+          <div
+            style={{
+              padding: "2px 5px 0 5px",
+              borderRadius: "20px",
+              backgroundColor: "#004383"
+            }}
+          >
+            <TelAndMailContainer />
+          </div>
 
-          <NavlinkRouter className="navbar-brand" to="/">
-            <img src="/logoB.png" height="60" alt="" />
-          </NavlinkRouter>
-
-          <Collapse isOpen={this.props.navigation.mobileTopMenu} navbar>
+          <Collapse
+            isOpen={this.props.navigation.mobileTopMenu}
+            navbar
+            style={{ borderRadius: "5px", backgroundColor: "#fdb813" }}
+          >
             <Nav className="navbar-nav w-100 justify-content-around">
               <NavItem>
                 <NavLink
-                  style={{ cursor: "pointer" }}
+                  style={{ paddingLeft: "6px", cursor: "pointer" }}
                   id="equipo"
                   onClick={this.handleOnClick.bind(this)}
                 >
@@ -65,7 +88,7 @@ class NavbarFisioB extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink
-                  style={{ cursor: "pointer" }}
+                  style={{ paddingLeft: "6px", cursor: "pointer" }}
                   id="contacto"
                   onClick={this.handleOnClick.bind(this)}
                 >
@@ -77,6 +100,7 @@ class NavbarFisioB extends React.Component {
                   nav
                   caret
                   id="servicios"
+                  style={{ paddingLeft: "6px", cursor: "pointer" }}
                   onClick={this.handleOnClick.bind(this)}
                 >
                   SERVICIOS

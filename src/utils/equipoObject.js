@@ -2,7 +2,8 @@ let equipo = [
   {
     nombre: "Javi",
     cargo: "fisioterapeuta",
-    urlPic: "https://homepages.cae.wisc.edu/~ece533/images/zelda.png",
+    urlPic:
+      "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/morgan-hjelm-1106154-unsplash.jpg?alt=media&token=ac108992-3f4f-4436-894e-c0e8ca5ee447",
     formacion: [
       {
         estudios: "fisioterapia",
@@ -32,7 +33,8 @@ let equipo = [
   {
     nombre: "Nadia",
     cargo: "podologa",
-    urlPic: "https://homepages.cae.wisc.edu/~ece533/images/barbara.png",
+    urlPic:
+      "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/daniel-monteiro-1105874-unsplash.jpg?alt=media&token=d197379f-6601-451a-835e-21048d46086c",
     formacion: [
       {
         estudios: "podología",
@@ -58,13 +60,7 @@ let equipo = [
       "pié diabético",
       "análisis de la pisada",
       "protesis plantares",
-      "podología 3ª edad",
-      "durezas",
-      "helomas ",
-      "uñas engrosadas",
-      "uñas encarnadas",
-      "papiloma",
-      "hongos"
+      "podología 3ª edad"
     ]
   }
 ];

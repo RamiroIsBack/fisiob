@@ -26,7 +26,37 @@ class EquipoMember extends Component {
       });
     }
   }
+  getTecnicas() {
+    return (
+      <div className="row">
+        <div
+          className="col-sm-12"
+          style={{ textAlign: "center", borderTop: "1px solid black" }}
+        >
+          tecnicas:
+        </div>
+
+        {this.props.person.tecnicas.map((tecnica, index) => (
+          <div
+            key={index}
+            id={`tecnica${index}`}
+            style={{
+              paddingRight: 2,
+              paddingLeft: 2,
+              border: "0.5px solid black",
+              borderStyle: "dotted",
+              display: "inline-block",
+              margin: "2px"
+            }}
+          >
+            {tecnica}
+          </div>
+        ))}
+      </div>
+    );
+  }
   render() {
+    let tecnicas = this.getTecnicas();
     return (
       <div>
         <div className="flip-container">
@@ -60,8 +90,11 @@ class EquipoMember extends Component {
                 </div>
 
                 <div
-                  className="col-sm-8"
-                  style={{ textAlign: "center", borderTop: "1px solid black" }}
+                  style={{
+                    width: "60%",
+                    textAlign: "center",
+                    borderTop: "1px solid black"
+                  }}
                 >
                   estudios:
                 </div>
@@ -78,34 +111,10 @@ class EquipoMember extends Component {
                     </div>
                   </div>
                 ))}
+                {tecnicas}
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div
-            className="col-sm-8"
-            style={{ textAlign: "center", borderTop: "1px solid black" }}
-          >
-            tecnicas:
-          </div>
-
-          {this.props.person.tecnicas.map((tecnica, index) => (
-            <div
-              key={index}
-              id={`tecnica${index}`}
-              style={{
-                paddingRight: 2,
-                paddingLeft: 2,
-                border: "0.5px solid black",
-                borderStyle: "dotted",
-                display: "inline-block",
-                margin: "2px"
-              }}
-            >
-              {tecnica}
-            </div>
-          ))}
         </div>
       </div>
     );

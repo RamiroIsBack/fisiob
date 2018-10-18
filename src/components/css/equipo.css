@@ -33,6 +33,8 @@
     }
     .card_container {
       width: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -46,7 +48,7 @@
 .front,
 .back {
   width: 290px;
-  height: 290px;
+  height: 425px;
 }
 
 /* flip speed goes here */

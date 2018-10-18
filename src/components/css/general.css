@@ -1,0 +1,55 @@
+.general__container {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "l l l l l l l l l l l l"
+    "m m m m m m m m m m m m"
+    "m m m m m m m m m m m m"
+    "m m m m m m m m m m m m"
+    "p p p p p p p p p p p p"
+    "f f f f f f f f f f f f";
+}
+.sticky__navbar__contanier {
+  z-index: 3000;
+  position: fixed;
+}
+.logo__top__container {
+  margin-top: 120px;
+  grid-area: l;
+  text-align: center;
+  background-color: white;
+  z-index: 68;
+}
+.main__container {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+  grid-area: m;
+}
+.footer__container {
+  background-color: black;
+  display: inline-block;
+  grid-area: f;
+  padding-top: 20px;
+  max-height: 800px;
+  min-height: 150px;
+}
+.cookies__aviso__container {
+  grid-area: p;
+  display: inline-block;
+  position: relative;
+  z-index: 68;
+}
+.cookies__aviso {
+  background-color: rgba(0, 0, 0, 0.58);
+  color: white;
+  grid-area: p;
+  padding: 5px 5px 0 15px;
+}
+.logo__top__img {
+  cursor: pointer;
+  position: relative;
+  width: 180px;
+}

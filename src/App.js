@@ -12,18 +12,38 @@ import {
   AsyncServicios
 } from "./components/AsyncComponents";
 import NavbarFisioB from "./components/containers/NavbarFisioB";
+import LogoContainer from "./components/containers/LogoContainer";
+import CookiesAvisoContainer from "./components/containers/CookiesAvisoContainer";
+import FooterContainer from "./components/containers/FooterContainer";
+import "./components/css/general.css";
+
 class App extends Component {
   render() {
+    let settingMinHigthToScreen = {
+      minHeight: window.innerHeight
+    };
     return (
       <Provider store={store.configure(null)}>
         <Router history={history}>
-          <div>
-            <NavbarFisioB />
-            <div style={{ marginTop: "100px" }}>
+          <div className="general__container" style={settingMinHigthToScreen}>
+            <div className="sticky__navbar__contanier">
+              <NavbarFisioB />
+            </div>
+            <div className="logo__top__container">
+              <LogoContainer />
+            </div>
+            <div className="main__container">
               <Route exact path="/" component={AsyncHome} />
               <Route path="/Equipo" component={AsyncEquipo} />
               <Route path="/Servicios" component={AsyncServicios} />
               <Route path="/Contacto" component={AsyncContacto} />
+            </div>
+            <div className="cookies__aviso__container">
+              <CookiesAvisoContainer />
+            </div>
+
+            <div className="footer__container">
+              <FooterContainer />
             </div>
           </div>
         </Router>

@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink as NavlinkRouter } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -45,9 +44,6 @@ class NavbarFisioB extends React.Component {
     }
   }
   render() {
-    // <NavlinkRouter className="navbar-brand" to="/">
-    //   <img src="/logoB.png" height="60" alt="" />
-    // </NavlinkRouter>
     return (
       <div>
         <Navbar

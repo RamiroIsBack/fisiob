@@ -29,13 +29,16 @@
 }
 .home__texto__corto__container {
   text-align: center;
+  margin: 40px 0 40px 0;
 }
 .home__texto__largo__container {
   text-align: center;
   background-color: aliceblue;
+  margin: 40px 0 40px 0;
 }
 .home__servicios__container {
-  background-color: #fdeecb;
+  margin: 40px 0 40px 0;
+  /* background-color: #fdeecb; */
 }
 .home__servicios__img {
   height: 120px;

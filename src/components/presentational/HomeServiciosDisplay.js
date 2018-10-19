@@ -12,10 +12,14 @@ class HomeServiciosDisplayContainer extends Component {
   render() {
     return (
       <div>
-        <div className="container" style={{ textAlign: "center" }}>
-          <h2>Servicios</h2>
+        <div
+          className="container"
+          style={{ paddingBottom: "30px", textAlign: "center" }}
+        >
+          <h2 style={{ color: "#004383" }}>Servicios</h2>
+          <div className="home__texto__border" />
         </div>
-        <div className="row">
+        <div className="row" style={{ margin: 0 }}>
           <div className="col-sm-4 row" style={{ width: "auto" }}>
             <div
               className="col-xs-3 col-sm-3 col-md-6 col-lg-6 col-xl-6"
@@ -31,7 +35,7 @@ class HomeServiciosDisplayContainer extends Component {
               className="col-xs-9 col-sm-9 col-md-6 col-lg-6 col-xl-6"
               style={{ width: "auto" }}
             >
-              <h4 style={{ right: 2, top: 2 }}>Fisioterapia</h4>
+              <h4 style={{ color: "#004383" }}>Fisioterapia</h4>
             </div>
           </div>
           <div className="col-sm-4 row" style={{ width: "auto" }}>
@@ -49,7 +53,7 @@ class HomeServiciosDisplayContainer extends Component {
               className="col-xs-9 col-sm-9 col-md-6 col-lg-6 col-xl-6"
               style={{ width: "auto" }}
             >
-              <h4>Osteopatia </h4>
+              <h4 style={{ color: "#004383" }}>Osteopatia </h4>
             </div>
           </div>
           <div className="col-sm-4 row" style={{ width: "auto" }}>
@@ -67,7 +71,7 @@ class HomeServiciosDisplayContainer extends Component {
               className="col-xs-9 col-sm-9 col-md-6 col-lg-6 col-xl-6"
               style={{ textAlign: "center", width: "auto" }}
             >
-              <h4>Pilates </h4>
+              <h4 style={{ color: "#004383" }}>Pilates </h4>
             </div>
           </div>
         </div>

@@ -5,12 +5,10 @@ import "../css/home.css";
 import history from "../../utils/history";
 import Carousel from "../presentational/Carousel";
 import { textoCortoHome, textoLargoHome } from "../../utils/homeCopy";
-import HomeServiciosDisplayContainer from "./HomeServiciosDisplayContainer";
+import HomeServiciosDisplay from "../presentational/HomeServiciosDisplay";
 
 class HomeContainer extends Component {
-  carouselSectionClicked(event) {
-    let e = event;
-  }
+  servicioSectionClicked() {}
   render() {
     return (
       <div>
@@ -30,13 +28,13 @@ class HomeContainer extends Component {
         </div>
 
         <div className="carousel__container">
-          <Carousel
-            carouselSectionClicked={this.carouselSectionClicked.bind(this)}
-          />
+          <Carousel />
         </div>
 
         <div className="home__servicios__container">
-          <HomeServiciosDisplayContainer />
+          <HomeServiciosDisplay
+            servicioSectionClicked={this.servicioSectionClicked.bind(this)}
+          />
         </div>
 
         <div className="home__texto__super__container">

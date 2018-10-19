@@ -139,7 +139,7 @@ class Mapa extends Component {
           ]
         }}
         defaultZoom={15}
-        defaultCenter={{ lat: 40.4491163, lng: -3.7072392 }}
+        defaultCenter={{ lat: 40.4487829, lng: -3.6989253 }}
       >
         {marker}
       </GoogleMap>

@@ -42,7 +42,7 @@ class App extends Component {
               <CookiesAvisoContainer />
             </div>
 
-            <div className="footer__container">
+            <div className="footer__container__general">
               <FooterContainer />
             </div>
           </div>

@@ -28,11 +28,11 @@
   background-color: white;
   grid-area: m;
 }
-.footer__container {
+.footer__container__general {
   background-color: black;
   display: inline-block;
   grid-area: f;
-  padding-top: 20px;
+
   max-height: 800px;
   min-height: 150px;
 }

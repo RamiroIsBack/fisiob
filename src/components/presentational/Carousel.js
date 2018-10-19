@@ -10,7 +10,7 @@ import {
 import { items } from "../../utils/homeCopy";
 import "../css/home.css";
 
-class CarouselContainer extends Component {
+class FisioBCarousel extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -100,4 +100,4 @@ class CarouselContainer extends Component {
   }
 }
 
-export default CarouselContainer;
+export default FisioBCarousel;

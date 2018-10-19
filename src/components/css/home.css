@@ -15,6 +15,32 @@
   height: 600px;
   max-width: 1024px;
 }
+.home__texto__super__container {
+  margin: auto;
+  width: 80%;
+}
+.home__texto__border {
+  margin: auto;
+  width: 40%;
+
+  border-top: 3px solid #004383;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.home__texto__corto__container {
+  text-align: center;
+}
+.home__texto__largo__container {
+  text-align: center;
+  background-color: aliceblue;
+}
+.home__servicios__container {
+  background-color: #fdeecb;
+}
+.home__servicios__img {
+  height: 120px;
+  margin: 0 0 20px 50px;
+}
 
 @media screen and (max-width: 1024px) {
   .carousel__container {
@@ -54,6 +80,9 @@
     height: 310px;
     max-width: 700px;
   }
+  .home__servicios__img {
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -73,5 +102,8 @@
   .carousel__img {
     height: 200px;
     max-width: 400px;
+  }
+  .home__servicios__img {
+    height: 60px;
   }
 }

@@ -24,3 +24,11 @@ export const items = [
     caption: "pilates"
   }
 ];
+
+export const textoLargoHome = `bla bla bla lskjwopobz oxbzpoxiasd vaspodivs osiv o sdviopsvopsdv osd.
+poxcivoxivapoij vapoisdjv poivjsdovi jsodiv sdpoivj sd jpaoijvposdij vasoj asdvioasoijsdvpoijsdv poiasdj oiaj bla bla bla.
+lxjosj vkjsoijfwpoei uapoiuwerpo oqwieufoiweupweapdif oisadf pou pi iaoisuf ioaweuf oaieuf paoiudf poaiweuf poaiweufosivujoijavaopi asoivmasdoimasodiv mas asoivm aoim aoisdm aoi maois maosim vasoivm apoivm asiovm aopisdmv pdimv aopidmv poaidmv ma.
+bla bla bla bla bla!`;
+
+export const textoCortoHome = `Bla bla bla bla bla, leiohsodos hsosdfs oshd osdhsosd.
+osdif hsosdf hsdoidf hsod sdhs s ss s dfdsf fhod so sh.`;

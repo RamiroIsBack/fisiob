@@ -10,7 +10,13 @@ class FooterContainer extends Component {
     history.push("/");
   }
   render() {
-    return <div>blabalblablablablalblablabl Cookies blakjbalblbalbla</div>;
+    return (
+      <div>
+        <div>blabalblablablablalblablabl Footer blakjbalblbalbla</div>
+        <div>blabalblablablablalblablabl Footer blakjbalblbalbla</div>
+        <div>blabalblablablablalblablabl Footer blakjbalblbalbla</div>
+      </div>
+    );
   }
 }
 export default connect(

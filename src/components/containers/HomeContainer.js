@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import "../css/general.css";
+import "../css/home.css";
 import history from "../../utils/history";
+import CarouselContainer from "../containers/CarouselContainer";
 
-class LogoContainer extends Component {
+class HomeContainer extends Component {
   handleClick(event) {
     window.scrollTo(0, 0);
     history.push("/");
   }
   render() {
     return (
-      <div className="logo__top__container" id="logoTopContainer">
-        <img
-          className="logo__top__img"
-          src="/logoB.png"
-          onClick={this.handleClick.bind(this)}
-        />
+      <div>
+        <h1>Hola fisioB!!</h1>
+        <div className="carousel__container">
+          <CarouselContainer />
+        </div>
       </div>
     );
   }
@@ -24,4 +24,4 @@ class LogoContainer extends Component {
 export default connect(
   null,
   null
-)(LogoContainer);
+)(HomeContainer);

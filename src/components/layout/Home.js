@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import "../css/layout.css";
 import actions from "../../actions";
-import CarouselContainer from "../containers/CarouselContainer";
+import HomeContainer from "../containers/HomeContainer";
 
 class Home extends Component {
   closeMenuIfNeeded() {
@@ -24,19 +24,7 @@ class Home extends Component {
         onClick={this.closeMenuIfNeeded.bind(this)}
         style={spaceForOpenTopMenu}
       >
-        <h1>Hola fisioB!!</h1>
-        <div
-          className="container"
-          style={{
-            marginLeft: "auto",
-            marginRight: "auto",
-            maxWidth: "1024px",
-            maxHeight: "600px",
-            overflow: "hidden"
-          }}
-        >
-          <CarouselContainer />
-        </div>
+        <HomeContainer />
       </div>
     );
   }

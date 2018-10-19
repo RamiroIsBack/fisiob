@@ -1,5 +1,4 @@
 import constants from "../constants";
-import { Firebase } from "../utils/Firebase";
 
 export default {
   toggleMobileTopMenu: open => {

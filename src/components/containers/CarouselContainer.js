@@ -7,26 +7,8 @@ import {
   CarouselCaption
 } from "reactstrap";
 
-const items = [
-  {
-    src:
-      "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/mahdi-haddadi-1106359-unsplash.jpg?alt=media&token=ca4677d9-2426-456b-9ccc-57c25cfe331a",
-    altText: "fisio",
-    caption: "fisioterapia"
-  },
-  {
-    src:
-      "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/fezbot2000-1106534-unsplash.jpg?alt=media&token=b7891e1b-0c34-435b-bf52-ebdf986fab73",
-    altText: "osteo",
-    caption: "osteopatia"
-  },
-  {
-    src:
-      "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/erik-mclean-1105925-unsplash.jpg?alt=media&token=6f654251-a93e-41eb-afc1-0d5d5a0f9751",
-    altText: "pilates",
-    caption: "pilates"
-  }
-];
+import { items } from "../../utils/homeCopy";
+import "../css/home.css";
 
 class CarouselContainer extends Component {
   constructor(props) {
@@ -80,11 +62,9 @@ class CarouselContainer extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img
-            style={{ height: 600, maxWidth: "1024px" }}
-            src={item.src}
-            alt={item.altText}
-          />
+          <div className="carusel__img__container">
+            <img className="carousel__img" src={item.src} alt={item.altText} />
+          </div>
           <CarouselCaption
             captionText={item.caption}
             captionHeader={item.caption}

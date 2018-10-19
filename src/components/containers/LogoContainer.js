@@ -16,6 +16,7 @@ class LogoContainer extends Component {
           className="logo__top__img"
           src="/logoB.png"
           onClick={this.handleClick.bind(this)}
+          alt="logo"
         />
       </div>
     );

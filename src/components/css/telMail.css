@@ -59,3 +59,12 @@
 .mail__pic:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 355px) {
+  .mail {
+    grid-area: p;
+    font-size: 13px;
+    padding: 10px 0;
+    margin: 0;
+  }
+}

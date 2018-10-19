@@ -1,0 +1,77 @@
+.carousel__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  max-height: 600px;
+  overflow: hidden;
+}
+.carousel__img__container {
+  position: relative;
+  overflow: hidden;
+  width: 1024px;
+  height: 600px;
+}
+.carousel__img {
+  height: 600px;
+  max-width: 1024px;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    max-height: 350px;
+    overflow: hidden;
+  }
+  .carousel__img__container {
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    height: 350px;
+  }
+  .carousel__img {
+    height: 350px;
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carousel__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+  .carousel__img__container {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+  }
+  .carousel__img {
+    height: 310px;
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+  .carousel__img__container {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+  }
+  .carousel__img {
+    height: 200px;
+    max-width: 400px;
+  }
+}

@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import "../css/layout.css";
 import actions from "../../actions";
+import InstalacionesContainer from "../containers/InstalacionesContainer";
 
 class Contacto extends Component {
   closeMenuIfNeeded() {
@@ -23,7 +24,7 @@ class Contacto extends Component {
         onClick={this.closeMenuIfNeeded.bind(this)}
         style={spaceForOpenTopMenu}
       >
-        <h1>Contacta con el super fisioB!!</h1>
+        <InstalacionesContainer />
       </div>
     );
   }

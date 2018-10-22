@@ -8,7 +8,7 @@ import store from "./stores";
 import {
   AsyncHome,
   AsyncEquipo,
-  AsyncContacto,
+  AsyncInstalaciones,
   AsyncServicios
 } from "./components/AsyncComponents";
 import NavbarFisioB from "./components/containers/NavbarFisioB";
@@ -36,7 +36,7 @@ class App extends Component {
               <Route exact path="/" component={AsyncHome} />
               <Route path="/Equipo" component={AsyncEquipo} />
               <Route path="/Servicios" component={AsyncServicios} />
-              <Route path="/Contacto" component={AsyncContacto} />
+              <Route path="/Instalaciones" component={AsyncInstalaciones} />
             </div>
             <div className="cookies__aviso__container">
               <CookiesAvisoContainer />

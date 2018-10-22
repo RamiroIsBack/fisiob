@@ -35,8 +35,8 @@ class NavbarFisioB extends React.Component {
     } else if (e.target.id === "equipo") {
       history.push("/equipo");
       this.props.moveToSection("");
-    } else if (e.target.id === "contacto") {
-      history.push("/contacto");
+    } else if (e.target.id === "instalaciones") {
+      history.push("/instalaciones");
       this.props.moveToSection("");
     } else {
       this.props.moveToSection(e.target.id);
@@ -84,10 +84,10 @@ class NavbarFisioB extends React.Component {
               <NavItem>
                 <NavLink
                   style={{ paddingLeft: "6px", cursor: "pointer" }}
-                  id="contacto"
+                  id="instalaciones"
                   onClick={this.handleOnClick.bind(this)}
                 >
-                  CONTACTO
+                  INSTALACIONES
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>

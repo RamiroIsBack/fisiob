@@ -30,8 +30,8 @@ class EquipoContainer extends Component {
       <div>
         <div className="deck__container">
           {equipoObject.equipo.map((person, index) => (
-            <div className="card__supercontainer">
-              <div key={index} className="card__container">
+            <div key={index} className="card__supercontainer">
+              <div className="card__container">
                 <EquipoMember
                   person={person}
                   servicioSectionClicked={this.servicioSectionClicked.bind(

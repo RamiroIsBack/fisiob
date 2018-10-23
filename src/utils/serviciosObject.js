@@ -5,7 +5,7 @@ export default {
       precio: 50,
       duracion: 50,
       bono: {
-        modalidad: "sesiones",
+        modalidad: "Bono",
         numero: 10,
         precio: 400
       },
@@ -19,7 +19,7 @@ export default {
       precio: 50,
       duracion: 50,
       bono: {
-        modalidad: "sesiones",
+        modalidad: "Bono",
         numero: 10,
         precio: 400
       },

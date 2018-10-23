@@ -50,6 +50,11 @@ class Mapa extends Component {
                 )
               }
             />
+            {this.props.normalColor && (
+              <div>
+                <p style={{ margin: "5px 0 5px 0" }}>C/ Artistas 57</p>
+              </div>
+            )}
           </div>
         </InfoWindow>
       </Marker>
@@ -66,77 +71,43 @@ class Mapa extends Component {
     return (
       <GoogleMap
         defaultOptions={{
-          styles: [
-            {
-              featureType: "landscape.natural",
-              elementType: "geometry.fill",
-              stylers: [
+          styles: !this.props.normalColor
+            ? [
                 {
-                  visibility: "on"
+                  featureType: "road",
+                  elementType: "geometry",
+                  stylers: [
+                    {
+                      lightness: 100
+                    },
+                    {
+                      visibility: "simplified"
+                    }
+                  ]
                 },
                 {
-                  color: "#e0efef"
-                }
-              ]
-            },
-            {
-              featureType: "poi",
-              elementType: "geometry.fill",
-              stylers: [
-                {
-                  visibility: "on"
+                  featureType: "road",
+                  elementType: "labels",
+                  stylers: [
+                    {
+                      visibility: "off"
+                    }
+                  ]
                 },
                 {
-                  hue: "#1900ff"
-                },
-                {
-                  color: "#c0e8e8"
+                  featureType: "transit.line",
+                  elementType: "geometry",
+                  stylers: [
+                    {
+                      visibility: "on"
+                    },
+                    {
+                      lightness: 700
+                    }
+                  ]
                 }
               ]
-            },
-            {
-              featureType: "road",
-              elementType: "geometry",
-              stylers: [
-                {
-                  lightness: 100
-                },
-                {
-                  visibility: "simplified"
-                }
-              ]
-            },
-            {
-              featureType: "road",
-              elementType: "labels",
-              stylers: [
-                {
-                  visibility: "off"
-                }
-              ]
-            },
-            {
-              featureType: "transit.line",
-              elementType: "geometry",
-              stylers: [
-                {
-                  visibility: "on"
-                },
-                {
-                  lightness: 700
-                }
-              ]
-            },
-            {
-              featureType: "water",
-              elementType: "all",
-              stylers: [
-                {
-                  color: "#004383"
-                }
-              ]
-            }
-          ]
+            : []
         }}
         defaultZoom={15}
         defaultCenter={{ lat: 40.4487829, lng: -3.6989253 }}

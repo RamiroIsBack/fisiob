@@ -1,75 +1,75 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import "../css/general.css";
 import history from "../../utils/history";
 import MapaContainer from "./MapaContainer";
-import "../css/footer.css"; // eslint-disable-line no-unused-vars
 import {
   telCopy,
   emailCopy,
   horario,
   direccion
 } from "../../utils/contactoCopy";
+import { Container, Row, Col } from "reactstrap";
 
-class FooterContainer extends Component {
+class ContactoContainer extends Component {
   handleClick(event) {
     window.scrollTo(0, 0);
     history.push("/");
   }
-  render() {
+  getLeftPart() {
     return (
-      <div className="footer__container">
-        <div className="footer__map__container">
-          <MapaContainer
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyClcb4B5oRktWDQWGU8Ev4hgYm5p_NXgL4&v=3.exp&libraries=geometry,drawing,places"
-            loadingElement={<div style={{ height: "100%" }} />}
-          />
-        </div>
-        <div className="footer__tel__container">
-          <div className="footer__tel">
-            <a href={"tel:" + telCopy.urlLink} style={{ color: "white" }}>
-              {telCopy.urlLink}
-            </a>
-          </div>
-          <div className="footer__tel__pic">
-            <img className="footer__picPhoto" alt="tel" src={telCopy.urlPic} />
-          </div>
-        </div>
-        <div className="footer__mail__container">
-          <div className="footer__mail">
-            <a href={"mailto:" + emailCopy.urlLink} style={{ color: "white" }}>
-              {emailCopy.urlLink}
-            </a>
-          </div>
-          <div className="footer__mail__pic">
-            <img
-              className="footer__picPhoto"
-              src={emailCopy.urlPic}
-              alt="mail"
-            />
+      <div>
+        <div className="contacto__tel__container">
+          <div style={{ display: "inline-block" }}>
+            <div style={{ display: "inline-block" }}>
+              <img
+                style={{ margin: "2px", height: 30 }}
+                src={telCopy.urlPic}
+                alt="mail"
+              />
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <a href={"mailto:" + telCopy.urlLink} style={{ color: "black" }}>
+                {telCopy.urlLink}
+              </a>
+            </div>
           </div>
         </div>
-        <div className="row footer__horario__container">
-          <div className="col-sm-3">
-            <p
-              style={{
-                margin: "0 0 0 5px"
-              }}
-            >
-              {horario.nombre}
-            </p>
+        <div className="contacto__mail__container">
+          <div style={{ display: "inline-block" }}>
+            <div style={{ display: "inline-block" }}>
+              <img
+                style={{ margin: "2px", height: 30 }}
+                src={emailCopy.urlPic}
+                alt="mail"
+              />
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <a
+                href={"mailto:" + emailCopy.urlLink}
+                style={{ color: "black" }}
+              >
+                {emailCopy.urlLink}
+              </a>
+            </div>
           </div>
-          <div className="footer__horario col-sm-9">{horario.info}</div>
+        </div>
+        <div style={{ display: "inline-block" }}>
+          <div style={{ display: "inline-block" }}>
+            <p style={{ margin: "5px" }}>{horario.nombre}</p>
+          </div>
+          <div style={{ display: "inline-block" }}>
+            <p>{horario.info}</p>
+          </div>
         </div>
 
-        <div className="footer__direccion__container">
+        <div className="contacto__direccion__container">
           <a
             href={direccion.urlLink}
             style={{
               marginLeft: "5px",
               textAlign: "left",
-              color: "white"
+              color: "black"
             }}
           >
             {direccion.nombre}
@@ -78,8 +78,51 @@ class FooterContainer extends Component {
       </div>
     );
   }
+  getRightPart() {
+    return direccion.detalles.split("\n").map((item, key) => {
+      return (
+        <span style={{ margin: "10px 0 0 5px" }} key={key}>
+          {item}
+          <br />
+        </span>
+      );
+    });
+  }
+  render() {
+    let leftJSX = this.getLeftPart();
+    let rightJSX = this.getRightPart();
+    return (
+      <div className="contacto__container">
+        <div
+          className="contacto__map__container"
+          style={{
+            marginLeft: "2%",
+            marginRight: "2%"
+          }}
+        >
+          <MapaContainer
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyClcb4B5oRktWDQWGU8Ev4hgYm5p_NXgL4&v=3.exp&libraries=geometry,drawing,places"
+            mapHeigth={window.innerHeight / 2}
+            normalColor={true}
+            loadingElement={<div style={{ height: "100%" }} />}
+          />
+        </div>
+        <Container>
+          <Row>
+            <Col xs="auto">{leftJSX}</Col>
+            <Col xs="auto">
+              <div>
+                <p style={{ margin: "5px" }}>detalles de la zona:</p>
+              </div>
+              <div style={{ maxWidth: 350 }}>{rightJSX}</div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    );
+  }
 }
 export default connect(
   null,
   null
-)(FooterContainer);
+)(ContactoContainer);

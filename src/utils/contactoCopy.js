@@ -17,7 +17,15 @@ export const direccion = {
   urlLink:
     "https://www.google.com/maps/place/Fisioterapia+Buend%C3%ADa/@40.4474725,-3.7013178,17z/data=!3m1!4b1!4m5!3m4!1s0xd4228f93ff787fb:0x39239806bd70c985!8m2!3d40.4474684!4d-3.6991291",
   nombre: `C/Artistas 57 28020 Madrid`,
-  info: `Metro: Nuevos Ministerios o Cuatro Caminos`
+  info: `Metro: Nuevos Ministerios o Cuatro Caminos`,
+  detalles: `EMT: Líneas 5, 149 y Circular
+  METRO: Nuevos Ministerios (Líneas 6, 8 y 10) Cuatro Caminos (Líneas 1, 2 y 6)
+  RENFE: Nuevos Ministerios (C1, C2, C3, C4, C7, C8, C10)
+  PARKING:
+   c/Hernani 57
+   c/Hernani s/n (Interparking)
+   c/General Moscardó 4-6
+  TAXI: parada de taxi en c/Orense Esq. c/Hernani`
 };
 
 export const cookiesInfoLarga = `Como usuario, puedes rechazar el tratamiento de los datos o la información bloqueando estas cookies mediante la configuración de tu navegador, pero si lo haces la página no funcionará al 100%.

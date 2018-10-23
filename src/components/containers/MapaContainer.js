@@ -7,8 +7,13 @@ class MapaContainer extends Component {
     return (
       <div>
         <Mapa
+          normalColor={this.props.normalColor ? true : false}
           containerElement={
-            <div style={{ height: "260px", maxWidth: "1200px" }} />
+            <div
+              style={{
+                height: this.props.mapHeigth || "260px"
+              }}
+            />
           }
           mapElement={<div style={{ height: "100%" }} />}
         />

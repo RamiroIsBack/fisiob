@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import serviciosObject from "../../utils/serviciosObject";
 //import actions from "../../actions";
+import { Container, Row, Col } from "reactstrap";
 
 class TarifasContainer extends Component {
   componentDidMount() {
@@ -27,27 +28,70 @@ class TarifasContainer extends Component {
   }
   render() {
     return (
-      <div>
+      <Container>
         {serviciosObject.servicios.map((servicio, index) => {
           return (
-            <div
-              className="container"
-              key={index}
-              ref={el => (this[servicio.nombre] = el)}
-            >
-              <h1>{servicio.nombre}</h1>
-              <p>{servicio.precio} Euros</p>
-              <p>{servicio.duracion} minutos</p>
-              <p>Tipo de bono:</p>
-              <p>{servicio.bono.modalidad}</p>
-              <p>{servicio.bono.numero} sesiones</p>
-              <p>{servicio.bono.precio} euros</p>
-              {servicio.horario && <p>horario:</p>}
-              <p>{servicio.horario}</p>
+            <div key={index} ref={el => (this[servicio.nombre] = el)}>
+              <Row style={{ borderBottom: "2px solid #004383" }}>
+                <h3 style={{ color: "#004383" }}>{servicio.nombre}</h3>
+              </Row>
+              <Row>
+                <Col
+                  style={{ minWidth: "183px" }}
+                  xs={{ offset: 0, size: "auto" }}
+                  md={{ size: "auto", offset: 3 }}
+                >
+                  Una sesion
+                </Col>
+                <Col size="auto">
+                  <p>{servicio.precio} Euros</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col
+                  style={{ minWidth: "183px" }}
+                  xs={{ offset: 0, size: "auto" }}
+                  md={{ size: "auto", offset: 3 }}
+                >
+                  {`${servicio.bono.modalidad} ${
+                    servicio.bono.numero
+                  } sesiones`}
+                </Col>
+                <Col size="auto">
+                  <p>{servicio.bono.precio} Euros</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col
+                  style={{ minWidth: "183px" }}
+                  xs={{ offset: 0, size: "auto" }}
+                  md={{ size: "auto", offset: 3 }}
+                >
+                  Bono 20 sesiones
+                </Col>
+                <Col size="auto">
+                  <p>600 Euros</p>
+                </Col>
+              </Row>
+
+              {servicio.horario && (
+                <Row>
+                  <Col
+                    style={{ minWidth: "183px" }}
+                    xs={{ offset: 0, size: "auto" }}
+                    md={{ size: "auto", offset: 3 }}
+                  >
+                    <p>horario</p>
+                  </Col>
+                  <Col size="auto">
+                    <p>{servicio.horario}</p>
+                  </Col>
+                </Row>
+              )}
             </div>
           );
         })}
-      </div>
+      </Container>
     );
   }
 }

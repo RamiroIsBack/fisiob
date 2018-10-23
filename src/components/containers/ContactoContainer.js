@@ -110,11 +110,16 @@ class ContactoContainer extends Component {
         <Container>
           <Row>
             <Col xs="auto">{leftJSX}</Col>
-            <Col xs="auto">
+            <Col>
               <div>
                 <p style={{ margin: "5px" }}>detalles de la zona:</p>
               </div>
-              <div style={{ maxWidth: 350 }}>{rightJSX}</div>
+              <div
+                style={{ minWidth: "320px" }}
+                className="contacto__direccion__detalles__container"
+              >
+                {rightJSX}
+              </div>
             </Col>
           </Row>
         </Container>

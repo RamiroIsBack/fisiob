@@ -135,11 +135,7 @@ class NavbarFisioB extends React.Component {
                       onClick={this.handleOnClick.bind(this)}
                       style={{ cursor: "pointer", padding: 3 }}
                     >
-                      <div
-                        key={index}
-                        className="row"
-                        style={{ width: "auto" }}
-                      >
+                      <div key={index} className="row">
                         <div
                           className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-6"
                           style={{ width: "auto" }}
@@ -154,7 +150,7 @@ class NavbarFisioB extends React.Component {
                         </div>
                         <div
                           className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-6"
-                          style={{ width: "auto" }}
+                          style={{ padding: 0, width: "auto" }}
                           id={servicio.nombre}
                           onClick={this.handleOnClick.bind(this)}
                         >

@@ -1,14 +1,10 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-
 import "../css/home.css";
-import history from "../../utils/history";
 import serviciosObject from "../../utils/serviciosObject";
 
 class HomeServiciosDisplayContainer extends Component {
   handleClick(event) {
-    window.scrollTo(0, 0);
-    history.push("/");
+    this.props.servicioSectionClicked(event.target.id);
   }
   render() {
     return (
@@ -22,22 +18,33 @@ class HomeServiciosDisplayContainer extends Component {
         </div>
         <div className="row" style={{ margin: 0 }}>
           {serviciosObject.servicios.map((servicio, index) => (
-            <div key={index} className="col-sm-4 row" style={{ width: "auto" }}>
+            <div
+              key={index}
+              className="col-sm-4 row"
+              id={servicio.nombre}
+              onClick={this.handleClick.bind(this)}
+              style={{ width: "auto", cursor: "pointer" }}
+            >
               <div
                 className="col-xs-3 col-sm-3 col-md-6 col-lg-6 col-xl-6"
                 style={{ width: "auto" }}
+                id={servicio.nombre}
               >
                 <img
                   alt={servicio.urlPic.alt}
                   src={servicio.urlPic.src}
                   className="home__servicios__img"
+                  id={servicio.nombre}
                 />
               </div>
               <div
                 className="col-xs-9 col-sm-9 col-md-6 col-lg-6 col-xl-6"
                 style={{ width: "auto" }}
+                id={servicio.nombre}
               >
-                <h4 style={{ color: "#004383" }}>{servicio.nombre}</h4>
+                <h4 id={servicio.nombre} style={{ color: "#004383" }}>
+                  {servicio.nombre}
+                </h4>
               </div>
             </div>
           ))}
@@ -46,7 +53,4 @@ class HomeServiciosDisplayContainer extends Component {
     );
   }
 }
-export default connect(
-  null,
-  null
-)(HomeServiciosDisplayContainer);
+export default HomeServiciosDisplayContainer;

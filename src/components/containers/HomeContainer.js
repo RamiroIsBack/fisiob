@@ -2,13 +2,30 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import "../css/home.css";
+import actions from "../../actions";
 import history from "../../utils/history";
 import Carousel from "../presentational/Carousel";
 import { textoCortoHome, textoLargoHome } from "../../utils/homeCopy";
 import HomeServiciosDisplay from "../presentational/HomeServiciosDisplay";
 
 class HomeContainer extends Component {
-  servicioSectionClicked() {}
+  servicioSectionClicked(id) {
+    if (id === "servicios") {
+      this.props.moveToSection("");
+    } else if (id === "equipo") {
+      history.push("/equipo");
+      this.props.moveToSection("");
+    } else if (id === "instalaciones") {
+      history.push("/instalaciones");
+      this.props.moveToSection("");
+    } else {
+      history.push("/servicios");
+      let whereTo = id;
+      setTimeout(() => {
+        this.props.moveToSection(whereTo);
+      }, 400);
+    }
+  }
   render() {
     return (
       <div>
@@ -53,7 +70,18 @@ class HomeContainer extends Component {
     );
   }
 }
+const stateToProps = ({ navigation }) => {
+  return {
+    navigation
+  };
+};
+const dispatchToProps = dispatch => {
+  return {
+    moveToSection: section => dispatch(actions.moveToSection(section))
+  };
+};
+
 export default connect(
-  null,
-  null
+  stateToProps,
+  dispatchToProps
 )(HomeContainer);

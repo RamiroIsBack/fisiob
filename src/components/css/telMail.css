@@ -1,6 +1,5 @@
 .tel__container {
   grid-area: t;
-
   display: grid;
   cursor: pointer;
   grid-template-columns: 42px auto;

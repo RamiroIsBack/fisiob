@@ -1,7 +1,11 @@
 let equipo = [
   {
-    nombre: "Javi",
+    nombre: "Javier",
+    apellido: "Buendia",
     cargo: "fisioterapeuta",
+    textoPersona: `bla bla bla, bla lkwoqio oeoi dkn sn lkadknaq askdnak, lwohla ls siew  qoiew.
+      Y seguimos un poco mas con el bla bla bla de de la persona lkwx xljpo oapidfpo poaisd, fuosid uosdif oi odsifusoi usoi oispufaif.
+      Ya vamos acabando.`,
     urlPic:
       "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/morgan-hjelm-1106154-unsplash.jpg?alt=media&token=ac108992-3f4f-4436-894e-c0e8ca5ee447",
     formacion: [
@@ -32,7 +36,10 @@ let equipo = [
   },
   {
     nombre: "Nadia",
+    apellido: "Fonseca",
     cargo: "podologa",
+    textoPersona: `bla bla bla, bla lkwoqio oeoi dkn sn lkadknaq askdnak, lwohla ls siew  qoiew. Glsp ;lkwo iOIu poisuv poiuasoiudf poisuadpoiu aos iud oiau poiu poi upo iu opiu osdufopisudofiu oidu oi uo iudfopi u osi.
+      Peld dlsi jso oisdj o sido idfiso doifj dsf.`,
     urlPic:
       "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/daniel-monteiro-1105874-unsplash.jpg?alt=media&token=d197379f-6601-451a-835e-21048d46086c",
     formacion: [

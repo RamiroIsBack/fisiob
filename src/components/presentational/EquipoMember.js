@@ -38,13 +38,12 @@ class EquipoMember extends Component {
 
         {this.props.person.tecnicas.map((tecnica, index) => (
           <div
+            className="equipo__member__button"
             key={index}
             id={`tecnica${index}`}
             style={{
               paddingRight: 2,
               paddingLeft: 2,
-              border: "0.5px solid black",
-              borderStyle: "dotted",
               display: "inline-block",
               margin: "2px"
             }}
@@ -55,18 +54,33 @@ class EquipoMember extends Component {
       </div>
     );
   }
+  getFlipButton() {
+    return (
+      <div
+        className="equipo__member__button"
+        onClick={this.flipIt.bind(this)}
+        style={{
+          backgroundColor: "black",
+          right: -10,
+          bottom: 6,
+          zIndex: 100,
+          position: "absolute"
+        }}
+      >
+        {!this.state.fliped ? "Estudios" : "Foto"}
+      </div>
+    );
+  }
   render() {
     let tecnicas = this.getTecnicas();
+    let flipButton = this.getFlipButton();
     return (
       <div>
         <div className="flip-container">
-          <div
-            className="flipper"
-            style={this.state.flipEffect}
-            onClick={this.flipIt.bind(this)}
-          >
+          <div className="flipper" style={this.state.flipEffect}>
             <div className="front">
               <img src={this.props.person.urlPic} width="280" alt="" />
+              {flipButton}
             </div>
             <div className="back">
               <div className="container-fluid">
@@ -87,6 +101,7 @@ class EquipoMember extends Component {
                   <div style={{ position: "absolute", right: 10 }}>
                     <img src={this.props.person.urlPic} width="50" alt="" />
                   </div>
+                  {flipButton}
                 </div>
 
                 <div

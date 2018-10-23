@@ -8,14 +8,22 @@ class EquipoContainer extends Component {
   render() {
     return (
       <div>
-        <div className="deck_container">
+        <div className="deck__container">
           {equipoObject.map((person, index) => (
-            <div key={index} className="card_container">
-              <EquipoMember person={person} />
+            <div className="card__supercontainer">
+              <div key={index} className="card__container">
+                <EquipoMember person={person} />
+              </div>
+              <div key={index} className="card__side" style={{ width: "90%" }}>
+                <p style={{ fontWeight: "bold" }}>
+                  {person.nombre} {person.apellido}
+                </p>
+                <p>{person.textoPersona}</p>
+              </div>
             </div>
           ))}
         </div>
-        <div className="container">
+        <div className="container" style={{ marginTop: 20 }}>
           {textoLargoEquipo.split("\n").map((item, key) => {
             return (
               <span key={key}>

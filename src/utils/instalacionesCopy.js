@@ -11,7 +11,7 @@ export const items = [
   },
   {
     src:
-      "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/425205-PDTHC1-239.jpg?alt=media&token=e77399bc-2b06-4769-8e2c-c881435a3034",
+      "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/64.jpg?alt=media&token=10ef5385-ed87-45d1-8e2e-10c46a438e13",
     alt: "pilates"
   },
   {

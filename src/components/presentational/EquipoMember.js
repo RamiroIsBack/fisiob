@@ -9,6 +9,9 @@ class EquipoMember extends Component {
       fliped: false
     };
   }
+  handleClick(e) {
+    this.props.servicioSectionClicked(e.target.id);
+  }
   flipIt(e) {
     //     /* flip the pane when hovered */
     // .flip-container:hover .flipper,
@@ -39,8 +42,9 @@ class EquipoMember extends Component {
         {this.props.person.tecnicas.map((tecnica, index) => (
           <div
             className="equipo__member__button"
+            onClick={this.handleClick.bind(this)}
             key={index}
-            id={`tecnica${index}`}
+            id={tecnica.servicio}
             style={{
               paddingRight: 2,
               paddingLeft: 2,
@@ -48,7 +52,7 @@ class EquipoMember extends Component {
               margin: "2px"
             }}
           >
-            {tecnica}
+            {tecnica.nombre}
           </div>
         ))}
       </div>
@@ -118,8 +122,18 @@ class EquipoMember extends Component {
                     <div className="col-sm-5" style={{ width: "auto" }}>
                       <p style={{ margin: "0 0 1 0" }}>{estudio.estudios}</p>
                     </div>
-                    <div className="col-sm-5" style={{ width: "auto" }}>
-                      <img src={estudio.centroUrlPic} width="60" alt="" />
+                    <div
+                      className="col-sm-5"
+                      style={{ cursor: "pointer", width: "auto" }}
+                    >
+                      <img
+                        onClick={() => {
+                          window.open(estudio.centroUrl, "blank");
+                        }}
+                        src={estudio.centroUrlPic}
+                        width="60"
+                        alt=""
+                      />
                     </div>
                     <div className="col-sm-2" style={{ width: "auto" }}>
                       <p style={{ margin: "0 0 1 0" }}>{estudio.fecha}</p>

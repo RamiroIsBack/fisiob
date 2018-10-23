@@ -21,7 +21,9 @@ class ServiciosContainer extends Component {
   }
 
   focusDiv(servicio) {
-    this[servicio].scrollIntoView({ blok: "start", behavior: "smooth" });
+    if (this[servicio]) {
+      this[servicio].scrollIntoView({ blok: "start", behavior: "smooth" });
+    }
   }
   render() {
     return (

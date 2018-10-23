@@ -1,18 +1,43 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
+import actions from "../../actions";
+import history from "../../utils/history";
 import "../css/equipo.css";
 import EquipoMember from "../presentational/EquipoMember";
-import equipoObject from "../../utils/equipoObject";
+import { equipoObject } from "../../utils/equipoObject";
 import { textoLargoEquipo } from "../../utils/equipoObject";
 class EquipoContainer extends Component {
+  servicioSectionClicked(id) {
+    if (id === "servicios") {
+      this.props.moveToSection("");
+    } else if (id === "equipo") {
+      history.push("/equipo");
+      this.props.moveToSection("");
+    } else if (id === "instalaciones") {
+      history.push("/instalaciones");
+      this.props.moveToSection("");
+    } else {
+      history.push("/servicios");
+      let whereTo = id;
+      setTimeout(() => {
+        this.props.moveToSection(whereTo);
+      }, 400);
+    }
+  }
   render() {
     return (
       <div>
         <div className="deck__container">
-          {equipoObject.map((person, index) => (
+          {equipoObject.equipo.map((person, index) => (
             <div className="card__supercontainer">
               <div key={index} className="card__container">
-                <EquipoMember person={person} />
+                <EquipoMember
+                  person={person}
+                  servicioSectionClicked={this.servicioSectionClicked.bind(
+                    this
+                  )}
+                />
               </div>
               <div key={index} className="card__side" style={{ width: "90%" }}>
                 <p style={{ fontWeight: "bold" }}>
@@ -24,7 +49,7 @@ class EquipoContainer extends Component {
           ))}
         </div>
         <div className="container" style={{ marginTop: 20 }}>
-          {textoLargoEquipo.split("\n").map((item, key) => {
+          {equipoObject.textoLargoEquipo.split("\n").map((item, key) => {
             return (
               <span key={key}>
                 {item}
@@ -37,4 +62,18 @@ class EquipoContainer extends Component {
     );
   }
 }
-export default EquipoContainer;
+const stateToProps = ({ navigation }) => {
+  return {
+    navigation
+  };
+};
+const dispatchToProps = dispatch => {
+  return {
+    moveToSection: section => dispatch(actions.moveToSection(section))
+  };
+};
+
+export default connect(
+  stateToProps,
+  dispatchToProps
+)(EquipoContainer);

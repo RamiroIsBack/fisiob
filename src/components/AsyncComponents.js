@@ -6,4 +6,13 @@ const AsyncServicios = AsyncComponentHOC(() => import("./layout/Servicios"));
 const AsyncInstalaciones = AsyncComponentHOC(() =>
   import("./layout/Instalaciones")
 );
-export { AsyncHome, AsyncEquipo, AsyncServicios, AsyncInstalaciones };
+const AsyncTarifas = AsyncComponentHOC(() => import("./layout/Tarifas"));
+const AsyncContacto = AsyncComponentHOC(() => import("./layout/Contacto"));
+export {
+  AsyncHome,
+  AsyncEquipo,
+  AsyncServicios,
+  AsyncInstalaciones,
+  AsyncTarifas,
+  AsyncContacto
+};

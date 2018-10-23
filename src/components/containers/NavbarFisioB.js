@@ -8,8 +8,7 @@ import {
   NavLink,
   UncontrolledDropdown,
   DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  DropdownMenu
 } from "reactstrap";
 import { connect } from "react-redux";
 
@@ -37,6 +36,12 @@ class NavbarFisioB extends React.Component {
       this.props.moveToSection("");
     } else if (e.target.id === "instalaciones") {
       history.push("/instalaciones");
+      this.props.moveToSection("");
+    } else if (e.target.id === "tarifas") {
+      history.push("/tarifas");
+      this.props.moveToSection("");
+    } else if (e.target.id === "contacto") {
+      history.push("/contacto");
       this.props.moveToSection("");
     } else {
       history.push("/servicios");
@@ -92,6 +97,24 @@ class NavbarFisioB extends React.Component {
                   onClick={this.handleOnClick.bind(this)}
                 >
                   INSTALACIONES
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  style={{ paddingLeft: "6px", cursor: "pointer" }}
+                  id="tarifas"
+                  onClick={this.handleOnClick.bind(this)}
+                >
+                  TARIFAS
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  style={{ paddingLeft: "6px", cursor: "pointer" }}
+                  id="contacto"
+                  onClick={this.handleOnClick.bind(this)}
+                >
+                  CONTACTO
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>

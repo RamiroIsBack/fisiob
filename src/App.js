@@ -9,7 +9,9 @@ import {
   AsyncHome,
   AsyncEquipo,
   AsyncInstalaciones,
-  AsyncServicios
+  AsyncServicios,
+  AsyncContacto,
+  AsyncTarifas
 } from "./components/AsyncComponents";
 import NavbarFisioB from "./components/containers/NavbarFisioB";
 import LogoContainer from "./components/containers/LogoContainer";
@@ -36,6 +38,8 @@ class App extends Component {
               <Route exact path="/" component={AsyncHome} />
               <Route path="/Equipo" component={AsyncEquipo} />
               <Route path="/Servicios" component={AsyncServicios} />
+              <Route path="/Tarifas" component={AsyncTarifas} />
+              <Route path="/Contacto" component={AsyncContacto} />
               <Route path="/Instalaciones" component={AsyncInstalaciones} />
             </div>
             <div className="cookies__aviso__container">

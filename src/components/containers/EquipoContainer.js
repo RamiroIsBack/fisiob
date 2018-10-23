@@ -6,7 +6,7 @@ import history from "../../utils/history";
 import "../css/equipo.css";
 import EquipoMember from "../presentational/EquipoMember";
 import { equipoObject } from "../../utils/equipoObject";
-import { textoLargoEquipo } from "../../utils/equipoObject";
+
 class EquipoContainer extends Component {
   servicioSectionClicked(id) {
     if (id === "servicios") {

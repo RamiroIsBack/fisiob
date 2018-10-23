@@ -8,6 +8,10 @@ export default {
         modalidad: "sesiones",
         numero: 10,
         precio: 400
+      },
+      urlPic: {
+        alt: "fisioterapia",
+        src: "/fisioterapia.png"
       }
     },
     {
@@ -18,6 +22,10 @@ export default {
         modalidad: "sesiones",
         numero: 10,
         precio: 400
+      },
+      urlPic: {
+        alt: "osteopatia",
+        src: "/osteopatia.png"
       }
     },
     {
@@ -29,7 +37,11 @@ export default {
         numero: 8,
         precio: 80
       },
-      horario: "M J 12:00-12:50 o L M 17:00-17:50"
+      horario: "M J 12:00-12:50 o L M 17:00-17:50",
+      urlPic: {
+        alt: "pilates",
+        src: "/pilates.png"
+      }
     }
   ]
 };

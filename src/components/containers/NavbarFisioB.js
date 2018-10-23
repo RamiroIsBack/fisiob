@@ -16,6 +16,7 @@ import { connect } from "react-redux";
 import actions from "../../actions";
 import history from "../../utils/history";
 import TelAndMailContainer from "../containers/TelAndMailContainer";
+import serviciosObject from "../../utils/serviciosObject";
 
 class NavbarFisioB extends React.Component {
   constructor(props) {
@@ -30,7 +31,6 @@ class NavbarFisioB extends React.Component {
   }
   handleOnClick(e) {
     if (e.target.id === "servicios") {
-      history.push("/servicios");
       this.props.moveToSection("");
     } else if (e.target.id === "equipo") {
       history.push("/equipo");
@@ -39,7 +39,11 @@ class NavbarFisioB extends React.Component {
       history.push("/instalaciones");
       this.props.moveToSection("");
     } else {
-      this.props.moveToSection(e.target.id);
+      history.push("/servicios");
+      let whereTo = e.target.id;
+      setTimeout(() => {
+        this.props.moveToSection(whereTo);
+      }, 400);
     }
   }
   render() {
@@ -101,25 +105,41 @@ class NavbarFisioB extends React.Component {
                   SERVICIOS
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem
-                    id="fisioterapia"
-                    onClick={this.handleOnClick.bind(this)}
-                  >
-                    Fisioterapia
-                  </DropdownItem>
-                  <DropdownItem
-                    id="osteopatia"
-                    onClick={this.handleOnClick.bind(this)}
-                  >
-                    Osteopatia
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem
-                    id="pilates"
-                    onClick={this.handleOnClick.bind(this)}
-                  >
-                    Pilates
-                  </DropdownItem>
+                  {serviciosObject.servicios.map((servicio, index) => (
+                    <div
+                      key={index}
+                      id={servicio.nombre}
+                      onClick={this.handleOnClick.bind(this)}
+                      style={{ cursor: "pointer", padding: 3 }}
+                    >
+                      <div
+                        key={index}
+                        className="row"
+                        style={{ width: "auto" }}
+                      >
+                        <div
+                          className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-6"
+                          style={{ width: "auto" }}
+                        >
+                          <img
+                            alt={servicio.urlPic.alt}
+                            src={servicio.urlPic.src}
+                            style={{ height: 38 }}
+                            id={servicio.nombre}
+                            onClick={this.handleOnClick.bind(this)}
+                          />
+                        </div>
+                        <div
+                          className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-6"
+                          style={{ width: "auto" }}
+                          id={servicio.nombre}
+                          onClick={this.handleOnClick.bind(this)}
+                        >
+                          {servicio.nombre}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

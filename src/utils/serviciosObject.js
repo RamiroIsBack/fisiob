@@ -38,7 +38,7 @@ Bla bla tldo aois spsi poa paosaps aposidp pasipocpao asod as do a aiopsdpoi.`
         },
 
         {
-          nombre: "Radiología e Imagen Biomédica",
+          nombre: "radiología e imagen biomédica",
           img: {
             src:
               "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/1.png?alt=media&token=33837f2d-3381-4339-b766-7ca00652dabb",
@@ -141,7 +141,7 @@ bla bla bla bla bla!`,
       },
       tecnicas: [
         {
-          nombre: "Pilates aplicado a la fisioterapia",
+          nombre: "pilates aplicado a la fisioterapia",
           img: {
             src:
               "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/3.png?alt=media&token=848378ec-32de-40f2-9494-b12449c5f023",

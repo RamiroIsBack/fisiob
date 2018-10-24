@@ -79,9 +79,9 @@ class ServiciosContainer extends Component {
                 </Col>
                 <Col style={{ minWidth: "320px" }}>{servicio.textoLargo}</Col>
               </Row>
-              <Row>
+              <div>
                 <ServiciosTecnicas servicio={servicio} />
-              </Row>
+              </div>
             </div>
           );
         })}

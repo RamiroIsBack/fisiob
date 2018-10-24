@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Container, Row, Col } from "reactstrap";
 
 import serviciosObject from "../../utils/serviciosObject";
+import ServiciosTecnicas from "../presentational/ServiciosTecnicas";
 //import actions from "../../actions";
 
 class ServiciosContainer extends Component {
@@ -27,27 +29,63 @@ class ServiciosContainer extends Component {
   }
   render() {
     return (
-      <div>
+      <Container>
         {serviciosObject.servicios.map((servicio, index) => {
           return (
-            <div
-              className="container"
-              key={index}
-              ref={el => (this[servicio.nombre] = el)}
-            >
-              <h1>{servicio.nombre}</h1>
-              <p>{servicio.precio} Euros</p>
-              <p>{servicio.duracion} minutos</p>
-              <p>Tipo de bono:</p>
-              <p>{servicio.bono.modalidad}</p>
-              <p>{servicio.bono.numero} sesiones</p>
-              <p>{servicio.bono.precio} euros</p>
-              {servicio.horario && <p>horario:</p>}
-              <p>{servicio.horario}</p>
+            <div>
+              <div
+                style={{
+                  marginTop: "60px",
+                  paddingTop: "20px",
+                  borderTopLeftRadius: "4px",
+                  borderTopRightRadius: "4px",
+                  borderTop: "3px solid #fdb813"
+                }}
+                key={index}
+                ref={el => (this[servicio.nombre] = el)}
+              />
+              <Row>
+                <div
+                  style={{
+                    textAlign: "center",
+                    margin: "auto"
+                  }}
+                >
+                  <img
+                    alt={servicio.urlPic.alt}
+                    src={servicio.urlPic.src}
+                    style={{ height: 50, display: "inline-block" }}
+                    id={servicio.nombre}
+                  />
+                  <h2
+                    style={{
+                      marginLeft: 10,
+                      color: "#004383",
+                      display: "inline-block"
+                    }}
+                  >
+                    {servicio.nombre}
+                  </h2>
+                </div>
+              </Row>
+              <Row>
+                <Col sm="auto" style={{ minWidth: "280px" }}>
+                  <img
+                    alt={servicio.img.altText}
+                    src={servicio.img.src}
+                    style={{ width: "280px" }}
+                    id={servicio.nombre}
+                  />
+                </Col>
+                <Col style={{ minWidth: "320px" }}>{servicio.textoLargo}</Col>
+              </Row>
+              <Row>
+                <ServiciosTecnicas servicio={servicio} />
+              </Row>
             </div>
           );
         })}
-      </div>
+      </Container>
     );
   }
 }

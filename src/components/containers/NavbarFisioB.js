@@ -28,6 +28,13 @@ class NavbarFisioB extends React.Component {
       this.props.toggleMobileTopMenu(!this.props.navigation.mobileTopMenu);
     }
   }
+  closeMenu() {
+    if (this.props.navigation) {
+      if (this.props.navigation.mobileTopMenu) {
+        this.props.toggleMobileTopMenu(false);
+      }
+    }
+  }
   handleOnClick(e) {
     if (e.target.id === "servicios") {
       this.props.moveToSection("");
@@ -49,6 +56,9 @@ class NavbarFisioB extends React.Component {
       setTimeout(() => {
         this.props.moveToSection(whereTo);
       }, 400);
+    }
+    if (e.target.id !== "servicios") {
+      this.closeMenu();
     }
   }
   render() {

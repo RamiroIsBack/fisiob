@@ -6,7 +6,8 @@ class ServiciosTecnicas extends React.Component {
     super();
     this.state = {
       tecnicaSelected: "",
-      indexTecnicaSelected: 0
+      indexTecnicaSelected: 0,
+      tooltipOpen: false
     };
   }
   componentDidMount() {
@@ -15,39 +16,76 @@ class ServiciosTecnicas extends React.Component {
       indexTecnicaSelected: 0
     });
   }
+  toggle() {
+    this.setState({
+      tooltipOpen: !this.state.tooltipOpen
+    });
+  }
   render() {
     let servicio = this.props.servicio;
     let styleSelected = {
-      borderBottom: "1px solid green",
-      borderTop: "1px solid green",
+      backgroundColor: " #004383",
+      color: "white",
+      borderRadius: "5px",
+      padding: "2px",
+      cursor: "pointer",
+      textAlign: "center",
       opacity: 1
     };
-    let styleNotSelected = { opacity: 0.5 };
+    let styleNotSelected = {
+      backgroundColor: "#6495ed",
+      color: "white",
+      borderRadius: "5px",
+      padding: "2px",
+      cursor: "pointer",
+      textAlign: "center",
+      opacity: 0.8
+    };
     return (
       <div>
         {servicio.tecnicas.map((tecnica, index) => (
           <div key={index}>
             <Row>
-              <Col
-                sm="auto"
-                style={{ minWidth: "280px" }}
-                style={
-                  tecnica.nombre === this.state.tecnicaSelected
-                    ? styleSelected
-                    : styleNotSelected
-                }
-                onClick={() => {
-                  this.setState({
-                    tecnicaSelected: tecnica.nombre,
-                    indexTecnicaSelected: index
-                  });
-                }}
-              >
-                {tecnica.nombre}
+              <Col sm="auto" style={{ paddingTop: 5, minWidth: "280px" }}>
+                <div
+                  style={
+                    tecnica.nombre === this.state.tecnicaSelected
+                      ? styleSelected
+                      : styleNotSelected
+                  }
+                  onClick={() => {
+                    this.setState({
+                      tecnicaSelected: tecnica.nombre,
+                      indexTecnicaSelected: index
+                    });
+                  }}
+                  id={tecnica.nombre
+                    .toString()
+                    .toLowerCase()
+                    .replace(/\s/g, "")}
+                >
+                  {tecnica.nombre}
+                </div>
+                {tecnica.nombre !== this.state.tecnicaSelected && (
+                  <Tooltip
+                    placement="right"
+                    delay={{ show: 100, hide: 600 }}
+                    isOpen={this.state.tooltipOpen}
+                    target={tecnica.nombre
+                      .toString()
+                      .toLowerCase()
+                      .replace(/\s/g, "")}
+                    toggle={this.toggle.bind(this)}
+                  >
+                    haz 'click' para ver detalles
+                  </Tooltip>
+                )}
               </Col>
               <Col style={{ minWidth: "320px" }}>
                 {tecnica.nombre === this.state.tecnicaSelected && (
-                  <Row>
+                  <Row
+                    style={{ paddingTop: 5, borderTop: "1px solid #004383" }}
+                  >
                     <Col style={{ minWidth: "220px" }}>{tecnica.texto}</Col>
                     <Col sm="auto">
                       <img

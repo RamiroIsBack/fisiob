@@ -58,6 +58,7 @@ class NavbarFisioB extends React.Component {
       }, 400);
     }
     if (e.target.id !== "servicios") {
+      window.scrollTo(0, 0);
       this.closeMenu();
     }
   }

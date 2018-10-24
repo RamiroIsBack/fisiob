@@ -28,9 +28,9 @@ bla bla bla bla bla!`,
           nombre: "fisioterapia deportiva",
           img: {
             src:
-              "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/1.png?alt=media&token=33837f2d-3381-4339-b766-7ca00652dabb",
+              "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/4.png?alt=media&token=55b344e6-92ba-4bb3-9e8c-0175ee863756",
             altText: "fisio",
-            caption: "fisioterapia"
+            caption: "fisio"
           },
           texto: `Bla bla bla bla bla, leiohsodos hsosdfs oshd osdhsosd.
 osdif hsosdf hsdoidf hsod sdhs s ss s dfdsf fhod so sh.
@@ -54,9 +54,9 @@ Bla bla tldo aois spsi poa paosaps aposidp pasipocpao asod as do a aiopsdpoi.`
           nombre: "vendaje neuromuscular",
           img: {
             src:
-              "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/1.png?alt=media&token=33837f2d-3381-4339-b766-7ca00652dabb",
+              "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/4.png?alt=media&token=55b344e6-92ba-4bb3-9e8c-0175ee863756",
             altText: "fisio",
-            caption: "fisioterapia"
+            caption: "fisio"
           },
           texto: `Bla bla bla bla bla, leiohsodos hsosdfs oshd osdhsosd.
 osdif hsosdf hsdoidf hsod sdhs s ss s dfdsf fhod so sh.
@@ -105,9 +105,9 @@ Bla bla tldo aois spsi poa paosaps aposidp pasipocpao asod as do a aiopsdpoi.`
           nombre: "control motor cervical",
           img: {
             src:
-              "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/2.png?alt=media&token=c5fbf40d-d6c5-4452-adaf-64964ce0adeb",
+              "https://firebasestorage.googleapis.com/v0/b/fisiob-f5aca.appspot.com/o/4.png?alt=media&token=55b344e6-92ba-4bb3-9e8c-0175ee863756",
             altText: "osteo",
-            caption: "osteopatia"
+            caption: "osteo"
           },
           texto: `Bla bla bla bla bla, leiohsodos hsosdfs oshd osdhsosd.
 osdif hsosdf hsdoidf hsod sdhs s ss s dfdsf fhod so sh.

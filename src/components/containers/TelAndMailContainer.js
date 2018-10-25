@@ -20,25 +20,25 @@ class TelAndMailContainer extends Component {
               {telCopy.urlLink}
             </a>
           </div>
-          <div
+        </div>
+        <div
+          style={{
+            width: "80%",
+            cursor: "default",
+            textAlign: "center",
+            color: "white",
+            fontWeight: "lighter",
+            margin: "auto"
+          }}
+        >
+          <p
             style={{
-              width: "80%",
-              cursor: "default",
-              textAlign: "center",
-              color: "white",
-              fontWeight: "lighter",
-              margin: "auto"
+              padding: 0,
+              margin: 0
             }}
           >
-            <p
-              style={{
-                padding: 0,
-                margin: 0
-              }}
-            >
-              consultas y citas
-            </p>
-          </div>
+            consultas y citas
+          </p>
         </div>
         <div className="mail__container">
           <div className="mail__pic">

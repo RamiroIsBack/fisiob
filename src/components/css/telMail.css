@@ -3,7 +3,7 @@
 }
 .tel {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 16px;
 }
 .tel__pic {
@@ -22,6 +22,10 @@
 .mail__container:hover {
   opacity: 1;
 }
+.mail__container {
+  display: inline-block;
+  min-width: 207px;
+}
 .mail {
   display: inline-block;
   font-size: 16px;
@@ -39,12 +43,33 @@
 .mail__pic:hover {
   opacity: 1;
 }
-
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 825px) {
   .mail {
-    grid-area: p;
     font-size: 13px;
-    padding: 10px 0;
+    margin: 0;
+    padding: 0;
+  }
+  .picPhoto {
+    max-height: 30px;
+    max-width: 30px;
+  }
+  .tel {
+    display: inline-block;
+    margin-top: 0;
+
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .mail {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .mail {
+    font-size: 13px;
     margin: 0;
   }
 }

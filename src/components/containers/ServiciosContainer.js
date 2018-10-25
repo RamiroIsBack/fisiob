@@ -32,8 +32,9 @@ class ServiciosContainer extends Component {
       <Container>
         {serviciosObject.servicios.map((servicio, index) => {
           return (
-            <div>
+            <div key={index}>
               <div
+                ref={el => (this[servicio.nombre] = el)}
                 style={{
                   marginTop: "60px",
                   paddingTop: "20px",
@@ -41,8 +42,6 @@ class ServiciosContainer extends Component {
                   borderTopRightRadius: "4px",
                   borderTop: "3px solid #fdb813"
                 }}
-                key={index}
-                ref={el => (this[servicio.nombre] = el)}
               />
               <Row>
                 <div
@@ -54,7 +53,11 @@ class ServiciosContainer extends Component {
                   <img
                     alt={servicio.urlPic.alt}
                     src={servicio.urlPic.src}
-                    style={{ height: 50, display: "inline-block" }}
+                    style={{
+                      height: 50,
+                      display: "inline-block",
+                      paddingBottom: 10
+                    }}
                     id={servicio.nombre}
                   />
                   <h2
@@ -73,11 +76,13 @@ class ServiciosContainer extends Component {
                   <img
                     alt={servicio.img.altText}
                     src={servicio.img.src}
-                    style={{ width: "280px" }}
+                    style={{ width: "280px", paddingBottom: "20px" }}
                     id={servicio.nombre}
                   />
                 </Col>
-                <Col style={{ minWidth: "320px" }}>{servicio.textoLargo}</Col>
+                <Col style={{ minWidth: "320px", paddingBottom: "20px" }}>
+                  {servicio.textoLargo}
+                </Col>
               </Row>
               <div>
                 <ServiciosTecnicas servicio={servicio} />

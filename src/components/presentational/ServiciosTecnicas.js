@@ -10,12 +10,7 @@ class ServiciosTecnicas extends React.Component {
       tooltipOpen: false
     };
   }
-  componentDidMount() {
-    this.setState({
-      tecnicaSelected: this.props.servicio.tecnicas[0].nombre,
-      indexTecnicaSelected: 0
-    });
-  }
+
   toggle() {
     this.setState({
       tooltipOpen: !this.state.tooltipOpen
@@ -67,18 +62,20 @@ class ServiciosTecnicas extends React.Component {
                   {tecnica.nombre}
                 </div>
                 {tecnica.nombre !== this.state.tecnicaSelected && (
-                  <Tooltip
-                    placement="right"
-                    delay={{ show: 100, hide: 600 }}
-                    isOpen={this.state.tooltipOpen}
-                    target={tecnica.nombre
-                      .toString()
-                      .toLowerCase()
-                      .replace(/\s/g, "")}
-                    toggle={this.toggle.bind(this)}
-                  >
-                    haz 'click' para ver detalles
-                  </Tooltip>
+                  <div id="serviciosTooltipContainer">
+                    <Tooltip
+                      placement="right"
+                      delay={{ show: 100, hide: 600 }}
+                      isOpen={this.state.tooltipOpen}
+                      target={tecnica.nombre
+                        .toString()
+                        .toLowerCase()
+                        .replace(/\s/g, "")}
+                      toggle={this.toggle.bind(this)}
+                    >
+                      ver detalles
+                    </Tooltip>
+                  </div>
                 )}
               </Col>
               <Col style={{ minWidth: "320px" }}>
@@ -91,7 +88,7 @@ class ServiciosTecnicas extends React.Component {
                       <img
                         alt={tecnica.img.altText}
                         src={tecnica.img.src}
-                        style={{ width: "280px" }}
+                        style={{ paddingBottom: 10, width: "280px" }}
                       />
                     </Col>
                   </Row>

@@ -10,7 +10,12 @@ class TelAndMailContainer extends Component {
       <div>
         <div className="tel__container">
           <div className="tel__pic">
-            <img className="picPhoto" alt="tel" src={telCopy.urlPic} />
+            <a
+              href={"tel:" + telCopy.urlLink}
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              <img className="picPhoto" alt="tel" src={telCopy.urlPic} />
+            </a>
           </div>
           <div className="tel">
             <a
@@ -42,7 +47,12 @@ class TelAndMailContainer extends Component {
         </div>
         <div className="mail__container">
           <div className="mail__pic">
-            <img className="picPhoto" src={emailCopy.urlPic} alt="mail" />
+            <a
+              href={"mailto:" + emailCopy.urlLink}
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              <img className="picPhoto" src={emailCopy.urlPic} alt="mail" />
+            </a>
           </div>
           <div className="mail">
             <a

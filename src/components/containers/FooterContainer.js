@@ -27,27 +27,35 @@ class FooterContainer extends Component {
           />
         </div>
         <div className="footer__tel__container">
+          <div className="footer__tel__pic">
+            <a href={"tel:" + telCopy.urlLink} style={{ color: "white" }}>
+              <img
+                className="footer__picPhoto"
+                alt="tel"
+                src={telCopy.urlPic}
+              />
+            </a>
+          </div>
           <div className="footer__tel">
             <a href={"tel:" + telCopy.urlLink} style={{ color: "white" }}>
               {telCopy.urlLink}
             </a>
           </div>
-          <div className="footer__tel__pic">
-            <img className="footer__picPhoto" alt="tel" src={telCopy.urlPic} />
-          </div>
         </div>
         <div className="footer__mail__container">
+          <div className="footer__mail__pic">
+            <a href={"mailto:" + emailCopy.urlLink} style={{ color: "white" }}>
+              <img
+                className="footer__picPhoto"
+                src={emailCopy.urlPic}
+                alt="mail"
+              />
+            </a>
+          </div>
           <div className="footer__mail">
             <a href={"mailto:" + emailCopy.urlLink} style={{ color: "white" }}>
               {emailCopy.urlLink}
             </a>
-          </div>
-          <div className="footer__mail__pic">
-            <img
-              className="footer__picPhoto"
-              src={emailCopy.urlPic}
-              alt="mail"
-            />
           </div>
         </div>
         <div className="row footer__horario__container">

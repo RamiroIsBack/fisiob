@@ -9,7 +9,7 @@ import { textoCortoHome, textoLargoHome } from "../../utils/homeCopy";
 import HomeServiciosDisplay from "../presentational/HomeServiciosDisplay";
 
 class HomeContainer extends Component {
-  servicioSectionClicked(id) {
+  servicioSectionClicked = id => {
     if (id === "servicios") {
       this.props.moveToSection("");
     } else if (id === "equipo") {
@@ -25,7 +25,7 @@ class HomeContainer extends Component {
         this.props.moveToSection(whereTo);
       }, 400);
     }
-  }
+  };
   render() {
     return (
       <div>
@@ -50,7 +50,7 @@ class HomeContainer extends Component {
 
         <div className="home__servicios__container">
           <HomeServiciosDisplay
-            servicioSectionClicked={this.servicioSectionClicked.bind(this)}
+            servicioSectionClicked={this.servicioSectionClicked}
           />
         </div>
 

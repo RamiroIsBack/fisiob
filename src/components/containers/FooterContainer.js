@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import "../css/general.css";
-import history from "../../utils/history";
 import MapaContainer from "./MapaContainer";
 import "../css/footer.css"; // eslint-disable-line no-unused-vars
 import {
@@ -13,10 +11,6 @@ import {
 } from "../../utils/contactoCopy";
 
 class FooterContainer extends Component {
-  handleClick(event) {
-    window.scrollTo(0, 0);
-    history.push("/");
-  }
   render() {
     return (
       <div className="footer__container">

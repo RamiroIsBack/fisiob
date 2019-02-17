@@ -12,6 +12,7 @@ class CookiesAvisoContainer extends Component {
     this.state = {
       showAlert: false
     };
+    this.handleClick = this.handleClick.bind(this);
   }
   handleClick(event) {
     if (event.target.id === "masInfo") {
@@ -37,7 +38,7 @@ class CookiesAvisoContainer extends Component {
         <h6 style={{ display: "inline" }}>{cookiesInfoCorta}</h6>
         <h5
           id="masInfo"
-          onClick={this.handleClick.bind(this)}
+          onClick={this.handleClick}
           style={{ display: "inline", fontWeight: "bold", cursor: "pointer" }}
         >
           {" "}
@@ -54,7 +55,7 @@ class CookiesAvisoContainer extends Component {
             color: "white",
             cursor: "pointer"
           }}
-          onClick={this.handleClick.bind(this)}
+          onClick={this.handleClick}
         >
           Aceptar
         </button>

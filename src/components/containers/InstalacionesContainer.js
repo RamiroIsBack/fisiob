@@ -14,6 +14,7 @@ class InstalacionesContainer extends Component {
     this.state = {
       fotoLoaded: false
     };
+    this.handleClick = this.handleClick.bind(this);
   }
   componentWillMount() {
     //make it start at the top of the page every time
@@ -53,7 +54,7 @@ class InstalacionesContainer extends Component {
         </div>
         <div className="instalaciones__logo__container">
           <img
-            onClick={this.handleClick.bind(this)}
+            onClick={this.handleClick}
             className="instalaciones__foto"
             alt="logoFisioB"
             src="/logoB.png"

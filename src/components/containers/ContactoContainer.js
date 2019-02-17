@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import history from "../../utils/history";
 import MapaContainer from "./MapaContainer";
 import {
   telCopy,
@@ -12,10 +11,6 @@ import {
 import { Container, Row, Col } from "reactstrap";
 
 class ContactoContainer extends Component {
-  handleClick(event) {
-    window.scrollTo(0, 0);
-    history.push("/");
-  }
   getLeftPart() {
     return (
       <div>

@@ -22,6 +22,8 @@ class NavbarFisioB extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+    this.handleOnClick = this.handleOnClick.bind(this);
   }
   toggle() {
     if (this.props.navigation) {
@@ -96,7 +98,7 @@ class NavbarFisioB extends React.Component {
                 <NavLink
                   style={{ paddingLeft: "6px", cursor: "pointer" }}
                   id="equipo"
-                  onClick={this.handleOnClick.bind(this)}
+                  onClick={this.handleOnClick}
                 >
                   EQUIPO
                 </NavLink>
@@ -105,7 +107,7 @@ class NavbarFisioB extends React.Component {
                 <NavLink
                   style={{ paddingLeft: "6px", cursor: "pointer" }}
                   id="instalaciones"
-                  onClick={this.handleOnClick.bind(this)}
+                  onClick={this.handleOnClick}
                 >
                   INSTALACIONES
                 </NavLink>
@@ -114,7 +116,7 @@ class NavbarFisioB extends React.Component {
                 <NavLink
                   style={{ paddingLeft: "6px", cursor: "pointer" }}
                   id="tarifas"
-                  onClick={this.handleOnClick.bind(this)}
+                  onClick={this.handleOnClick}
                 >
                   TARIFAS
                 </NavLink>
@@ -123,7 +125,7 @@ class NavbarFisioB extends React.Component {
                 <NavLink
                   style={{ paddingLeft: "6px", cursor: "pointer" }}
                   id="contacto"
-                  onClick={this.handleOnClick.bind(this)}
+                  onClick={this.handleOnClick}
                 >
                   CONTACTO
                 </NavLink>
@@ -134,7 +136,7 @@ class NavbarFisioB extends React.Component {
                   caret
                   id="servicios"
                   style={{ paddingLeft: "6px", cursor: "pointer" }}
-                  onClick={this.handleOnClick.bind(this)}
+                  onClick={this.handleOnClick}
                 >
                   SERVICIOS
                 </DropdownToggle>
@@ -143,7 +145,7 @@ class NavbarFisioB extends React.Component {
                     <div
                       key={index}
                       id={servicio.nombre}
-                      onClick={this.handleOnClick.bind(this)}
+                      onClick={this.handleOnClick}
                       style={{ cursor: "pointer", padding: 3 }}
                     >
                       <div key={index} className="row">
@@ -156,14 +158,14 @@ class NavbarFisioB extends React.Component {
                             src={servicio.urlPic.src}
                             style={{ height: 38 }}
                             id={servicio.nombre}
-                            onClick={this.handleOnClick.bind(this)}
+                            onClick={this.handleOnClick}
                           />
                         </div>
                         <div
                           className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-6"
                           style={{ padding: 0, width: "auto" }}
                           id={servicio.nombre}
-                          onClick={this.handleOnClick.bind(this)}
+                          onClick={this.handleOnClick}
                         >
                           {servicio.nombre}
                         </div>

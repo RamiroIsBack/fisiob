@@ -6,11 +6,11 @@ import actions from "../../actions";
 import ServiciosContainer from "../containers/ServiciosContainer";
 
 class Servicios extends Component {
-  closeMenuIfNeeded() {
+  closeMenuIfNeeded = () => {
     if (this.props.navigation.mobileTopMenu) {
       this.props.toggleMobileTopMenu(false);
     }
-  }
+  };
   render() {
     let spaceForOpenTopMenu = this.props.navigation.mobileTopMenu
       ? { animationName: "moveDownSlowly" }
@@ -21,7 +21,7 @@ class Servicios extends Component {
     return (
       <div
         className="layout__container"
-        onClick={this.closeMenuIfNeeded.bind(this)}
+        onClick={this.closeMenuIfNeeded}
         style={spaceForOpenTopMenu}
       >
         <ServiciosContainer />

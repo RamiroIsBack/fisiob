@@ -6,11 +6,11 @@ import EquipoContainer from "../containers/EquipoContainer";
 import "../css/layout.css";
 
 class Equipo extends Component {
-  closeMenuIfNeeded() {
+  closeMenuIfNeeded = () => {
     if (this.props.navigation.mobileTopMenu) {
       this.props.toggleMobileTopMenu(false);
     }
-  }
+  };
   render() {
     let spaceForOpenTopMenu = this.props.navigation.mobileTopMenu
       ? { animationName: "moveDownSlowly" }
@@ -22,7 +22,7 @@ class Equipo extends Component {
     return (
       <div
         className="layout__container"
-        onClick={this.closeMenuIfNeeded.bind(this)}
+        onClick={this.closeMenuIfNeeded}
         style={spaceForOpenTopMenu}
       >
         <EquipoContainer />

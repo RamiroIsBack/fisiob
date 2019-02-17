@@ -8,11 +8,13 @@ class EquipoMember extends Component {
       flipEffect: {},
       fliped: false
     };
+    this.handleClick = this.handleClick.bind(this);
+    this.flipIt = this.flipIt.bind(this);
   }
   handleClick(e) {
     this.props.servicioSectionClicked(e.target.id);
   }
-  flipIt(e) {
+  flipIt() {
     //     /* flip the pane when hovered */
     // .flip-container:hover .flipper,
     // .flip-container.hover .flipper {
@@ -42,7 +44,7 @@ class EquipoMember extends Component {
         {this.props.person.tecnicas.map((tecnica, index) => (
           <div
             className="equipo__member__button"
-            onClick={this.handleClick.bind(this)}
+            onClick={this.handleClick}
             key={index}
             id={tecnica.servicio}
             style={{
@@ -62,7 +64,7 @@ class EquipoMember extends Component {
     return (
       <div
         className="equipo__member__button"
-        onClick={this.flipIt.bind(this)}
+        onClick={this.flipIt}
         style={{
           backgroundColor: "black",
           right: -10,

@@ -8,7 +8,7 @@ import EquipoMember from "../presentational/EquipoMember";
 import { equipoObject } from "../../utils/equipoObject";
 
 class EquipoContainer extends Component {
-  servicioSectionClicked(id) {
+  servicioSectionClicked = id => {
     if (id === "servicios") {
       this.props.moveToSection("");
     } else if (id === "equipo") {
@@ -24,7 +24,7 @@ class EquipoContainer extends Component {
         this.props.moveToSection(whereTo);
       }, 400);
     }
-  }
+  };
   render() {
     return (
       <div>
@@ -34,9 +34,7 @@ class EquipoContainer extends Component {
               <div className="card__container">
                 <EquipoMember
                   person={person}
-                  servicioSectionClicked={this.servicioSectionClicked.bind(
-                    this
-                  )}
+                  servicioSectionClicked={this.servicioSectionClicked}
                 />
               </div>
               <div key={index} className="card__side" style={{ width: "90%" }}>

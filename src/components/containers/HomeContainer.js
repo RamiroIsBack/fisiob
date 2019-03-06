@@ -6,7 +6,7 @@ import "../css/home.css";
 import actions from "../../actions";
 import history from "../../utils/history";
 import Carousel from "../presentational/Carousel";
-import { textoCortoHome, textoLargoHome } from "../../utils/homeCopy";
+//import { textoCortoHome, textoLargoHome } from "../../utils/homeCopy";
 import HomeServiciosDisplay from "../presentational/HomeServiciosDisplay";
 
 class HomeContainer extends Component {
@@ -53,25 +53,36 @@ class HomeContainer extends Component {
     }
   };
   render() {
+    console.log(this.props.copy.inicioCopy);
     return (
       <div>
         <div className="home__texto__super__container">
           <div className="home__texto__border" />
           <div className="home__texto__corto__container">
-            {textoCortoHome.split("\n").map((item, key) => {
-              return (
-                <span key={key}>
-                  {item}
-                  <br />
-                </span>
-              );
-            })}
+            {this.props.copy.inicioCopy ? (
+              this.props.copy.inicioCopy.inicioTextoCorto
+                .split("\n")
+                .map((item, key) => {
+                  return (
+                    <span key={key}>
+                      {item}
+                      <br />
+                    </span>
+                  );
+                })
+            ) : (
+              <div />
+            )}
           </div>
           <div />
         </div>
 
         <div className="carousel__container">
-          <Carousel />
+          <Carousel
+            items={
+              this.props.copy.inicioCopy ? this.props.copy.inicioCopy.items : []
+            }
+          />
         </div>
 
         <div className="home__servicios__container">
@@ -82,23 +93,30 @@ class HomeContainer extends Component {
 
         <div className="home__texto__super__container">
           <div className="home__texto__largo__container">
-            {textoLargoHome.split("\n").map((item, key) => {
-              return (
-                <span key={key}>
-                  {item}
-                  <br />
-                </span>
-              );
-            })}
+            {this.props.copy.inicioCopy ? (
+              this.props.copy.inicioCopy.inicioTextoLargo
+                .split("\n")
+                .map((item, key) => {
+                  return (
+                    <span key={key}>
+                      {item}
+                      <br />
+                    </span>
+                  );
+                })
+            ) : (
+              <div />
+            )}
           </div>
         </div>
       </div>
     );
   }
 }
-const stateToProps = ({ navigation }) => {
+const stateToProps = ({ navigation, copy }) => {
   return {
-    navigation
+    navigation,
+    copy
   };
 };
 const dispatchToProps = dispatch => {

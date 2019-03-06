@@ -70,6 +70,31 @@ export default (state = initialState, action) => {
       }
       return newState;
     }
+    case constants.INICIO_RECEIVED: {
+      newState["inicioCopy"] = action.data;
+      return newState;
+    }
+    case constants.EQUIPO_RECEIVED: {
+      newState["equipoCopy"] = action.data;
+      return newState;
+    }
+    case constants.INSTALACIONES_RECEIVED: {
+      newState["instalacionesCopy"] = action.data;
+      return newState;
+    }
+
+    case constants.SERVICIOS_RECEIVED: {
+      newState["serviciosCopy"] = action.data;
+      return newState;
+    }
+    case constants.TECNICAS_RECEIVED: {
+      newState["tecnicasCopy"] = action.data;
+      return newState;
+    }
+    case constants.CONTACTO_RECEIVED: {
+      newState["contactoCopy"] = action.data;
+      return newState;
+    }
 
     default:
       return state;

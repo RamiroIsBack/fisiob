@@ -3,11 +3,9 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  CarouselIndicators
 } from "reactstrap";
 
-import { items } from "../../utils/homeCopy";
 import "../css/home.css";
 
 class FisioBCarousel extends Component {
@@ -32,7 +30,7 @@ class FisioBCarousel extends Component {
   next() {
     if (this.animating) return;
     const nextIndex =
-      this.state.activeIndex === items.length - 1
+      this.state.activeIndex === this.props.items.length - 1
         ? 0
         : this.state.activeIndex + 1;
     this.setState({ activeIndex: nextIndex });
@@ -42,7 +40,7 @@ class FisioBCarousel extends Component {
     if (this.animating) return;
     const nextIndex =
       this.state.activeIndex === 0
-        ? items.length - 1
+        ? this.props.items.length - 1
         : this.state.activeIndex - 1;
     this.setState({ activeIndex: nextIndex });
   }
@@ -54,8 +52,14 @@ class FisioBCarousel extends Component {
 
   render() {
     const { activeIndex } = this.state;
-
-    const slides = items.map(item => {
+    if (this.props.items.length === 0) {
+      return (
+        <div style={{ textAlign: "center", height: 300 }}>
+          <img style={{ marginTop: 120 }} src="/logoB.png" alt="fisioterapia" />
+        </div>
+      );
+    }
+    const slides = this.props.items.map(item => {
       return (
         <CarouselItem
           onExiting={this.onExiting}
@@ -65,10 +69,6 @@ class FisioBCarousel extends Component {
           <div className="carusel__img__container">
             <img className="carousel__img" src={item.src} alt={item.altText} />
           </div>
-          <CarouselCaption
-            captionText={item.caption}
-            captionHeader={item.caption}
-          />
         </CarouselItem>
       );
     });
@@ -80,7 +80,7 @@ class FisioBCarousel extends Component {
         previous={this.previous}
       >
         <CarouselIndicators
-          items={items}
+          items={this.props.items}
           activeIndex={activeIndex}
           onClickHandler={this.goToIndex}
         />

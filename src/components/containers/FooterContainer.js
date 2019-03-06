@@ -3,15 +3,13 @@ import { connect } from "react-redux";
 
 import MapaContainer from "./MapaContainer";
 import "../css/footer.css"; // eslint-disable-line no-unused-vars
-import {
-  telCopy,
-  emailCopy,
-  horario,
-  direccion
-} from "../../utils/contactoCopy";
 
 class FooterContainer extends Component {
   render() {
+    if (!this.props.contactoCopy) {
+      return null;
+    }
+    let { telCopy, emailCopy, horario, direccion } = this.props.contactoCopy;
     return (
       <div className="footer__container">
         <div className="footer__map__container">
@@ -81,7 +79,8 @@ class FooterContainer extends Component {
     );
   }
 }
+const stateToProps = ({ copy }) => copy;
 export default connect(
-  null,
+  stateToProps,
   null
 )(FooterContainer);

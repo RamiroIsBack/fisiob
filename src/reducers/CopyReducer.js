@@ -14,22 +14,6 @@ var initialState = {
 export default (state = initialState, action) => {
   let newState = Object.assign({}, state);
   switch (action.type) {
-    case constants.CONTENIDOS_RECEIVED: {
-      //console.log (' from reducer Contenidos_RECEIVED: ' +JSON.stringify(action.data))
-      newState["ContenidosLoaded"] = true;
-      let list = action.data;
-
-      newState["listaContenidos"] = list;
-      for (let i = 0; i < newState.listaContenidos.length; i++) {
-        let carousellObjectList = newState.listaContenidos[i];
-
-        if (carousellObjectList.id === "carousell") {
-          newState.carousellBackground.urlPic =
-            carousellObjectList["pic1"].urlPicCarousell;
-        }
-      }
-      return newState;
-    }
     case constants.MOVE_CAROUSELL: {
       if (newState.listaContenidos.length !== 0) {
         for (let i = 0; i < newState.listaContenidos.length; i++) {

@@ -29,7 +29,7 @@
   grid-area: m;
 }
 .footer__container__general {
-  background-color: black;
+  background-color: #004383;
   display: inline-block;
   grid-area: f;
 

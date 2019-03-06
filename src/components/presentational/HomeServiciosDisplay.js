@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "../css/home.css";
-import serviciosObject from "../../utils/serviciosObject";
 
 class HomeServiciosDisplayContainer extends Component {
   handleClick(event) {
     this.props.servicioSectionClicked(event.target.id);
   }
   render() {
+    if (!this.props.serviciosObject) {
+      return <div>Cargando los servicios... </div>;
+    }
     return (
       <div>
         <div
@@ -17,7 +19,7 @@ class HomeServiciosDisplayContainer extends Component {
           <div className="home__texto__border" />
         </div>
         <div className="row" style={{ margin: 0 }}>
-          {serviciosObject.servicios.map((servicio, index) => (
+          {this.props.serviciosObject.servicios.map((servicio, index) => (
             <div
               key={index}
               className="col-sm-4 row"
@@ -31,8 +33,8 @@ class HomeServiciosDisplayContainer extends Component {
                 id={servicio.nombre}
               >
                 <img
-                  alt={servicio.urlPic.alt}
-                  src={servicio.urlPic.src}
+                  alt={servicio.nombre}
+                  src={servicio.urlIcono}
                   className="home__servicios__img"
                   id={servicio.nombre}
                 />

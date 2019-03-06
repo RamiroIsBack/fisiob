@@ -53,7 +53,6 @@ class HomeContainer extends Component {
     }
   };
   render() {
-    console.log(this.props.copy.inicioCopy);
     return (
       <div>
         <div className="home__texto__super__container">
@@ -87,6 +86,7 @@ class HomeContainer extends Component {
 
         <div className="home__servicios__container">
           <HomeServiciosDisplay
+            serviciosObject={this.props.copy.serviciosCopy}
             servicioSectionClicked={this.servicioSectionClicked}
           />
         </div>

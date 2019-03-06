@@ -2,16 +2,11 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import MapaContainer from "./MapaContainer";
-import {
-  telCopy,
-  emailCopy,
-  horario,
-  direccion
-} from "../../utils/contactoCopy";
+
 import { Container, Row, Col } from "reactstrap";
 
 class ContactoContainer extends Component {
-  getLeftPart() {
+  getLeftPart({ telCopy, emailCopy, horario, direccion }) {
     return (
       <div>
         <div className="contacto__tel__container">
@@ -73,7 +68,7 @@ class ContactoContainer extends Component {
       </div>
     );
   }
-  getRightPart() {
+  getRightPart(direccion) {
     return direccion.detalles.split("\n").map((item, key) => {
       return (
         <span style={{ margin: "10px 0 0 5px" }} key={key}>
@@ -84,8 +79,12 @@ class ContactoContainer extends Component {
     });
   }
   render() {
-    let leftJSX = this.getLeftPart();
-    let rightJSX = this.getRightPart();
+    let leftJSX = "";
+    let rightJSX = "";
+    if (this.props.contactoCopy) {
+      leftJSX = this.getLeftPart(this.props.contactoCopy);
+      rightJSX = this.getRightPart(this.props.contactoCopy.direccion);
+    }
     return (
       <div className="contacto__container">
         <div
@@ -117,7 +116,8 @@ class ContactoContainer extends Component {
     );
   }
 }
+const stateToProps = ({ copy }) => copy;
 export default connect(
-  null,
+  stateToProps,
   null
 )(ContactoContainer);

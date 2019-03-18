@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-//import actions from "../../actions";
+import actions from "../../actions";
 import { connect } from "react-redux";
+import axios from "axios";
 
 import history from "../../utils/history";
 import "../css/instalaciones.css";
-import {
-  textoLargoInstalaciones,
-  items as instalacionesCopy
-} from "../../utils/instalacionesCopy";
+
 class InstalacionesContainer extends Component {
   constructor() {
     super();
@@ -18,6 +16,18 @@ class InstalacionesContainer extends Component {
   }
   componentWillMount() {
     //make it start at the top of the page every time
+    let urlHerokuPart = "https://stormy-meadow-66204.herokuapp.com";
+    axios({
+      method: "get",
+      url: `${urlHerokuPart}/copy/instalaciones`
+    })
+      .then(res => {
+        this.props.instalacionesReceived(res.data.instalacionesCopy[0]);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+
     window.scrollTo(0, 0);
   }
   handleClick() {
@@ -25,9 +35,18 @@ class InstalacionesContainer extends Component {
   }
 
   render() {
+    let instalacionesObject = undefined;
+    if (this.props.copy) {
+      if (this.props.copy.instalacionesCopy) {
+        instalacionesObject = this.props.copy.instalacionesCopy;
+      }
+    }
+    if (!instalacionesObject) {
+      return <div />;
+    }
     return (
       <div className="instalaciones__container">
-        {instalacionesCopy.map((instalacion, index) => {
+        {instalacionesObject.items.map((instalacion, index) => {
           return (
             <div
               key={index}
@@ -50,7 +69,7 @@ class InstalacionesContainer extends Component {
         })}
 
         <div className="instalaciones__descripcion__container">
-          <p> {textoLargoInstalaciones}</p>
+          <p> {instalacionesObject.instalacionesTextoLargo}</p>
         </div>
         <div className="instalaciones__logo__container">
           <img
@@ -67,11 +86,15 @@ class InstalacionesContainer extends Component {
 }
 
 const dispatchToProps = dispatch => {
-  return {};
+  return {
+    instalacionesReceived: instalacionesCopy =>
+      dispatch(actions.instalacionesReceived(instalacionesCopy))
+  };
 };
 
 const stateToProps = state => {
   return {
+    copy: state.copy,
     navigation: state.navigation
   };
 };

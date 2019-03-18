@@ -2,10 +2,19 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import "../css/telMail.css";
-import { telCopy, emailCopy } from "../../utils/contactoCopy";
+import {
+  telCopy as telCopyBackup,
+  emailCopy as emailCopyBackup
+} from "../../utils/contactoCopy";
 
 class TelAndMailContainer extends Component {
   render() {
+    let telCopy = telCopyBackup;
+    let emailCopy = emailCopyBackup;
+    if (this.props.copy.contactoCopy) {
+      telCopy = this.props.copy.contactoCopy.telCopy;
+      emailCopy = this.props.copy.contactoCopy.emailCopy;
+    }
     return (
       <div>
         <div className="tel__container">
@@ -67,7 +76,12 @@ class TelAndMailContainer extends Component {
     );
   }
 }
+const stateToProps = ({ copy }) => {
+  return {
+    copy
+  };
+};
 export default connect(
-  null,
+  stateToProps,
   null
 )(TelAndMailContainer);

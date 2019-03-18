@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import {
   Collapse,
   Navbar,
@@ -15,7 +16,6 @@ import { connect } from "react-redux";
 import actions from "../../actions";
 import history from "../../utils/history";
 import TelAndMailContainer from "../containers/TelAndMailContainer";
-import serviciosObject from "../../utils/serviciosObject";
 
 class NavbarFisioB extends React.Component {
   constructor(props) {
@@ -24,6 +24,31 @@ class NavbarFisioB extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
     this.handleOnClick = this.handleOnClick.bind(this);
+  }
+  componentDidMount() {
+    let urlHerokuPart = "https://stormy-meadow-66204.herokuapp.com";
+    axios({
+      method: "get",
+      url: `${urlHerokuPart}/copy/inicio`
+    })
+      .then(res => {
+        this.props.inicioReceived(res.data.inicioCopy[0]);
+        axios({
+          method: "get",
+          url: `${urlHerokuPart}/copy/servicios`
+        }).then(res => {
+          this.props.serviciosReceived(res.data.serviciosCopy[0]);
+          axios({
+            method: "get",
+            url: `${urlHerokuPart}/copy/tecnicas`
+          }).then(res => {
+            this.props.tecnicasReceived(res.data.tecnicasCopy[0]);
+          });
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
   }
   toggle() {
     if (this.props.navigation) {
@@ -65,6 +90,13 @@ class NavbarFisioB extends React.Component {
     }
   }
   render() {
+    let serviciosObject = undefined;
+    if (this.props.copy) {
+      if (this.props.copy.serviciosCopy) {
+        serviciosObject = this.props.copy.serviciosCopy;
+      }
+    }
+
     return (
       <div>
         <Navbar
@@ -141,37 +173,41 @@ class NavbarFisioB extends React.Component {
                   SERVICIOS
                 </DropdownToggle>
                 <DropdownMenu right>
-                  {serviciosObject.servicios.map((servicio, index) => (
-                    <div
-                      key={index}
-                      id={servicio.nombre}
-                      onClick={this.handleOnClick}
-                      style={{ cursor: "pointer", padding: 3 }}
-                    >
-                      <div key={index} className="row">
-                        <div
-                          className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-6"
-                          style={{ width: "auto" }}
-                        >
-                          <img
-                            alt={servicio.urlPic.alt}
-                            src={servicio.urlPic.src}
-                            style={{ height: 38 }}
+                  {serviciosObject ? (
+                    serviciosObject.servicios.map((servicio, index) => (
+                      <div
+                        key={index}
+                        id={servicio.nombre}
+                        onClick={this.handleOnClick}
+                        style={{ cursor: "pointer", padding: 3 }}
+                      >
+                        <div key={index} className="row">
+                          <div
+                            className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-6"
+                            style={{ width: "auto" }}
+                          >
+                            <img
+                              alt={servicio.nombre}
+                              src={servicio.urlIcono}
+                              style={{ height: 38 }}
+                              id={servicio.nombre}
+                              onClick={this.handleOnClick}
+                            />
+                          </div>
+                          <div
+                            className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-6"
+                            style={{ padding: 0, width: "auto" }}
                             id={servicio.nombre}
                             onClick={this.handleOnClick}
-                          />
-                        </div>
-                        <div
-                          className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-6"
-                          style={{ padding: 0, width: "auto" }}
-                          id={servicio.nombre}
-                          onClick={this.handleOnClick}
-                        >
-                          {servicio.nombre}
+                          >
+                            {servicio.nombre}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))
+                  ) : (
+                    <div />
+                  )}
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
@@ -181,15 +217,21 @@ class NavbarFisioB extends React.Component {
     );
   }
 }
-const stateToProps = ({ navigation }) => {
+const stateToProps = ({ copy, navigation }) => {
   return {
-    navigation
+    navigation,
+    copy
   };
 };
 const dispatchToProps = dispatch => {
   return {
     toggleMobileTopMenu: open => dispatch(actions.toggleMobileTopMenu(open)),
-    moveToSection: section => dispatch(actions.moveToSection(section))
+    moveToSection: section => dispatch(actions.moveToSection(section)),
+    inicioReceived: inicioCopy => dispatch(actions.inicioReceived(inicioCopy)),
+    serviciosReceived: serviciosCopy =>
+      dispatch(actions.serviciosReceived(serviciosCopy)),
+    tecnicasReceived: tecnicasCopy =>
+      dispatch(actions.tecnicasReceived(tecnicasCopy))
   };
 };
 

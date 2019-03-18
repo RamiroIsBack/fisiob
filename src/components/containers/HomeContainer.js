@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import axios from "axios";
 
 import "../css/home.css";
 import actions from "../../actions";
@@ -10,31 +9,6 @@ import Carousel from "../presentational/Carousel";
 import HomeServiciosDisplay from "../presentational/HomeServiciosDisplay";
 
 class HomeContainer extends Component {
-  componentDidMount() {
-    let urlHerokuPart = "https://stormy-meadow-66204.herokuapp.com";
-    axios({
-      method: "get",
-      url: `${urlHerokuPart}/copy/inicio`
-    })
-      .then(res => {
-        this.props.inicioReceived(res.data.inicioCopy[0]);
-        axios({
-          method: "get",
-          url: `${urlHerokuPart}/copy/servicios`
-        }).then(res => {
-          this.props.serviciosReceived(res.data.serviciosCopy[0]);
-          axios({
-            method: "get",
-            url: `${urlHerokuPart}/copy/tecnicas`
-          }).then(res => {
-            this.props.tecnicasReceived(res.data.tecnicasCopy[0]);
-          });
-        });
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }
   servicioSectionClicked = id => {
     if (id === "servicios") {
       this.props.moveToSection("");
@@ -121,12 +95,7 @@ const stateToProps = ({ navigation, copy }) => {
 };
 const dispatchToProps = dispatch => {
   return {
-    moveToSection: section => dispatch(actions.moveToSection(section)),
-    inicioReceived: inicioCopy => dispatch(actions.inicioReceived(inicioCopy)),
-    serviciosReceived: serviciosCopy =>
-      dispatch(actions.serviciosReceived(serviciosCopy)),
-    tecnicasReceived: tecnicasCopy =>
-      dispatch(actions.tecnicasReceived(tecnicasCopy))
+    moveToSection: section => dispatch(actions.moveToSection(section))
   };
 };
 

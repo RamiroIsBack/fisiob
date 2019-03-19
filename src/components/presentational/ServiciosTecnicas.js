@@ -17,7 +17,6 @@ class ServiciosTecnicas extends React.Component {
     });
   }
   render() {
-    let servicio = this.props.servicio;
     let styleSelected = {
       backgroundColor: " #004383",
       color: "white",
@@ -38,7 +37,7 @@ class ServiciosTecnicas extends React.Component {
     };
     return (
       <div>
-        {servicio.tecnicas.map((tecnica, index) => (
+        {this.props.tecnicas.map((tecnica, index) => (
           <div key={index}>
             <Row>
               <Col sm="auto" style={{ paddingTop: 5, minWidth: "280px" }}>
@@ -86,8 +85,8 @@ class ServiciosTecnicas extends React.Component {
                     <Col style={{ minWidth: "220px" }}>{tecnica.texto}</Col>
                     <Col sm="auto">
                       <img
-                        alt={tecnica.img.altText}
-                        src={tecnica.img.src}
+                        alt={tecnica.nombre}
+                        src={tecnica.urlPic}
                         style={{ paddingBottom: 10, width: "280px" }}
                       />
                     </Col>

@@ -10,21 +10,11 @@ import HomeServiciosDisplay from "../presentational/HomeServiciosDisplay";
 
 class HomeContainer extends Component {
   servicioSectionClicked = id => {
-    if (id === "servicios") {
-      this.props.moveToSection("");
-    } else if (id === "equipo") {
-      history.push("/equipo");
-      this.props.moveToSection("");
-    } else if (id === "instalaciones") {
-      history.push("/instalaciones");
-      this.props.moveToSection("");
-    } else {
-      history.push("/servicios");
-      let whereTo = id;
-      setTimeout(() => {
-        this.props.moveToSection(whereTo);
-      }, 400);
-    }
+    history.push("/servicios");
+    let whereTo = id;
+    setTimeout(() => {
+      this.props.moveToSection(whereTo);
+    }, 400);
   };
   render() {
     return (

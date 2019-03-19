@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Container, Row, Col } from "reactstrap";
 
-import serviciosObject from "../../utils/serviciosObject";
 import ServiciosTecnicas from "../presentational/ServiciosTecnicas";
 //import actions from "../../actions";
 
@@ -27,7 +26,40 @@ class ServiciosContainer extends Component {
       this[servicio].scrollIntoView({ blok: "start", behavior: "smooth" });
     }
   }
+  showTecnicasSinServicio = () => {
+    let tecnicasSinServicio = this.props.copy.tecnicasCopy.tecnicas.filter(
+      tecnica =>
+        !this.props.copy.serviciosCopy.servicios.find(
+          servicio => servicio.nombre === tecnica.servicioNombre
+        )
+    );
+    return (
+      <div>
+        <div
+          style={{
+            textAlign: "center",
+            margin: "auto"
+          }}
+        >
+          <h2
+            style={{
+              marginLeft: 50,
+              color: "#004383"
+            }}
+          >
+            Diferentes Tecnicas
+          </h2>
+        </div>
+        <ServiciosTecnicas tecnicas={tecnicasSinServicio} />
+      </div>
+    );
+  };
+
   render() {
+    if (!this.props.copy.serviciosCopy) {
+      return `cargando servicios, un momento porfavor ...`;
+    }
+    let serviciosObject = this.props.copy.serviciosCopy;
     return (
       <Container>
         {serviciosObject.servicios.map((servicio, index) => {
@@ -51,8 +83,8 @@ class ServiciosContainer extends Component {
                   }}
                 >
                   <img
-                    alt={servicio.urlPic.alt}
-                    src={servicio.urlPic.src}
+                    alt={servicio.nombre}
+                    src={servicio.urlIcono}
                     style={{
                       height: 50,
                       display: "inline-block",
@@ -74,29 +106,39 @@ class ServiciosContainer extends Component {
               <Row>
                 <Col sm="auto" style={{ minWidth: "280px" }}>
                   <img
-                    alt={servicio.img.altText}
-                    src={servicio.img.src}
+                    alt={servicio.nombre}
+                    src={servicio.urlPic}
                     style={{ width: "280px", paddingBottom: "20px" }}
                     id={servicio.nombre}
                   />
                 </Col>
                 <Col style={{ minWidth: "320px", paddingBottom: "20px" }}>
-                  {servicio.textoLargo}
+                  {servicio.servicioTextoLargo}
                 </Col>
               </Row>
               <div>
-                <ServiciosTecnicas servicio={servicio} />
+                {this.props.copy.tecnicasCopy ? (
+                  <ServiciosTecnicas
+                    tecnicas={this.props.copy.tecnicasCopy.tecnicas.filter(
+                      tecnica => tecnica.servicioNombre === servicio.nombre
+                    )}
+                  />
+                ) : (
+                  <div />
+                )}
               </div>
             </div>
           );
         })}
+        {this.props.copy.tecnicasCopy ? this.showTecnicasSinServicio() : null}
       </Container>
     );
   }
 }
-const stateToProps = ({ navigation }) => {
+const stateToProps = ({ copy, navigation }) => {
   return {
-    navigation
+    navigation,
+    copy
   };
 };
 // const dispatchToProps = dispatch => {

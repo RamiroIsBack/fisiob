@@ -1,13 +1,27 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import axios from "axios";
 
 import actions from "../../actions";
 import history from "../../utils/history";
 import "../css/equipo.css";
 import EquipoMember from "../presentational/EquipoMember";
-import { equipoObject } from "../../utils/equipoObject";
 
 class EquipoContainer extends Component {
+  componentDidMount() {
+    let urlHerokuPart = "https://stormy-meadow-66204.herokuapp.com";
+    axios({
+      method: "get",
+      url: `${urlHerokuPart}/copy/equipo`
+    })
+      .then(res => {
+        this.props.equipoReceived(res.data.equipoCopy[0]);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+
   servicioSectionClicked = id => {
     if (id === "servicios") {
       this.props.moveToSection("");
@@ -26,10 +40,13 @@ class EquipoContainer extends Component {
     }
   };
   render() {
+    if (!this.props.copy.equipoCopy) {
+      return <div> Cargando...</div>;
+    }
     return (
       <div>
         <div className="deck__container">
-          {equipoObject.equipo.map((person, index) => (
+          {this.props.copy.equipoCopy.equipo.map((person, index) => (
             <div key={index} className="card__supercontainer">
               <div className="card__container">
                 <EquipoMember
@@ -47,27 +64,31 @@ class EquipoContainer extends Component {
           ))}
         </div>
         <div className="container" style={{ marginTop: 20 }}>
-          {equipoObject.textoLargoEquipo.split("\n").map((item, key) => {
-            return (
-              <span key={key}>
-                {item}
-                <br />
-              </span>
-            );
-          })}
+          {this.props.copy.equipoCopy.equipoTextoLargo
+            .split("\n")
+            .map((item, key) => {
+              return (
+                <span key={key}>
+                  {item}
+                  <br />
+                </span>
+              );
+            })}
         </div>
       </div>
     );
   }
 }
-const stateToProps = ({ navigation }) => {
+const stateToProps = ({ copy, navigation }) => {
   return {
-    navigation
+    navigation,
+    copy
   };
 };
 const dispatchToProps = dispatch => {
   return {
-    moveToSection: section => dispatch(actions.moveToSection(section))
+    moveToSection: section => dispatch(actions.moveToSection(section)),
+    equipoReceived: equipoCopy => dispatch(actions.equipoReceived(equipoCopy))
   };
 };
 

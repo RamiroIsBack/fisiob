@@ -14,7 +14,7 @@
     margin: 5px;
   }
 }
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1250px) {
   .deck__container {
     margin: 0 10px;
     padding: 0;
@@ -53,13 +53,13 @@
     }
   }
 }
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 1250px) {
   @supports (display: grid) {
     .deck__container {
       margin: 0;
       display: grid;
       grid-gap: 15px;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
       grid-auto-rows: repeat(auto-fit, minmax(300px, 480px));
       grid-auto-flow: dense;
     }

@@ -85,7 +85,11 @@ class EquipoMember extends Component {
         <div className="flip-container">
           <div className="flipper" style={this.state.flipEffect}>
             <div className="front">
-              <img src={this.props.person.urlPic} width="280" alt="" />
+              <img
+                style={{ maxWidth: 280, maxHeight: 380 }}
+                src={this.props.person.urlPic}
+                alt={this.props.person.nombre}
+              />
               {flipButton}
             </div>
             <div className="back">
@@ -105,7 +109,11 @@ class EquipoMember extends Component {
                     </p>
                   </div>
                   <div style={{ position: "absolute", right: 10 }}>
-                    <img src={this.props.person.urlPic} width="50" alt="" />
+                    <img
+                      style={{ maxWidth: 50, maxHeight: 70 }}
+                      src={this.props.person.urlPic}
+                      alt={this.props.person.nombre}
+                    />
                   </div>
                   {flipButton}
                 </div>

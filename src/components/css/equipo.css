@@ -14,7 +14,7 @@
     margin: 5px;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1650px) {
   .deck__container {
     margin: 0 10px;
     padding: 0;
@@ -53,7 +53,7 @@
     }
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1650px) {
   @supports (display: grid) {
     .deck__container {
       margin: 0;

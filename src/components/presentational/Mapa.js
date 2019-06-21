@@ -21,7 +21,7 @@ class Mapa extends Component {
       <Marker
         position={{
           lat: 40.4474684,
-          lng: -3.7013178
+          lng: -3.6991291
         }}
         onClick={() =>
           this.handleClick(

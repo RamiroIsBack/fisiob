@@ -179,13 +179,18 @@ class NavbarFisioB extends React.Component {
                         key={index}
                         id={servicio.nombre}
                         onClick={this.handleOnClick}
-                        style={{ cursor: "pointer", padding: 3 }}
+                        style={{
+                          cursor: "pointer",
+                          padding: 3,
+                          width: "fit-content"
+                        }}
                       >
-                        <div key={index} className="row">
-                          <div
-                            className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-6"
-                            style={{ width: "auto" }}
-                          >
+                        <div
+                          key={index}
+                          className="row"
+                          style={{ width: "180px" }}
+                        >
+                          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                             <img
                               alt={servicio.nombre}
                               src={servicio.urlIcono}
@@ -195,7 +200,7 @@ class NavbarFisioB extends React.Component {
                             />
                           </div>
                           <div
-                            className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-6"
+                            className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8"
                             style={{ padding: 0, width: "auto" }}
                             id={servicio.nombre}
                             onClick={this.handleOnClick}

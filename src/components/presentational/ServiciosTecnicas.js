@@ -1,21 +1,15 @@
 import React from "react";
-import { Row, Col, Tooltip } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 class ServiciosTecnicas extends React.Component {
   constructor() {
     super();
     this.state = {
       tecnicaSelected: "",
-      indexTecnicaSelected: 0,
-      tooltipOpen: false
+      indexTecnicaSelected: 0
     };
   }
 
-  toggle() {
-    this.setState({
-      tooltipOpen: !this.state.tooltipOpen
-    });
-  }
   render() {
     let styleSelected = {
       backgroundColor: " #004383",
@@ -60,22 +54,6 @@ class ServiciosTecnicas extends React.Component {
                 >
                   {tecnica.nombre}
                 </div>
-                {tecnica.nombre !== this.state.tecnicaSelected && (
-                  <div id="serviciosTooltipContainer">
-                    <Tooltip
-                      placement="right"
-                      delay={{ show: 100, hide: 600 }}
-                      isOpen={this.state.tooltipOpen}
-                      target={tecnica.nombre
-                        .toString()
-                        .toLowerCase()
-                        .replace(/\s/g, "")}
-                      toggle={this.toggle.bind(this)}
-                    >
-                      ver detalles
-                    </Tooltip>
-                  </div>
-                )}
               </Col>
               <Col style={{ minWidth: "320px" }}>
                 {tecnica.nombre === this.state.tecnicaSelected && (

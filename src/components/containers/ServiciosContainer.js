@@ -30,29 +30,35 @@ class ServiciosContainer extends Component {
     let tecnicasSinServicio = this.props.copy.tecnicasCopy.tecnicas.filter(
       tecnica =>
         !this.props.copy.serviciosCopy.servicios.find(
-          servicio => servicio.nombre === tecnica.servicioNombre
+          servicio =>
+            servicio.nombre.toLowerCase() ===
+            tecnica.servicioNombre.toLowerCase()
         )
     );
-    return (
-      <div>
-        <div
-          style={{
-            textAlign: "center",
-            margin: "auto"
-          }}
-        >
-          <h2
+    if (tecnicasSinServicio.length !== 0) {
+      return (
+        <div>
+          <div
             style={{
-              marginLeft: 50,
-              color: "#004383"
+              textAlign: "center",
+              margin: "auto"
             }}
           >
-            Diferentes Tecnicas
-          </h2>
+            <h2
+              style={{
+                marginLeft: 50,
+                color: "#004383"
+              }}
+            >
+              Diferentes Tecnicas
+            </h2>
+          </div>
+          <ServiciosTecnicas tecnicas={tecnicasSinServicio} />
         </div>
-        <ServiciosTecnicas tecnicas={tecnicasSinServicio} />
-      </div>
-    );
+      );
+    } else {
+      return <div />;
+    }
   };
 
   render() {
@@ -63,17 +69,19 @@ class ServiciosContainer extends Component {
     return (
       <Container>
         {serviciosObject.servicios.map((servicio, index) => {
+          let styleWithBorderTop = {
+            paddingTop: "160px",
+            borderTopLeftRadius: "4px",
+            borderTopRightRadius: "4px",
+            borderTop: "3px solid #fdb813"
+          };
+          let styleToAply =
+            index !== 0 ? styleWithBorderTop : { paddingTop: "130px" };
           return (
             <div key={index}>
               <div
                 ref={el => (this[servicio.nombre] = el)}
-                style={{
-                  marginTop: "60px",
-                  paddingTop: "20px",
-                  borderTopLeftRadius: "4px",
-                  borderTopRightRadius: "4px",
-                  borderTop: "3px solid #fdb813"
-                }}
+                style={styleToAply}
               />
               <Row>
                 <div
@@ -116,11 +124,13 @@ class ServiciosContainer extends Component {
                   {servicio.servicioTextoLargo}
                 </Col>
               </Row>
-              <div>
+              <div style={{ marginBottom: "20px" }}>
                 {this.props.copy.tecnicasCopy ? (
                   <ServiciosTecnicas
                     tecnicas={this.props.copy.tecnicasCopy.tecnicas.filter(
-                      tecnica => tecnica.servicioNombre === servicio.nombre
+                      tecnica =>
+                        tecnica.servicioNombre.toLowerCase() ===
+                        servicio.nombre.toLowerCase()
                     )}
                   />
                 ) : (

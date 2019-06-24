@@ -12,6 +12,7 @@ class EquipoMember extends Component {
     this.flipIt = this.flipIt.bind(this);
   }
   handleClick(e) {
+    console.log(e.currentTarget.id);
     this.props.servicioSectionClicked(e.target.id);
   }
   flipIt() {

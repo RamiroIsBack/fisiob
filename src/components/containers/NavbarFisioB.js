@@ -81,7 +81,7 @@ class NavbarFisioB extends React.Component {
       history.push("/servicios");
       let whereTo = e.target.id;
       setTimeout(() => {
-        this.props.moveToSection(whereTo);
+        this.props.moveToSection(whereTo.toLowerCase());
       }, 400);
     }
     if (e.target.id !== "servicios") {

@@ -35,7 +35,7 @@ class EquipoContainer extends Component {
       history.push("/servicios");
       let whereTo = id;
       setTimeout(() => {
-        this.props.moveToSection(whereTo);
+        this.props.moveToSection(whereTo.toLowerCase());
       }, 400);
     }
   };

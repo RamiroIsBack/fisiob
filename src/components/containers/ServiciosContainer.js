@@ -80,7 +80,7 @@ class ServiciosContainer extends Component {
           return (
             <div key={index}>
               <div
-                ref={el => (this[servicio.nombre] = el)}
+                ref={el => (this[servicio.nombre.toLowerCase()] = el)}
                 style={styleToAply}
               />
               <Row>

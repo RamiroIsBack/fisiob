@@ -46,10 +46,10 @@ class ContactoContainer extends Component {
         </div>
         <div style={{ display: "inline-block" }}>
           <div style={{ display: "inline-block" }}>
-            <p style={{ margin: "5px" }}>{horario.nombre}</p>
+            <p style={{ margin: "5px" }}>horario:</p>
           </div>
           <div style={{ display: "inline-block" }}>
-            <p>{horario.info}</p>
+            <p>{horario}</p>
           </div>
         </div>
 

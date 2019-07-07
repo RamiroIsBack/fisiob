@@ -50,17 +50,15 @@ class FooterContainer extends Component {
             </a>
           </div>
         </div>
-        <div className="row footer__horario__container">
-          <div className="col-sm-3">
-            <p
-              style={{
-                margin: "0 0 0 5px"
-              }}
-            >
-              {horario.nombre}
-            </p>
+        <div className="footer__horario__container">
+          <div
+            style={{
+              marginLeft: "5px",
+              color: "white"
+            }}
+          >
+            {horario}
           </div>
-          <div className="footer__horario col-sm-9">{horario.info}</div>
         </div>
 
         <div className="footer__direccion__container">

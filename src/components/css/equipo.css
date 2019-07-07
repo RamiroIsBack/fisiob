@@ -10,11 +10,10 @@
     margin-left: 10%;
   }
   .card__supercontainer {
-    border: 3px solid #fdb813;
     margin: 5px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1250px) and (min-width: 700px) {
   .deck__container {
     margin: 0 10px;
     padding: 0;
@@ -93,7 +92,7 @@
 .front,
 .back {
   width: 290px;
-  height: 460px;
+  height: 500px;
 }
 
 /* flip speed goes here */

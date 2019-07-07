@@ -121,7 +121,41 @@ class ServiciosContainer extends Component {
                   />
                 </Col>
                 <Col style={{ minWidth: "320px", paddingBottom: "20px" }}>
-                  {servicio.servicioTextoLargo}
+                  <p>{servicio.servicioTextoLargo}</p>
+                  <Container>
+                    <p style={{ display: "inline" }}>Duración: </p>
+                    <h5 style={{ display: "inline", fontWeight: "bolder" }}>
+                      {servicio.duracion}
+                    </h5>{" "}
+                    <p style={{ display: "inline" }}>minutos</p>
+                    {servicio.precio === 0 || servicio.precio === "0" ? (
+                      <div />
+                    ) : (
+                      <div>
+                        <p style={{ display: "inline" }}>precio por sesión: </p>
+                        <h5 style={{ display: "inline", fontWeight: "bolder" }}>
+                          {servicio.precio}
+                        </h5>{" "}
+                        <p style={{ display: "inline" }}>Euros</p>
+                      </div>
+                    )}
+                    {servicio.bono.modalidad === "sin bono" ? (
+                      <div />
+                    ) : (
+                      <div>
+                        <p style={{ display: "inline" }}>
+                          {servicio.bono.modalidad}{" "}
+                        </p>
+                        <p style={{ display: "inline" }}>
+                          {servicio.bono.dias} días :{" "}
+                        </p>
+                        <h5 style={{ display: "inline", fontWeight: "bolder" }}>
+                          {servicio.bono.precio}
+                        </h5>{" "}
+                        <p style={{ display: "inline" }}>Euros</p>
+                      </div>
+                    )}
+                  </Container>
                 </Col>
               </Row>
               <div style={{ marginBottom: "20px" }}>

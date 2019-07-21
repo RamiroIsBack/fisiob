@@ -74,7 +74,7 @@ class TarifasContainer extends Component {
                     xs={{ offset: 0, size: "auto" }}
                     md={{ size: "auto", offset: 4 }}
                   >
-                    <p style={{ display: "inline" }}>precio por sesión: </p>
+                    <p style={{ display: "inline" }}>precio por sesión : </p>
                     <h5 style={{ display: "inline", fontWeight: "bolder" }}>
                       {servicio.precio}
                     </h5>{" "}
@@ -94,9 +94,7 @@ class TarifasContainer extends Component {
                     <p style={{ display: "inline" }}>
                       {servicio.bono.modalidad}{" "}
                     </p>
-                    <p style={{ display: "inline" }}>
-                      {servicio.bono.dias} días :{" "}
-                    </p>
+                    <p style={{ display: "inline" }}>{servicio.bono.dias} : </p>
                     <h5 style={{ display: "inline", fontWeight: "bolder" }}>
                       {servicio.bono.precio}
                     </h5>{" "}

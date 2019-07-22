@@ -82,25 +82,52 @@ class TarifasContainer extends Component {
                   </Col>
                 </Row>
               )}
-              {servicio.bono.modalidad === "sin bono" ? (
-                <div />
+              {servicio.bonos &&
+              servicio.bonos.bono.modalidad !== "sin bono" ? (
+                <div>
+                  <Row style={{ marginBottom: "6px" }}>
+                    <Col
+                      style={{ minWidth: "183px" }}
+                      xs={{ offset: 0, size: "auto" }}
+                      md={{ size: "auto", offset: 4 }}
+                    >
+                      <p style={{ display: "inline" }}>
+                        {servicio.bonos.bono.modalidad}{" "}
+                      </p>
+                      <p style={{ display: "inline" }}>
+                        {servicio.bonos.bono.dias} :{" "}
+                      </p>
+                      <h5 style={{ display: "inline", fontWeight: "bolder" }}>
+                        {servicio.bonos.bono.precio}
+                      </h5>{" "}
+                      <p style={{ display: "inline" }}>Euros</p>
+                    </Col>
+                  </Row>
+                  {servicio.bonos.bonoSecundario.modalidad !== "sin bono" ? (
+                    <Row style={{ marginBottom: "6px" }}>
+                      <Col
+                        style={{ minWidth: "183px" }}
+                        xs={{ offset: 0, size: "auto" }}
+                        md={{ size: "auto", offset: 4 }}
+                      >
+                        <p style={{ display: "inline" }}>
+                          {servicio.bonos.bonoSecundario.modalidad}{" "}
+                        </p>
+                        <p style={{ display: "inline" }}>
+                          {servicio.bonos.bonoSecundario.dias} :{" "}
+                        </p>
+                        <h5 style={{ display: "inline", fontWeight: "bolder" }}>
+                          {servicio.bonos.bonoSecundario.precio}
+                        </h5>{" "}
+                        <p style={{ display: "inline" }}>Euros</p>
+                      </Col>
+                    </Row>
+                  ) : (
+                    <div />
+                  )}
+                </div>
               ) : (
-                <Row style={{ marginBottom: "6px" }}>
-                  <Col
-                    style={{ minWidth: "183px" }}
-                    xs={{ offset: 0, size: "auto" }}
-                    md={{ size: "auto", offset: 4 }}
-                  >
-                    <p style={{ display: "inline" }}>
-                      {servicio.bono.modalidad}{" "}
-                    </p>
-                    <p style={{ display: "inline" }}>{servicio.bono.dias} : </p>
-                    <h5 style={{ display: "inline", fontWeight: "bolder" }}>
-                      {servicio.bono.precio}
-                    </h5>{" "}
-                    <p style={{ display: "inline" }}>Euros</p>
-                  </Col>
-                </Row>
+                <div />
               )}
             </div>
           );

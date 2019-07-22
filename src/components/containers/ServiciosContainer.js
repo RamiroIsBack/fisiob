@@ -139,21 +139,49 @@ class ServiciosContainer extends Component {
                         <p style={{ display: "inline" }}>Euros</p>
                       </div>
                     )}
-                    {servicio.bono.modalidad === "sin bono" ? (
-                      <div />
-                    ) : (
+                    {servicio.bonos &&
+                    servicio.bonos.bono.modalidad !== "sin bono" ? (
                       <div>
-                        <p style={{ display: "inline" }}>
-                          {servicio.bono.modalidad}{" "}
-                        </p>
-                        <p style={{ display: "inline" }}>
-                          {servicio.bono.dias} días :{" "}
-                        </p>
-                        <h5 style={{ display: "inline", fontWeight: "bolder" }}>
-                          {servicio.bono.precio}
-                        </h5>{" "}
-                        <p style={{ display: "inline" }}>Euros</p>
+                        <div>
+                          <p style={{ display: "inline" }}>
+                            {servicio.bonos.bono.modalidad}{" "}
+                          </p>
+                          <p style={{ display: "inline" }}>
+                            {servicio.bonos.bono.dias} días :{" "}
+                          </p>
+                          <h5
+                            style={{ display: "inline", fontWeight: "bolder" }}
+                          >
+                            {servicio.bonos.bono.precio}
+                          </h5>{" "}
+                          <p style={{ display: "inline" }}>Euros</p>
+                        </div>
+
+                        {servicio.bonos.bonoSecundario.modalidad !==
+                        "sin bono" ? (
+                          <div>
+                            <p style={{ display: "inline" }}>
+                              {servicio.bonos.bonoSecundario.modalidad}{" "}
+                            </p>
+                            <p style={{ display: "inline" }}>
+                              {servicio.bonos.bonoSecundario.dias} días :{" "}
+                            </p>
+                            <h5
+                              style={{
+                                display: "inline",
+                                fontWeight: "bolder"
+                              }}
+                            >
+                              {servicio.bonos.bonoSecundario.precio}
+                            </h5>{" "}
+                            <p style={{ display: "inline" }}>Euros</p>
+                          </div>
+                        ) : (
+                          <div />
+                        )}
                       </div>
+                    ) : (
+                      <div />
                     )}
                   </Container>
                 </Col>

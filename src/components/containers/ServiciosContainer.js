@@ -132,7 +132,9 @@ class ServiciosContainer extends Component {
                       <div />
                     ) : (
                       <div>
-                        <p style={{ display: "inline" }}>precio por sesión: </p>
+                        <p style={{ display: "inline" }}>
+                          Precio por sesión :{" "}
+                        </p>
                         <h5 style={{ display: "inline", fontWeight: "bolder" }}>
                           {servicio.precio}
                         </h5>{" "}
@@ -144,10 +146,12 @@ class ServiciosContainer extends Component {
                       <div>
                         <div>
                           <p style={{ display: "inline" }}>
-                            {servicio.bonos.bono.modalidad}{" "}
+                            {servicio.bonos.bono.modalidad === "bono"
+                              ? "Bono"
+                              : "Mensualidad"}{" "}
                           </p>
                           <p style={{ display: "inline" }}>
-                            {servicio.bonos.bono.dias} días :{" "}
+                            {servicio.bonos.bono.dias} :{" "}
                           </p>
                           <h5
                             style={{ display: "inline", fontWeight: "bolder" }}
@@ -161,10 +165,13 @@ class ServiciosContainer extends Component {
                         "sin bono" ? (
                           <div>
                             <p style={{ display: "inline" }}>
-                              {servicio.bonos.bonoSecundario.modalidad}{" "}
+                              {servicio.bonos.bonoSecundario.modalidad ===
+                              "bono"
+                                ? "Bono"
+                                : "Mensualidad"}{" "}
                             </p>
                             <p style={{ display: "inline" }}>
-                              {servicio.bonos.bonoSecundario.dias} días :{" "}
+                              {servicio.bonos.bonoSecundario.dias} :{" "}
                             </p>
                             <h5
                               style={{

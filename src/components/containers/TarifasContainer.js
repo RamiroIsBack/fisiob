@@ -74,7 +74,7 @@ class TarifasContainer extends Component {
                     xs={{ offset: 0, size: "auto" }}
                     md={{ size: "auto", offset: 4 }}
                   >
-                    <p style={{ display: "inline" }}>precio por sesión : </p>
+                    <p style={{ display: "inline" }}>Precio por sesión : </p>
                     <h5 style={{ display: "inline", fontWeight: "bolder" }}>
                       {servicio.precio}
                     </h5>{" "}
@@ -92,7 +92,9 @@ class TarifasContainer extends Component {
                       md={{ size: "auto", offset: 4 }}
                     >
                       <p style={{ display: "inline" }}>
-                        {servicio.bonos.bono.modalidad}{" "}
+                        {servicio.bonos.bono.modalidad === "bono"
+                          ? "Bono"
+                          : "Mensualidad"}{" "}
                       </p>
                       <p style={{ display: "inline" }}>
                         {servicio.bonos.bono.dias} :{" "}
@@ -111,7 +113,9 @@ class TarifasContainer extends Component {
                         md={{ size: "auto", offset: 4 }}
                       >
                         <p style={{ display: "inline" }}>
-                          {servicio.bonos.bonoSecundario.modalidad}{" "}
+                          {servicio.bonos.bonoSecundario.modalidad === "bono"
+                            ? "Bono"
+                            : "Mensualidad"}{" "}
                         </p>
                         <p style={{ display: "inline" }}>
                           {servicio.bonos.bonoSecundario.dias} :{" "}

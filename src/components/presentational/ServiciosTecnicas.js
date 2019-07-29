@@ -61,13 +61,17 @@ class ServiciosTecnicas extends React.Component {
                     style={{ paddingTop: 5, borderTop: "1px solid #004383" }}
                   >
                     <Col style={{ minWidth: "220px" }}>{tecnica.texto}</Col>
-                    <Col sm="auto">
-                      <img
-                        alt={tecnica.nombre}
-                        src={tecnica.urlPic}
-                        style={{ paddingBottom: 10, width: "280px" }}
-                      />
-                    </Col>
+                    {tecnica.urlPic !== "" && tecnica.urlPic !== undefined ? (
+                      <Col sm="auto">
+                        <img
+                          alt={tecnica.nombre}
+                          src={tecnica.urlPic}
+                          style={{ paddingBottom: 10, width: "280px" }}
+                        />
+                      </Col>
+                    ) : (
+                      <Col sm="1" />
+                    )}
                   </Row>
                 )}
               </Col>

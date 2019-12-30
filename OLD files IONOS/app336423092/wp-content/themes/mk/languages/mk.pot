@@ -1,0 +1,555 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-04-30 12:48-0800\n"
+"PO-Revision-Date: 2015-04-30 12:54-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:25
+msgid "Nothing here!"
+msgstr ""
+
+#: 404.php:28
+msgid ""
+"We are sorry, it looks like nothing was found at this location. Please check "
+"entered address you may"
+msgstr ""
+
+#: 404.php:29
+msgid "Go to our homepage or"
+msgstr ""
+
+#: 404.php:33
+msgid "Try searching our site?"
+msgstr ""
+
+#: author.php:38
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: comments.php:35 comments.php:56
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:38 comments.php:59
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:39 comments.php:60
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:22 content.php:29 image.php:85
+#: formats/content-audio.php:45 formats/content-gallery.php:65
+#: formats/content-quote.php:63 formats/content-standard.php:77
+#: formats/content-video.php:45 formats/entry-audio.php:17
+#: formats/entry-gallery.php:18 formats/entry-standard.php:18
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:29 image.php:106 LNT-framework/template-tags.php:146
+msgid "Edit"
+msgstr ""
+
+#: content.php:22
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:113
+msgid "Footer Left"
+msgstr ""
+
+#: functions.php:122
+msgid "Footer Middle"
+msgstr ""
+
+#: functions.php:131
+msgid "Footer Right"
+msgstr ""
+
+#: header.php:30
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:28
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:29
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:95
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a>"
+msgstr ""
+
+#: search.php:23 LNT-framework/lnt-misc.php:197
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: formats/content-audio.php:12 formats/content-gallery.php:32
+#: formats/content-quote.php:30 formats/content-standard.php:24
+#: formats/content-standard.php:47 formats/content-video.php:12
+msgid "Social sharing links"
+msgstr ""
+
+#: formats/entry-audio.php:32 formats/entry-gallery.php:35
+#: formats/entry-standard.php:33 formats/entry-video.php:27
+msgid "<i class=\"fa fa-comments\"></i> 0"
+msgstr ""
+
+#: formats/entry-audio.php:32 formats/entry-gallery.php:35
+#: formats/entry-standard.php:33 formats/entry-video.php:27
+msgid "<i class=\"fa fa-comments\"></i> 1"
+msgstr ""
+
+#: formats/entry-audio.php:32 formats/entry-gallery.php:35
+#: formats/entry-standard.php:33 formats/entry-video.php:27
+msgid "<i class=\"fa fa-comments\"></i> %"
+msgstr ""
+
+#: formats/entry-standard.php:4
+msgid "Featured"
+msgstr ""
+
+#: LNT-framework/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: LNT-framework/lnt-formats-metaboxes.php:28
+msgid "Quote Author"
+msgstr ""
+
+#: LNT-framework/lnt-formats-metaboxes.php:35
+msgid "Quote Author:"
+msgstr ""
+
+#: LNT-framework/lnt-formats-metaboxes.php:41
+msgid "Quote Author Url:"
+msgstr ""
+
+#: LNT-framework/lnt-formats-metaboxes.php:48
+msgid ""
+"Quote Text: (If empty, the theme will display an excerpt from the content)"
+msgstr ""
+
+#: LNT-framework/lnt-misc.php:376 LNT-framework/lnt-misc.php:377
+msgid "Search &hellip;"
+msgstr ""
+
+#: LNT-framework/lnt-misc.php:429
+#, php-format
+msgid "Read More %s"
+msgstr ""
+
+#: LNT-framework/lnt-pagination.php:29
+msgid "First Page"
+msgstr ""
+
+#: LNT-framework/lnt-pagination.php:30
+msgid "Last Page"
+msgstr ""
+
+#: LNT-framework/lnt-pagination.php:31
+msgid "Next"
+msgstr ""
+
+#: LNT-framework/lnt-pagination.php:32
+msgid "Prev"
+msgstr ""
+
+#: LNT-framework/lnt-sidenav.php:173
+msgid "Toggle navigation"
+msgstr ""
+
+#: LNT-framework/lnt-sidenav.php:211
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: LNT-framework/lnt-sidenav.php:238
+msgid "Set up Your Menu"
+msgstr ""
+
+#: LNT-framework/lnt-social-sharing.php:33
+msgid "Share on Facebook"
+msgstr ""
+
+#: LNT-framework/lnt-social-sharing.php:34
+msgid "Share on Google"
+msgstr ""
+
+#: LNT-framework/lnt-social-sharing.php:35
+msgid "Share on Twitter"
+msgstr ""
+
+#: LNT-framework/lnt-social-sharing.php:36
+msgid "Pin This!"
+msgstr ""
+
+#: LNT-framework/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+
+#: LNT-framework/template-tags.php:27
+msgid "Older posts"
+msgstr ""
+
+#: LNT-framework/template-tags.php:31
+msgid "Newer posts"
+msgstr ""
+
+#: LNT-framework/template-tags.php:57
+msgid "Post navigation"
+msgstr ""
+
+#: LNT-framework/template-tags.php:119 LNT-framework/template-tags.php:130
+msgid ", "
+msgstr ""
+
+#: LNT-framework/template-tags.php:123
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:125
+#, php-format
+msgid "<span class=\"fa fa-folder\"></span>&nbsp; %1$s &nbsp;"
+msgstr ""
+
+#: LNT-framework/template-tags.php:133
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:135
+#, php-format
+msgid "<span class=\"fa fa-tag\"></span>&nbsp; %1$s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:163
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:165
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:167
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:169
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:171
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:173
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:195
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:199
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: LNT-framework/template-tags.php:201
+msgid "Archives"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:31
+msgid "Colors"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:37
+msgid "Link Primary Color"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:45
+msgid "Links Hover Color"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:84
+msgid "General Settings"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:90
+msgid "Logo"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:97
+msgid "Favicon"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:110
+msgid "Blog Index Layout"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:119
+msgid "Header Search"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:127
+msgid "Custom Header Image Section"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:135
+msgid "Tracking Code"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:143
+msgid "Custom Js"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:151
+msgid "Custom css"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:162
+#: LNT-framework/customizer/customizer-options.php:170
+msgid "Homepage Slider"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:179
+msgid "Show Default Homepage Slider "
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:186
+msgid "Slide1 Image"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:193
+msgid "Slide1 Main Caption"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:196
+msgid "We are MK Theme"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:200
+msgid "Slide1 Sub Caption"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:203
+msgid "We make beautiful things happen"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:207
+msgid "Slide1 Btn URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:213
+msgid "Slide1 Btn Text"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:216
+#: LNT-framework/customizer/customizer-options.php:251
+#: LNT-framework/customizer/customizer-options.php:286
+msgid "Learn More"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:221
+msgid "Slide2 Image"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:228
+msgid "Slide2 Main Caption"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:231
+msgid "Stylish free Wordpress Theme"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:235
+msgid "Slide2 Sub Caption"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:238
+msgid "Optimized for mobile devices, clean w3C validated markup"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:242
+msgid "Slide2 Btn URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:248
+msgid "Slide2 Btn Text"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:256
+msgid "Slide3 Image"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:263
+msgid "Slide3 Main Caption"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:266
+msgid "Get more with MK <br/>proffessional Version"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:270
+msgid "Slide3 Sub Caption"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:273
+msgid "Premium sliders, page composer, unlimited layouts..."
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:277
+msgid "Slide3 Btn URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:283
+msgid "Slide3 Btn Text"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:295
+#: LNT-framework/customizer/customizer-options.php:303
+msgid "Social Links"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:310
+msgid "Facebook URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:316
+msgid "Twitter URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:323
+msgid "Google Plus URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:329
+msgid "Pinterest URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:335
+msgid "Instagram URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-options.php:341
+msgid "Dribble URL"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/customizer-library.php:98
+msgid "Panel Examples"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/customizer-library.php:106
+msgid "Panel Section"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/customizer-library.php:113
+msgid "Example Text Input"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:18
+msgid "Standard Fonts"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:20
+msgid "Google Fonts"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:125
+msgid "All"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:126
+msgid "Cyrillic"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:127
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:128
+msgid "Devanagari"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:129
+msgid "Greek"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:130
+msgid "Greek Extended"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:131
+msgid "Khmer"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:132
+msgid "Latin"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:133
+msgid "Latin Extended"
+msgstr ""
+
+#: LNT-framework/customizer/customizer-library/extensions/fonts.php:134
+msgid "Vietnamese"
+msgstr ""

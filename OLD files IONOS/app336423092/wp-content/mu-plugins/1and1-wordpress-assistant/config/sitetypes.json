@@ -1,0 +1,119 @@
+{
+    "sitetypes": {
+        "business": {
+            "headline": "business_headline",
+            "description": "business_description",
+            "themes": [
+                "radiate",
+                "vantage",
+                "beonepage",
+                "customizr",
+                "zerif-lite",
+                "corporate-plus",
+                "busiprof",
+                "belise-lite"
+            ],
+            "homepage": "static"
+        },
+
+        "blog": {
+            "headline": "blog_headline",
+            "description": "blog_description",
+            "themes": [
+                "hemingway",
+                "islemag",
+                "elara",
+                "journal-blog",
+                "mazino",
+                "masonic",
+                "vivacious-magazine",
+                "news-portal",
+                "cenote",
+                "yosemite-lite",
+                "colormag"
+            ],
+          "homepage": "posts"
+        },
+
+        "eshop": {
+            "headline": "eshop_headline",
+            "description": "eshop_description",
+            "themes": [
+                "exoplanet",
+                "shop-isle",
+                "shophistic-lite",
+                "vogue",
+                "llorix-one-lite",
+                "ecommerce-saga",
+                "athena",
+                "trusted",
+                "easy-store"
+            ],
+            "homepage": "static"
+        },
+
+        "gallery": {
+            "headline": "gallery_headline",
+            "description": "gallery_description",
+            "themes": [
+                "photo-perfect",
+                "hitchcock",
+                "acmephoto",
+                "receptar",
+                "moesia",
+                "portfolio-lite",
+                "fotografie",
+                "full-frame",
+                "lens",
+                "fukasawa"
+            ],
+            "homepage": "posts"
+        },
+
+        "personal": {
+            "headline": "personal_headline",
+            "description": "personal_description",
+            "themes": [
+                "rock-star",
+                "mh-musicmag",
+                "writers",
+                "argent",
+                "responsive",
+                "tiny-framework",
+                "hemingway"
+            ],
+            "homepage": "static"
+        },
+
+        "podcast": {
+            "headline": "podcast_headline",
+            "description": "podcast_description",
+            "themes": [
+                "islemag",
+                "virtue",
+                "trance",
+                "modern",
+                "colormag",
+                "ashe",
+                "journal-blog"
+            ],
+          "homepage": "posts"
+        },
+
+        "club": {
+            "headline": "club_headline",
+            "description": "club_description",
+            "themes": [
+                "landing-pageasy",
+                "hueman",
+                "kale",
+                "clubfitness",
+                "busiprof",
+                "flaton",
+                "catch-base",
+                "argent"
+            ],
+            "homepage": "static"
+        }
+    }
+}

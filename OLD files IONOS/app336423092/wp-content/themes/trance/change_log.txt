@@ -1,0 +1,61 @@
+
+
+changelog.txt 
+
+== changelog ==
+= 1.0.9 =
+* Initial Release
+
+= 1.1 =
+* Changed the Screenshot image.
+* Changed the placeholder Image
+* Fixed the title attribute in Social Icons
+* Fixed a minor bug regarding the positioning of the search icon.
+
+= 1.2 =
+* Added layout functionality for left or right sidebar
+* Updated Font-Awesome
+* Some minor bug fixes and css stylisations
+
+=1.3 =
+* Added a new iconset
+* Fixed a few bugs
+* Pro version notification
+
+= 1.4 =
+* Fixed the 404 page
+* Option to disable header hover effect
+* Other minor bug fixes
+
+= 1.5 =
+* Added a feature to make home page full width
+* Other minor bug fixes
+
+= 1.6 =
+* Updated Font Awesome
+* Updated Google Plus Icon in Social Icons
+
+= 1.7 =
+* Updated Bootstrap
+* Updated Changed the Screenshot
+* Other minor bug fixes
+
+= 1.8 =
+* Updated Bootstrap
+* Updated Font Awesome
+
+= 1.10 =
+* Minor Bug fixes
+
+= 1.11 =
+* Changes to Layout
+* Minor Bug Fixes
+
+= 1.12 =
+* Change the Theme URI
+
+= 1.13 =
+* Minor Bug Fixes
+
+= 1.14 =
+* Added Navigation in Footer

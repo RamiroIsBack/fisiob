@@ -1,0 +1,266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-07-15 16:44-0400\n"
+"PO-Revision-Date: 2015-07-15 16:44-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ../Documents/school/2014fall/interaction/web/queue\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:39
+msgid "Asides"
+msgstr ""
+
+#: archive.php:42
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:45
+msgid "Images"
+msgstr ""
+
+#: archive.php:48
+msgid "Videos"
+msgstr ""
+
+#: archive.php:51
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:54
+msgid "Links"
+msgstr ""
+
+#: archive.php:57
+msgid "Statuses"
+msgstr ""
+
+#: archive.php:60
+msgid "Audios"
+msgstr ""
+
+#: archive.php:63
+msgid "Chats"
+msgstr ""
+
+#: archive.php:66
+msgid "Archives"
+msgstr ""
+
+#: comments.php:30 comments.php:47
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:31 comments.php:48
+msgid "&#65513; Newer Comments"
+msgstr ""
+
+#: comments.php:32 comments.php:49
+msgid "Older Comments &#65515;"
+msgstr ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:12 content-single.php:14
+msgid "Edit"
+msgstr ""
+
+#: content-page.php:19 content-single.php:21 content.php:29
+msgid "Pages:"
+msgstr ""
+
+#: content.php:22 post-preview.php:22
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: footer.php:20
+msgid "About"
+msgstr ""
+
+#: footer.php:27
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:27
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:29
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: functions.php:195
+msgid "&hellip;"
+msgstr ""
+
+#: functions.php:236
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:271
+msgid "Primary Nav"
+msgstr ""
+
+#: functions.php:272
+msgid "Secondary Nav"
+msgstr ""
+
+#: inc/customizer.php:19
+msgid "Display Site Title &amp; Tagline"
+msgstr ""
+
+#: inc/customizer.php:23 inc/featured-content.php:405
+msgid "Featured Content"
+msgstr ""
+
+#: inc/customizer.php:24 inc/featured-content.php:406
+#, php-format
+msgid ""
+"Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the "
+"tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Accent Color"
+msgstr ""
+
+#: inc/customizer.php:52
+msgid "Mini About"
+msgstr ""
+
+#: inc/customizer.php:53
+msgid ""
+"Provide a brief description of your site to appear in the footer of the home "
+"page."
+msgstr ""
+
+#: inc/customizer.php:73
+msgid "About "
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Show?"
+msgstr ""
+
+#: inc/extras.php:63
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/featured-content.php:428
+msgid "Tag Name"
+msgstr ""
+
+#: inc/featured-content.php:433
+msgid "Don&rsquo;t display tag on front end."
+msgstr ""
+
+#: inc/template-tags.php:35
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:39
+msgid "<span class=\"meta-nav\">&larr;</span> Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:43
+msgid "Older posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:66
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:143 inc/template-tags.php:149
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:145
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:151
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:157
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:157
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:157
+msgid "% Comments"
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""

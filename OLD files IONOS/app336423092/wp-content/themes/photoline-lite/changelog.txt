@@ -1,0 +1,63 @@
+== Photoline Lite WordPress Theme ==
+
+= 1.1.6 - 8.09.2018
+* Fixed translation strings and security.
+
+= 1.1.5 - 8.09.2018
+* Tweak: Update theme screenshot to be within new WordPress.org rules
+
+= 1.1.4 - 31.01.2017
+* Fixed: responsiveness of the mosaic posts grid - php,js,css
+
+= 1.1.3 - 24.08.2016
+* Fixed: display of the site title group - php
+
+= 1.1.2 - 23.08.2016
+* Fixed: custom excerpt function - php
+* Changed: custom excerpt function - php
+* Added: customize option more link text of custom excerpt - php
+* Removed: unnecessary functions related to post excerpt
+
+= 1.1.1 - 22.08.2016
+* Fixed: minor fixes
+
+= 1.1.0 - 21.08.2016
+* Big update: files structure, functions and more
+
+= 1.0.7 - 18.07.2016
+* Removed: style and script slimmenu - css, js
+* Changed: mobile menu
+* Fixed: minor css fixes
+
+= 1.0.6 - 12.04.2016
+* Fixed: conditions of the counter of posts in the layout mosaic tiles - php
+* Added: new mobile menu - script & style
+* Changed: font size of header, mobile menu, other minor changes css
+* Added: license information in README
+
+= 1.0.5 - 16.11.2015
+* Minor change css: added .search-list with a centered alignment
+* Minor change search template: replacing <p> tag to <h3>
+* Change header.php: do not show main menu (Primary location) if it is not assigned
+* Updated Font Awesome to 4.4.0 and Genericons to 3.4
+
+= 1.0.4 - 12.10.2015
+* Removed not used files
+
+= 1.0.3 - 12.10.2015
+* Removed page templates Page Mosaic Tiles and Page Square Tiles
+* Added option Customizer section Home Tagline
+* Added option to disable the lightbox images
+* Some small changes and improvements
+* Replacement screenshot (new size)
+
+= 1.0.2 - 9.07.2015
+* Removed unnecessary script
+* Esc home_url() in breadcrump func.
+
+= 1.0.1 - 25.06.2015
+* Removed unnecessary functions
+* Few fixes and minor changes
+
+= 1.0 - 19.06.2015
+* Initial release.

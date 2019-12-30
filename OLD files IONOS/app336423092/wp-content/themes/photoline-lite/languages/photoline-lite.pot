@@ -1,0 +1,919 @@
+# Copyright (C) 2014 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: photoline\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2016-08-21 19:55+0800\n"
+"PO-Revision-Date: 2016-08-21 19:55+0800\n"
+"Last-Translator: dinevthemes <post@makewp.ru>\n"
+"Language-Team: \n"
+"Language: EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:16
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../comments.php:17
+msgid "Comments: "
+msgstr ""
+
+#: ../comments.php:17
+msgid "0"
+msgstr ""
+
+#: ../comments.php:17
+msgid "1"
+msgstr ""
+
+#: ../comments.php:17
+msgid "%"
+msgstr ""
+
+#: ../comments.php:22 ../comments.php:36
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:23 ../comments.php:37
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:24 ../comments.php:38
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:53
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../comments.php:54
+msgid "Post Comment"
+msgstr ""
+
+#: ../functions.php:86 ../inc/contextual-help.php:79
+msgid "Top Menu"
+msgstr ""
+
+#: ../functions.php:87
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:88 ../inc/contextual-help.php:74
+msgid "Social Menu"
+msgstr ""
+
+#: ../functions.php:123
+msgid "Sidebar Posts"
+msgstr ""
+
+#: ../functions.php:131
+msgid "Sidebar Pages"
+msgstr ""
+
+#: ../functions.php:139
+msgid "Blog Intro"
+msgstr ""
+
+#: ../functions.php:140
+msgid "The headline area Blog page."
+msgstr ""
+
+#: ../functions.php:148
+msgid "Home Top"
+msgstr ""
+
+#: ../functions.php:149
+msgid ""
+"The area Home Page template at the top - above - page content in one line "
+"with no columns"
+msgstr ""
+
+#: ../functions.php:157
+msgid "Home Above"
+msgstr ""
+
+#: ../functions.php:158
+msgid "The area Home Page template at the above page content in 2,3,4 column."
+msgstr ""
+
+#: ../functions.php:166
+msgid "Home Below"
+msgstr ""
+
+#: ../functions.php:167
+msgid "The area Home Page template at the below page content in 2,3,4 column."
+msgstr ""
+
+#: ../functions.php:175
+msgid "Footer Left"
+msgstr ""
+
+#: ../functions.php:176
+msgid "Located in the footer left."
+msgstr ""
+
+#: ../functions.php:184
+msgid "Footer Center"
+msgstr ""
+
+#: ../functions.php:185
+msgid "Located in the footer center."
+msgstr ""
+
+#: ../functions.php:193
+msgid "Footer Right"
+msgstr ""
+
+#: ../functions.php:194
+msgid "Located in the footer right."
+msgstr ""
+
+#: ../image.php:34
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: ../image.php:48 ../inc/template-tags.php:71 ../inc/template-tags.php:89
+#: ../template-parts/section-home-content.php:16
+#: ../template-parts/page/content-wide.php:35
+#: ../template-parts/page/content.php:35
+#: ../template-parts/post/footer-meta.php:16
+msgid "Edit"
+msgstr ""
+
+#: ../no-results.php:14
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../no-results.php:18
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:23
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../search.php:34
+msgid "Nothing Found"
+msgstr ""
+
+#: ../searchform.php:11
+msgid "Search"
+msgstr ""
+
+#: ../inc/back-compat.php:21 ../inc/back-compat.php:29
+#: ../inc/back-compat.php:40
+#, php-format
+msgid ""
+"Photoline requires at least WordPress version 4.3. You are running version "
+"%s. Please upgrade and try again."
+msgstr ""
+
+#: ../inc/breadcrumbs.php:10
+msgid "Home"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:11
+#, php-format
+msgid "Archive for %s"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:12
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:13
+#, php-format
+msgid "Posts tagged %s"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:14
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:15
+msgid "Error 404"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:159
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/contextual-help.php:16 ../inc/welcome.php:47 ../inc/welcome.php:48
+msgid "Photoline Theme"
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid "Thank you for choosing this Theme!"
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid ""
+"The Theme has a contextual help for almost all admin screens. More "
+"information, help and support you will find on the website <a href=\"http://"
+"www.dinevthemes.com/\">DinevThemes</a>."
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid "Quick Start"
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid ""
+"Using Customizer set your color, upload a logo (avatar - for personal) "
+"image, upload a background image (or select any color), upload the image (or "
+"select any color) header and other settings."
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid ""
+"The theme has page templates for the Home Page. Home Mosaic Tiles and Home "
+"Square Tiles Templates show 4 (or more) posts image format. Widgets page "
+"template is a Home One Template. Into Home Tagline section can be used "
+"plugins shortcode."
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid "Note"
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid ""
+"An important feature of the theme: templates for categories. You can choose "
+"when creating a category or editing a category."
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid ""
+"If you want to display the posts without the sidebar just leave blank "
+"Sidebar posts."
+msgstr ""
+
+#: ../inc/contextual-help.php:17
+msgid ""
+"The theme activates additional fields in the user profile which are used "
+"when displaying the Author Box widget."
+msgstr ""
+
+#: ../inc/contextual-help.php:26 ../inc/contextual-help.php:27
+#: ../inc/contextual-help.php:36 ../inc/contextual-help.php:37
+#: ../inc/contextual-help.php:46 ../inc/contextual-help.php:65
+msgid "Theme Features"
+msgstr ""
+
+#: ../inc/contextual-help.php:27 ../inc/contextual-help.php:37
+msgid "Use Featured image"
+msgstr ""
+
+#: ../inc/contextual-help.php:27
+msgid ""
+"Featured image used for the cover of the post formats, quote, audio, video. "
+"Upload the image that will be displayed header on single post formats "
+"standard and image."
+msgstr ""
+
+#: ../inc/contextual-help.php:27 ../inc/contextual-help.php:37
+msgid "Use Excerpt"
+msgstr ""
+
+#: ../inc/contextual-help.php:27 ../inc/contextual-help.php:37
+msgid "Enter text in field Excerpt to display announcement of the post."
+msgstr ""
+
+#: ../inc/contextual-help.php:27
+msgid "Format"
+msgstr ""
+
+#: ../inc/contextual-help.php:27
+msgid ""
+"<b>Quote.</b> As title, type the author quotes. Quote place in the main text "
+"box without using tag blockquote (b-quote). Featured image and Excerpt are "
+"not used.<br /><b>Link.</b> As title, type the name Link. URL place in the "
+"main text box without using http (http://). Featured image and Excerpt are "
+"not used."
+msgstr ""
+
+#: ../inc/contextual-help.php:27 ../inc/contextual-help.php:37
+msgid "Button"
+msgstr ""
+
+#: ../inc/contextual-help.php:27 ../inc/contextual-help.php:37
+msgid ""
+"To show the button, use the link class, , for example <code>class=\"btn blue"
+"\"</code>. Color options: green, blue, red."
+msgstr ""
+
+#: ../inc/contextual-help.php:27 ../inc/contextual-help.php:37
+msgid "Gallery shortcode"
+msgstr ""
+
+#: ../inc/contextual-help.php:27 ../inc/contextual-help.php:37
+msgid ""
+"For a slideshow gallery use the built-in parameter shortcode Themes "
+"<code>type=\"slider\"</code>, sample: <code>[gallery ids=\"...\" type="
+"\"slider\"]</code>"
+msgstr ""
+
+#: ../inc/contextual-help.php:37
+msgid "Upload the image that will be displayed header on page."
+msgstr ""
+
+#: ../inc/contextual-help.php:37
+msgid "Templates"
+msgstr ""
+
+#: ../inc/contextual-help.php:37
+msgid ""
+"The theme has several page templates. Use metabox Page Attributes > dropdown "
+"Template."
+msgstr ""
+
+#: ../inc/contextual-help.php:47 ../inc/contextual-help.php:75
+msgid "Custom widgets"
+msgstr ""
+
+#: ../inc/contextual-help.php:47
+msgid ""
+"Built-in widgets this theme is marked Photoline. The theme activates "
+"additional fields in the user profile which are used when displaying the "
+"widget Author Box. For Blog Intro sidebar using a text widget. If you want "
+"to display the posts without the sidebar just leave blank (no widgets) "
+"sidebar posts."
+msgstr ""
+
+#: ../inc/contextual-help.php:47
+msgid "The theme has a widgetized homepage using the Home One template."
+msgstr ""
+
+#: ../inc/contextual-help.php:55
+msgid "Recommend"
+msgstr ""
+
+#: ../inc/contextual-help.php:56
+msgid "Recommended plugins for Photoline Theme"
+msgstr ""
+
+#: ../inc/contextual-help.php:56
+msgid "Jetpack By WordPress.com"
+msgstr ""
+
+#: ../inc/contextual-help.php:56
+msgid "Contact Form 7 By Takayuki Miyoshi"
+msgstr ""
+
+#: ../inc/contextual-help.php:56
+msgid "Shortcodes Ultimate By Vladimir Anokhin."
+msgstr ""
+
+#: ../inc/contextual-help.php:66
+msgid "Custom Header background Color"
+msgstr ""
+
+#: ../inc/contextual-help.php:66
+msgid ""
+"Background color header set using Customizer. Go to Customize > Colors: "
+"Header BG Color"
+msgstr ""
+
+#: ../inc/contextual-help.php:75
+msgid ""
+"Menu icons social media is displayed in the footer. Included all popular "
+"icons of social media, and Feedburner. To create a menu item, use the tab "
+"Links (Edit Menus). And select Social Menu as Theme locations."
+msgstr ""
+
+#: ../inc/contextual-help.php:75
+msgid ""
+"Example:<br />tab <strong>Links</strong><br /><em>URL</em> http://twitter."
+"com/your<br /><em>Navigation Label</em> Twitter"
+msgstr ""
+
+#: ../inc/contextual-help.php:80
+msgid ""
+"<p><strong>Top Menu</strong></p><p>The theme has an additional top menu bar."
+"</p><p>If you create a menu item using Links tab (Edit Menus) and links will "
+"be http://tel: OR http://mailto: OR https://goo.gl (short link google map) "
+"it will be displayed icons Font Awesome.</p><p>Example:<br />tab "
+"<strong>Links</strong><br /><em>URL</em> http://tel:+1916000000<br /"
+"><em>Navigation Label</em> +1 916 00.00.00</p>"
+msgstr ""
+
+#: ../inc/customizer.php:142
+msgid "Main Color"
+msgstr ""
+
+#: ../inc/customizer.php:154
+msgid "Secondary Color"
+msgstr ""
+
+#: ../inc/customizer.php:166
+msgid "Header BG Color"
+msgstr ""
+
+#: ../inc/customizer.php:178
+msgid "Link Color"
+msgstr ""
+
+#: ../inc/customizer.php:190
+msgid "Hover Color"
+msgstr ""
+
+#: ../inc/customizer.php:202
+msgid "Hover Menu"
+msgstr ""
+
+#: ../inc/customizer.php:214
+msgid "Menu Bar Color"
+msgstr ""
+
+#: ../inc/customizer.php:226
+msgid "Menu Bar Current"
+msgstr ""
+
+#: ../inc/customizer.php:238
+msgid "Menu Link"
+msgstr ""
+
+#: ../inc/customizer.php:250
+msgid "Menu Link Hover"
+msgstr ""
+
+#: ../inc/customizer.php:262
+msgid "Border Bold"
+msgstr ""
+
+#: ../inc/customizer.php:274
+msgid "Border Thin"
+msgstr ""
+
+#: ../inc/customizer.php:286
+msgid "Additional Color"
+msgstr ""
+
+#: ../inc/customizer.php:298
+msgid "Footer Text"
+msgstr ""
+
+#: ../inc/customizer.php:310
+msgid "Footer BG"
+msgstr ""
+
+#: ../inc/customizer.php:324 ../inc/customizer.php:353
+msgid "Logo Image"
+msgstr ""
+
+#: ../inc/customizer.php:325
+msgid ""
+"For the option of a round frame best suited a image square size is 400px and "
+"more."
+msgstr ""
+
+#: ../inc/customizer.php:340
+msgid "No Frame logo"
+msgstr ""
+
+#: ../inc/customizer.php:364
+msgid "Home Tagline"
+msgstr ""
+
+#: ../inc/customizer.php:365
+msgid ""
+"Headlines area for the Homepage. Tagline Text field to type text (can use "
+"the html tags, for sample: <h1>Headline</h1>) or paste shortcode. Clear this "
+"field to not show Home Tagline."
+msgstr ""
+
+#: ../inc/customizer.php:403
+msgid "Tagline Text"
+msgstr ""
+
+#: ../inc/customizer.php:414
+msgid "Background Color"
+msgstr ""
+
+#: ../inc/customizer.php:421
+msgid "Background Image"
+msgstr ""
+
+#: ../inc/customizer.php:429
+msgid "Show header of front page"
+msgstr ""
+
+#: ../inc/customizer.php:430
+msgid "Show header of front page instead Home of Tagline."
+msgstr ""
+
+#: ../inc/customizer.php:441
+msgid "Footer Copyright"
+msgstr ""
+
+#: ../inc/customizer.php:458
+msgid "Copyright"
+msgstr ""
+
+#: ../inc/customizer.php:468
+msgid "Display Options"
+msgstr ""
+
+#: ../inc/customizer.php:482
+msgid "Show social menu in the header"
+msgstr ""
+
+#: ../inc/customizer.php:496
+msgid "Transparent menu bar"
+msgstr ""
+
+#: ../inc/customizer.php:510
+msgid "No border menu bar"
+msgstr ""
+
+#: ../inc/customizer.php:525
+msgid "Opacity hero box"
+msgstr ""
+
+#: ../inc/customizer.php:526
+msgid "The percent opacity box of the homepage title in the header."
+msgstr ""
+
+#: ../inc/customizer.php:546
+msgid "Hide page header"
+msgstr ""
+
+#: ../inc/customizer.php:560
+msgid "Hide Submenu pages"
+msgstr ""
+
+#: ../inc/customizer.php:574
+msgid "Numbered navigation"
+msgstr ""
+
+#: ../inc/customizer.php:588
+msgid "Disable lightbox image"
+msgstr ""
+
+#: ../inc/customizer.php:603
+msgid "Number of posts image format"
+msgstr ""
+
+#: ../inc/customizer.php:604
+msgid ""
+"Only works for the Home page with the assigned template Home Mosaic Tiles / "
+"Home Square Tiles."
+msgstr ""
+
+#: ../inc/extras.php:59
+msgid "Read More"
+msgstr ""
+
+#: ../inc/pagination.php:15
+msgid "Previous"
+msgstr ""
+
+#: ../inc/pagination.php:16
+msgid "Next"
+msgstr ""
+
+#: ../inc/pagination.php:19
+msgid "Posts navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:34
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:44
+msgid "Older"
+msgstr ""
+
+#: ../inc/template-tags.php:48
+msgid "Newer"
+msgstr ""
+
+#: ../inc/template-tags.php:71
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:81
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:93
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:184
+#, php-format
+msgid ""
+"<span class=\"posted-on\">%1$s</span><span class=\"byline\"> <i>by</i> %2$s</"
+"span>"
+msgstr ""
+
+#: ../inc/template-tags.php:203 ../inc/template-tags.php:204
+msgid ", "
+msgstr ""
+
+#: ../inc/template-tags.php:208
+msgid "Category: "
+msgstr ""
+
+#: ../inc/template-tags.php:213 ../template-parts/header.php:35
+msgid "Tag: "
+msgstr ""
+
+#: ../inc/template-tags.php:415
+#, php-format
+msgid "Powered by %s"
+msgstr ""
+
+#: ../inc/template-tags.php:417
+#, php-format
+msgid "Theme by %s"
+msgstr ""
+
+#: ../inc/welcome.php:34
+msgid "Thanks for choosing Photoline!"
+msgstr ""
+
+#: ../inc/welcome.php:35
+msgid "This theme has built-in Contextual Help for most admin screens."
+msgstr ""
+
+#: ../inc/welcome.php:35
+msgid "To get Help right now, click on the tab Help on the top admin bar."
+msgstr ""
+
+#: ../inc/welcome.php:35
+#, php-format
+msgid "Get a brief setup instructions on the %swelcome screen%s."
+msgstr ""
+
+#: ../inc/welcome.php:36
+msgid "Welcome!"
+msgstr ""
+
+#: ../inc/welcome.php:66
+msgid "Theme"
+msgstr ""
+
+#: ../inc/welcome.php:67
+msgid "Thank you for choosing Photoline WordPress theme for your website!"
+msgstr ""
+
+#: ../inc/welcome.php:72
+msgid "Welcome to"
+msgstr ""
+
+#: ../inc/welcome.php:75
+msgid "Here are some links to get you started and optional theme-setup tasks:"
+msgstr ""
+
+#: ../inc/welcome.php:82
+msgid "Get Started"
+msgstr ""
+
+#: ../inc/welcome.php:85
+#, php-format
+msgid ""
+"Photoline includes a homepage templates. Assign the homepage templates to "
+"your %sfront page%s."
+msgstr ""
+
+#: ../inc/welcome.php:89 ../inc/welcome.php:97
+msgid "Set your Front page, go to"
+msgstr ""
+
+#: ../inc/welcome.php:89 ../inc/welcome.php:93 ../inc/welcome.php:97
+msgid "Front page displays"
+msgstr ""
+
+#: ../inc/welcome.php:93
+msgid "Set you Posts page, go to"
+msgstr ""
+
+#: ../inc/welcome.php:101
+msgid "To select page as Front page you will need to create a new page, go to "
+msgstr ""
+
+#: ../inc/welcome.php:101
+msgid "Add New Page"
+msgstr ""
+
+#: ../inc/welcome.php:105
+msgid "Set you "
+msgstr ""
+
+#: ../inc/welcome.php:105
+msgid "main Menu"
+msgstr ""
+
+#: ../inc/welcome.php:108
+msgid "Get Support"
+msgstr ""
+
+#: ../inc/welcome.php:110
+msgid "Get more features and support with Photoline Premium."
+msgstr ""
+
+#: ../inc/welcome.php:111
+msgid "Get Premium"
+msgstr ""
+
+#: ../inc/welcome.php:117
+msgid "Next Steps"
+msgstr ""
+
+#: ../inc/welcome.php:119
+msgid "Photoline includes a custom widgets, go to "
+msgstr ""
+
+#: ../inc/welcome.php:119
+msgid "Manage widgets"
+msgstr ""
+
+#: ../inc/welcome.php:123
+msgid "Using the WordPress Customizer you can tweak appearance."
+msgstr ""
+
+#: ../inc/welcome.php:131
+msgid "Plugins"
+msgstr ""
+
+#: ../inc/welcome.php:134
+msgid "Extend the functionality of the theme using free plugins, go to "
+msgstr ""
+
+#: ../inc/welcome.php:134
+msgid "Install Plugins"
+msgstr ""
+
+#: ../inc/welcome.php:136
+msgid ""
+"Below you will find links to plugins we recommend. None of these plugins are "
+"required for theme to work, they add additional functionality."
+msgstr ""
+
+#: ../inc/widgets/widget-callact.php:21
+msgid "Call-To-Action"
+msgstr ""
+
+#: ../inc/widgets/widget-callact.php:24
+msgid "Call to Action section"
+msgstr ""
+
+#: ../inc/widgets/widget-callact.php:61
+msgid "Main Text:"
+msgstr ""
+
+#: ../inc/widgets/widget-callact.php:66 ../inc/widgets/widget-icontext.php:104
+msgid "Button Text:"
+msgstr ""
+
+#: ../inc/widgets/widget-callact.php:71
+msgid "Button Link:"
+msgstr ""
+
+#: ../inc/widgets/widget-callact.php:76
+msgid "Background Color:"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:13
+msgid "Icons"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:16
+msgid "Custom Text Widget with Icons"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:92
+msgid "Title:"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:95
+msgid "Icon:"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:97
+msgid "View Icons"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:97
+msgid "Remove"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:101
+msgid "URL:"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:107
+msgid "Icon and Button Color:"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:111
+msgid "Default"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:112
+msgid "Blue"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:113
+msgid "Red"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:114
+msgid "Green"
+msgstr ""
+
+#: ../inc/widgets/widget-icontext.php:124
+msgid "Automatically add paragraphs"
+msgstr ""
+
+#: ../template-parts/header.php:40
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../template-parts/header.php:44
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../template-parts/header.php:47
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../template-parts/header.php:50
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../template-parts/header.php:53
+msgid "Asides"
+msgstr ""
+
+#: ../template-parts/header.php:56
+msgid "Images"
+msgstr ""
+
+#: ../template-parts/header.php:59
+msgid "Videos"
+msgstr ""
+
+#: ../template-parts/header.php:62
+msgid "Quotes"
+msgstr ""
+
+#: ../template-parts/header.php:65
+msgid "Links"
+msgstr ""
+
+#: ../template-parts/header.php:68
+msgid "Blog"
+msgstr ""
+
+#: ../template-parts/header.php:71
+msgid "Archives"
+msgstr ""
+
+#: ../template-parts/header.php:101
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../template-parts/navigation-main.php:11
+msgid "Menu"
+msgstr ""
+
+#: ../template-parts/page/content-wide.php:29
+#: ../template-parts/page/content.php:29 ../template-parts/post/content.php:28
+msgid "Pages:"
+msgstr ""

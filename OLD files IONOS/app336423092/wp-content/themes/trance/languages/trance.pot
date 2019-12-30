@@ -1,0 +1,499 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Trance\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2015-07-15 00:12+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: Divjot Singh <support@divjot.co>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38 comments.php:60
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41 comments.php:63
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:64
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:76
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:45
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:45
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:47
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:56 header.php:23
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:99
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:109
+msgid "Footer Widget 1"
+msgstr ""
+
+#: functions.php:111
+msgid "The left-most widget column in the footer"
+msgstr ""
+
+#: functions.php:119
+msgid "Footer Widget 2"
+msgstr ""
+
+#: functions.php:121
+msgid "The second widget column in the footer"
+msgstr ""
+
+#: functions.php:129
+msgid "Footer Widget 3"
+msgstr ""
+
+#: functions.php:131
+msgid "The third widget column in the footer"
+msgstr ""
+
+#: functions.php:139
+msgid "Footer Widget 4"
+msgstr ""
+
+#: functions.php:141
+msgid "The last widget column in the footer"
+msgstr ""
+
+#: functions.php:185
+msgctxt "Play font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:187
+msgctxt "Maven Pro font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:268
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: functions.php:271
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:278 inc/template-tags.php:107 inc/template-tags.php:113
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: functions.php:278
+msgid "(Edit)"
+msgstr ""
+
+#: header.php:29
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:61
+msgid "Search"
+msgstr ""
+
+#: header.php:87 inc/customizer.php:530
+msgid "Most Popular"
+msgstr ""
+
+#: home.php:16
+msgid "RECENT POSTS"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Layout Settings"
+msgstr ""
+
+#: inc/customizer.php:22
+msgid "Manage the Layout Settings of your site."
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "Show Featured Image in the Post."
+msgstr ""
+
+#: inc/customizer.php:47
+msgid "Social Settings"
+msgstr ""
+
+#: inc/customizer.php:48
+msgid "Manage the Social Icon Settings of your site."
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "Enable Social Icons"
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/customizer.php:99
+msgid "Twitter URL"
+msgstr ""
+
+#: inc/customizer.php:116
+msgid "Google+ URL"
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Instagram URL"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "Flickr URL"
+msgstr ""
+
+#: inc/customizer.php:167
+msgid "Pinterest URL"
+msgstr ""
+
+#: inc/customizer.php:184
+msgid "YouTube URL"
+msgstr ""
+
+#: inc/customizer.php:201
+msgid "RSS URL"
+msgstr ""
+
+#: inc/customizer.php:218
+msgid "LinkedIn URL"
+msgstr ""
+
+#: inc/customizer.php:235
+msgid "StumbleUpon URL"
+msgstr ""
+
+#: inc/customizer.php:252
+msgid "Contact Page URL"
+msgstr ""
+
+#: inc/customizer.php:269
+msgid "SoundCloud URL"
+msgstr ""
+
+#: inc/customizer.php:286
+msgid "Vimeo URL"
+msgstr ""
+
+#: inc/customizer.php:305
+msgid "OR Logo Upload"
+msgstr ""
+
+#: inc/customizer.php:325
+msgid "Upload a Favicon"
+msgstr ""
+
+#: inc/customizer.php:326
+msgid "Supported formats are .ico, .jpg, .png but .ico is preferred"
+msgstr ""
+
+#: inc/customizer.php:338
+msgid "Slider Settings"
+msgstr ""
+
+#: inc/customizer.php:345 inc/customizer.php:362
+msgid "Enable Slider"
+msgstr ""
+
+#: inc/customizer.php:370
+msgid "Slide 1"
+msgstr ""
+
+#: inc/customizer.php:386 inc/customizer.php:439 inc/customizer.php:492
+msgid "Slide Upload"
+msgstr ""
+
+#: inc/customizer.php:401 inc/customizer.php:454 inc/customizer.php:507
+msgid "Description"
+msgstr ""
+
+#: inc/customizer.php:415 inc/customizer.php:468 inc/customizer.php:521
+msgid "URL"
+msgstr ""
+
+#: inc/customizer.php:423
+msgid "Slide 2"
+msgstr ""
+
+#: inc/customizer.php:476
+msgid "Slide 3"
+msgstr ""
+
+#: inc/customizer.php:531
+msgid "Settings for the 'Most Popular' section of the theme"
+msgstr ""
+
+#: inc/customizer.php:547
+msgid "Hide Most Popular Section"
+msgstr ""
+
+#: inc/customizer.php:566
+msgid "The Background Image"
+msgstr ""
+
+#: inc/customizer.php:587
+msgid "Title Color"
+msgstr ""
+
+#: inc/customizer.php:609
+msgid "Description Color"
+msgstr ""
+
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:55
+msgid "Previous"
+msgstr ""
+
+#: inc/template-tags.php:83
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:88
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:105 inc/template-tags.php:111
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:119
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:119
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:119
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:123 template-parts/content-page.php:24
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:140
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:142
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:144
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:146
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:146
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:148
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:148
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:150
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:150
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:153
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:155
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:157
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:159
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:161
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:163
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:165
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:167
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:169
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:172
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:176
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:178
+msgid "Archives"
+msgstr ""
+
+#: most-popular.php:60
+msgid "Oops, there are no posts. Browse Some posts to fill this area."
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: template-parts/content-home.php:39 template-parts/content.php:39
+msgid "READ MORE"
+msgstr ""
+
+#: template-parts/content-home.php:42 template-parts/content-page.php:18
+#: template-parts/content-single.php:30 template-parts/content.php:42
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""

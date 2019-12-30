@@ -1,0 +1,290 @@
+/**
+ * Hoot Customizer
+ * ========================================================
+ */
+
+
+/*** Sortlist Control ***/
+
+.customize-control-sortlist {}
+ul.hoot-control-sortlist {}
+li.hoot-control-sortlistitem { background: #fafafa; border: 1px solid #ddd; position: relative; line-height: 40px; margin: 5px 0 0; }
+li.hoot-control-sortlistitem:first-of-type { margin-top: 0; }
+
+.hoot-sortlistitem-head { display: block; background: #f1f1f1; border-bottom: 1px solid #ddd; cursor: pointer; position: relative; }
+.hoot-sortlistitem-head:after { clear: both; }
+.hoot-sortlistitem-head i { float: right; border-right: 1px solid #ddd; width: 40px; text-align: center; display: block; line-height: 40px; color: #777; position: relative; background: #f1f1f1; }
+.hoot-sortlistitem-head .sortlistitem-sort { float: left; cursor: move; }
+.hoot-sortlistitem-head .sortlistitem-label { position: absolute; top: 0; left: 50px; height: 40px; overflow: hidden; max-width: 110px; white-space: nowrap; text-overflow: ellipsis; }
+.hoot-sortlistitem-head .sortlistitem-expand { border-left: 1px solid #ddd; }
+.hoot-sortlistitem-head .sortlistitem-display { border-right: none; z-index: 1; }
+
+.hoot-control-sortlistitem-placeholder { border: 1px dashed #d5d5d5; background: #f7f7f7; margin-top: 5px; }
+
+.sortlistitem-display span { display: none; background-color: #444; background-color: rgba(80,80,80,0.6); color: #fff; border-radius: 3px; position: absolute; top: -12px; right: -7px; padding: 3px 7px; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 1.4em; }
+.sortlistitem-display:hover span { display: block; }
+
+.hoot-sortlistitem-head .sortlistitem-expand.options-open { background: #eee;
+-webkit-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.15);
+   -moz-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.15);
+        box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.15); }
+.hoot-sortlistitem-head .sortlistitem-expand.options-open:before { content: "\f0d8"; }
+li.deactivated .sortlistitem-display:before { content: "\f070"; }
+li.deactivated,
+li.deactivated .hoot-sortlistitem-head,
+li.deactivated .hoot-sortlistitem-head i { background: #e5e5e5; color: #bbb; }
+li.deactivated .hoot-sortlistitem-head .sortlistitem-display { background: #f1f1f1; color: #777; }
+
+.hoot-sortlistitem-options { display: block; clear: both; padding: 5px 0; border-top: solid 1px #ddd; }
+.hoot-sortlistitem-option { display: block; padding: 5px 10px; line-height: 1.4em; }
+.hoot-sortlistitem-option-title { display: block; }
+.hoot-sortlistitem-option-sublabel { display: block; margin: 2px 0 5px; }
+.hoot-sortlistitem-option-text {}
+.hoot-sortlistitem-option-textarea {}
+.hoot-sortlistitem-option-checkbox {}
+.hoot-sortlistitem-option-checkbox .hoot-sortlistitem-option-title { display: inline-block; }
+.hoot-sortlistitem-option-checkbox input { float: right; position: relative; top: 5px; }
+.hoot-sortlistitem-option-select {}
+
+
+/*** Radioimage Control ***/
+
+.hoot-customize-radioimage { display: block; float: left; border: 3px solid #ddd; margin: 0 5px 5px 0; cursor: pointer; position: relative; padding: 2px; }
+.hoot-customize-radioimage.radiocheck { border: 3px solid #64bd1f; }
+.hoot-customize-radioimage.radiocheck:before { content: "\f147"; font-family: dashicons; background-color: #64bd1f; position: absolute; right: 0; bottom: 0; border-top-left-radius: 2px; color: #fff; line-height: normal; font-size: 20px; padding: 1px 0 0 1px; }
+.hoot-customize-radioimage input { display: none; }
+.hoot-customize-radioimage img { display: inline-block;
+    vertical-align: middle; }
+
+
+/*** Icon Control ***/
+
+.customize-control-icon {}
+.hoot-customizer-control-icon-picked, .hoot-customizer-control-icon-remove { display: inline-block; line-height: 22px; background: #f7f7f7; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.08); box-shadow: 1px 1px 0 rgba(0,0,0,.08); border: solid 1px #ccc; cursor: pointer; }
+.hoot-customizer-control-icon-picked:hover, .hoot-customizer-control-icon-remove:hover { background: #fafafa; border-color: #999; color: #23282d; }
+.hoot-customizer-control-icon-picked:active, .hoot-customizer-control-icon-remove:active { outline: 0; background: #eee; border-color: #999; color: #32373c; -webkit-box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5); box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5); }
+.hoot-customizer-control-icon-picked i { font-size: 20px; padding: 2px 4px; width: 26px; text-align: center; background: #eee; float: left; }
+.hoot-customizer-control-icon-picked i.selected { /*background: #2ea2cc; color: #fff;*/ }
+.hoot-customizer-control-icon-picked span { display: inline-block; padding: 1px 7px; float: left; border-left: solid 1px #ccc; -webkit-border-radius: 0 2px 2px 0; border-radius: 0 2px 2px 0; }
+.hoot-customizer-control-icon-remove { vertical-align: top; padding: 1px 7px; margin-left: 10px; background-color: #fff; }
+.hoot-customizer-control-icon-remove i { color: #bbb; font-size: 13px; }
+.hoot-customizer-control-icon-remove span { color: #888; margin-left: 5px; }
+/* Displaying Icon Fly */
+.customize-control-icon .hoot-customizer-control-icon-picked.flygroup-open { border-color: #999; color: #32373c; /*background: #eee;*/ background: #e5e5e5;
+	/*-webkit-box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+	        box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 0 1px #5b9dd9,0 0 2px 1px rgba(30,140,190,.8);
+            box-shadow: 0 0 0 1px #5b9dd9,0 0 2px 1px rgba(30,140,190,.8);*/
+	-webkit-box-shadow: inset 2px 2px 6px -3px rgba(0,0,0,.6);
+	        box-shadow: inset 2px 2px 6px -3px rgba(0,0,0,.6); }
+.customize-control-icon .hoot-customizer-control-icon-picked.flygroup-open span { border-color: #aaa; }
+
+/** Icon Fly **/
+.hoot-icon-list-wrap {}
+.hoot-icon-list-wrap h4 {}
+.hoot-icon-list i { font-size: 20px; display: inline-block; width: 1em; border: 1px solid #e1e1e1; margin: 0 0 -1px -1px; padding: 0.5em; cursor: pointer; }
+.hoot-icon-list i:hover,
+.hoot-icon-list i:hover:before,
+.hoot-icon-list i.selected { background: #2ea2cc; color: #fff; }
+
+/** Displaying Icon Fly **/
+/* @includes Customizer Layout Mods */
+
+body.hoot-displaying-flyicon #hoot-flyicon { left: 0; width: 300px; z-index: 9; }
+body.hoot-displaying-flyicon #customize-preview { opacity: .4; left: 300px; }
+body.hoot-displaying-flyicon #customize-controls {}
+@media screen and (max-width: 640px) {
+	body.hoot-displaying-flyicon #hoot-flyicon { left: 0; width: 100%; position: fixed; z-index: 11; }
+}
+
+
+/*** Group Control ***/
+
+.hoot-customize-control-groupstart.customize-control .hoot-flypanel-button { position: relative; padding-right: 25px; }
+.hoot-customize-control-groupstart .hoot-flypanel-button:after { content: "\f132"; display: inline-block; position: absolute; top: 7px; right: 5px; z-index: 1; font: 400 14px/1 dashicons; vertical-align: middle; -webkit-transition: all .2s; transition: all .2s; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.hoot-customize-control-groupend { display: none !important; }
+@media screen and (max-width: 640px) {
+	.customize-control.hoot-customize-control-groupstart .hoot-flypanel-button { padding-right: 25px; }
+	.hoot-customize-control-groupstart .hoot-flypanel-button:after { top: 10px; }
+}
+/* Displaying Group Fly */
+.hoot-customize-control-groupstart.flygroup-open .hoot-flypanel-button { border-color: #999; color: #32373c; /*background: #eee;*/ background: #e5e5e5;
+	/*-webkit-box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+	        box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 0 1px #5b9dd9,0 0 2px 1px rgba(30,140,190,.8);
+            box-shadow: 0 0 0 1px #5b9dd9,0 0 2px 1px rgba(30,140,190,.8);*/
+	-webkit-box-shadow: inset 2px 2px 6px -3px rgba(0,0,0,.6);
+	        box-shadow: inset 2px 2px 6px -3px rgba(0,0,0,.6); }
+.hoot-customize-control-groupstart.flygroup-open .hoot-flypanel-button:after { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+/** Group Options **/
+
+#customize-controls .hoot-customize-control-group-blocks { display: none !important; }
+/* Group Fly */
+#hoot-flygroup-content > ul { margin: 0; }
+#hoot-flygroup-content .hoot-customize-control-group-blocks { display: list-item !important; }
+
+/** Displaying Group Fly **/
+/* @includes Customizer Layout Mods */
+
+body.hoot-displaying-flygroup #hoot-flygroup { left: 0; width: 300px; z-index: 9; }
+body.hoot-displaying-flygroup #customize-preview { opacity: .4; left: 300px; }
+body.hoot-displaying-flygroup #customize-controls {}
+@media screen and (max-width: 640px) {
+	body.hoot-displaying-flygroup #hoot-flygroup { left: 0; width: 100%; position: fixed; z-index: 11; }
+}
+
+
+/*** Background Control ***/
+
+/* Start */
+.hoot-customize-control-betterbackgroundstart.customize-control { margin-bottom: 0; }
+.hoot-customize-control-betterbackgroundstart.customize-control:after { display: none; }
+
+/* End */
+.hoot-customize-control-betterbackgroundend.customize-control { padding-top: 0; }
+.hoot-customize-control-betterbackgroundend.customize-control:after {}
+
+/* Background Control Units */
+li.hoot-customize-control-background-blocks {} /* padding-top: 15px; */
+.hoot-customize-control-background-blocks.customize-control:after { display: none; }
+
+/* Color */
+.hoot-customize-control-background-blocks.customize-control-color { margin-bottom: 2px; } /* padding-top: 0; */
+.hoot-customize-control-background-blocks.customize-control-color:after {}
+.hoot-customize-control-background-blocks .wp-color-result {} /* top: -30px; */
+
+/* Type Button */
+.hoot-customize-control-background-blocks.hoot-customize-control-betterbackgroundbutton { margin-bottom: 8px; }
+.hoot-customize-control-background-blocks.hoot-customize-control-betterbackgroundbutton:after {}
+.hoot-betterbackground-buttons { }
+.hoot-betterbackground-buttons .hoot-betterbackground-button { display: inline-block; width: 50%; text-align: center; }
+.hoot-betterbackground-buttons .selected { background: #fff; border-color: #bbb;
+	-webkit-box-shadow: inset -2px 1px 2px rgba(0,0,0,0.25);
+	        box-shadow: inset -2px 1px 2px rgba(0,0,0,0.25); }
+.hoot-betterbackground-buttons .hoot-betterbackground-button-custom.selected {
+	-webkit-box-shadow: inset 2px 1px 2px rgba(0,0,0,0.25);
+	        box-shadow: inset 2px 1px 2px rgba(0,0,0,0.25); }
+.hoot-betterbackground-buttons .deactive { color: #a0a5aa; border-color: #ddd; background: #eee; text-shadow: 0 1px 0 #fff; }
+.hoot-betterbackground-buttons .hoot-betterbackground-button-predefined { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.hoot-betterbackground-buttons .hoot-betterbackground-button-custom { position: relative; left: -1px; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+/* Custom Image */
+.hoot-customize-control-background-blocks.customize-control-image { margin-bottom: 5px; }
+.hoot-customize-control-background-blocks.customize-control-image:after {}
+
+/* Selects */
+.hoot-customize-control-background-blocks.customize-control-select { width: 33%; float: left; clear: none; }
+.hoot-customize-control-background-blocks.customize-control-select:after {}
+
+/* Pattern */
+.hoot-customize-control-background-blocks.customize-control-groupstart {}
+.hoot-customize-control-background-blocks.customize-control-groupstart:after {}
+.hoot-betterbackground-button-pattern { display: block; float: left; width: 28px; height: 26px; overflow: hidden; position: relative; left: -10px; max-width: 150%;
+	-webkit-box-shadow: 2px 0px 2px rgba(0,0,0,0.2);
+	        box-shadow: 2px 0px 2px rgba(0,0,0,0.2); }
+#customize-controls .hoot-betterbackground-button-pattern img { max-width: inherit; }
+.hoot-customize-control-background-blocks.customize-control-radioimage {}
+.hoot-customize-control-background-blocks.customize-control-radioimage:after {}
+.hoot-customize-control-background-blocks.customize-control-radioimage img { max-width: 68px; }
+
+
+/*** Info Buttons ***/
+.hoot-prevent-fouc { display: none; }
+#hoot-info-buttons { background: #fff; padding: 17px 0 17px;
+	-webkit-box-shadow: 0 2px 8px 0px rgba( 200, 200, 200, 0.8 );
+	   -moz-box-shadow: 0 2px 8px 0px rgba( 200, 200, 200, 0.8 );
+	        box-shadow: 0 2px 8px 0px rgba( 200, 200, 200, 0.8 );
+}
+#customize-controls #customize-theme-controls .control-section .hoot-titlearea-info-buttons { padding: 17px 0 17px; font-size: 13px;
+	-webkit-box-shadow: 0 2px 8px 0px rgba( 200, 200, 200, 0.8 );
+	   -moz-box-shadow: 0 2px 8px 0px rgba( 200, 200, 200, 0.8 );
+	        box-shadow: 0 2px 8px 0px rgba( 200, 200, 200, 0.8 );
+}
+.hoot-info-buttons { display: table; width: 95%; height: 36px; }
+.hoot-info-block { display: table-cell; text-align: center; vertical-align: middle; }
+.hoot-info-block a { outline: none; -webkit-box-shadow: none; box-shadow: none; color: #888; text-decoration: none; }
+.hoot-info-block a:hover { color: #0073aa; }
+.hoot-info-block img { vertical-align: middle; }
+.hoot-info-block i { font-size: 16px; }
+.hoot-info-block:first-child { padding-left: 15px; }
+/*.hoot-info-block:last-child { padding-right: 15px; }*/ /*When used with parent dispay as table with 100%width, adding padding makes wp's js not set panel heading topmargin correctly. Instead decrease parent width to add padding, and set height to offset margintop error due to reduced width*/
+.hoot-logo-button { width: 65px; padding-right: 8px;
+	-webkit-transition: padding 0.3s linear;
+	   -moz-transition: padding 0.3s linear;
+	     -o-transition: padding 0.3s linear;
+	        transition: padding 0.3s linear;
+}
+.hoot-logo-button img { width: 65px; height: 31px; }
+.hoot-premium-button { width: 100px; padding-left: 8px; }
+.hoot-premium-button a { -webkit-border-radius: 18px; border-radius: 18px; text-transform: uppercase; background: #2a8cbb; color: #fff; padding: 4px 10px; }
+.hoot-premium-button a:hover { color: #fff; -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.5); box-shadow: 0px 1px 4px rgba(0,0,0,0.5); }
+.hoot-premium-button a:active, .hoot-premium-button a:focus { background: #0073aa; }
+.hoot-info-button-label { padding-left: 3px; }
+.hoot-info-button {}
+.hoot-info-button a { position: relative; padding: 2px 3px; }
+.hoot-info-button .hoot-info-button-label.hoot-tooltip-text { display: none; z-index: 1; position: absolute; top: 100%; right: -45px; font-size: 11px; }
+.hoot-info-button a:hover .hoot-info-button-label.hoot-tooltip-text { display: block; width: 90px; height: auto; opacity: 1; padding: 5px; }
+.hoot-info-button-label i { font-size: inherit; }
+
+
+/*** Default Controls ***/
+
+label { cursor: inherit; }
+.customize-control { position: relative; }
+.customize-control-sublabel { display: block; position: relative; top: -5px; }
+.customize-control-sublabel ul { list-style: disc; margin-left: 2em; }
+.customize-control-title { line-height: 1.333em; margin-bottom: 8px; }
+
+/* Image / Upload */
+/* Deprecated WP4.6 */
+.customize-control-background .current,.customize-control-cropped_image .current,.customize-control-header .current,.customize-control-image .current,.customize-control-media .current,.customize-control-site_icon .current,.customize-control-upload .current{margin-bottom:0;width:48%;float:left}.customize-control-background .current .container,.customize-control-cropped_image .current .container,.customize-control-image .current .container,.customize-control-media .current .container,.customize-control-site_icon .current .container,.customize-control-upload .current .container{min-height:27px}.customize-control-background .inner,.customize-control-cropped_image .inner,.customize-control-header .inner,.customize-control-header .inner .dashicons,.customize-control-image .inner,.customize-control-media .inner,.customize-control-site_icon .inner,.customize-control-upload .inner{line-height:27px;top:inherit;min-height:inherit;font-size:11px;font-style:italic}.customize-control-background img,.customize-control-cropped_image img,.customize-control-header img,.customize-control-image img,.customize-control-media img,.customize-control-site_icon img,.customize-control-upload img{width:auto;display:block;margin:0 auto}.customize-control-background .actions,.customize-control-cropped_image .actions,.customize-control-header .actions,.customize-control-image .actions,.customize-control-media .actions,.customize-control-site_icon .actions,.customize-control-upload .actions{margin-bottom:-6px;width:48%;float:right}.customize-control-background .default-button,.customize-control-background .remove-button,.customize-control-background .upload-button,.customize-control-cropped_image .default-button,.customize-control-cropped_image .remove-button,.customize-control-cropped_image .upload-button,.customize-control-header button.new,.customize-control-header button.remove,.customize-control-image .default-button,.customize-control-image .remove-button,.customize-control-image .upload-button,.customize-control-media .default-button,.customize-control-media .remove-button,.customize-control-media .upload-button,.customize-control-site_icon .default-button,.customize-control-site_icon .remove-button,.customize-control-site_icon .upload-button,.customize-control-upload .default-button,.customize-control-upload .remove-button,.customize-control-upload .upload-button{width:100%;margin-bottom:6px}
+/* @since WP4.6 */
+.customize-control .attachment-media-view .thumbnail,
+.customize-control .attachment-media-view .placeholder,
+.customize-control .attachment-media-view .actions { width: 48%; float: left; }
+.customize-control .attachment-media-view .placeholder { padding: 4px 0; margin: 0; }
+.customize-control .attachment-media-view .actions { float: right; margin-top: 0; }
+.customize-control .attachment-media-view .actions button { width: 100%; margin-bottom: 6px; margin-top: 0; }
+.customize-control .media-widget-control .media-widget-preview,
+.customize-control .media-widget-control .media-widget-buttons { width: 48%; float: left; margin-bottom: 1em; }
+.customize-control .media-widget-control .placeholder { width: 100%; }
+.customize-control .media-widget-control .media-widget-buttons { float: right; }
+.customize-control .media-widget-control .media-widget-buttons button { width: 100%; margin-bottom: 6px; margin-top: 0 !important; } /*important to override for mobile view*/
+.customize-control .media-widget-control .media-widget-fields,
+.customize-control .media-widget-control .widget-control-actions { clear: both; }
+
+/* Bettercheckbox */
+.customize-control-bettercheckbox .bettercheckbox-single .customize-control-title { margin-right: 55px; }
+.customize-control-bettercheckbox .bettercheckbox-single input[type="checkbox"] { position: absolute; top: 23px; right: 20px; margin: 0; top: 5px; }
+
+/* Radio */
+.customize-control-radio label { cursor: pointer; padding: 0; /* line-height: 1.4em; margin-top: 7px; display: block; */ }
+.customize-control-radio .customize-inside-control-row { padding-top: 3px; padding-bottom: 3px; }
+
+/* Select */
+.customize-control select { width: 100%; }
+
+
+/*** General Fly Panel ***/
+
+.hoot-flypanel-button {}
+.hoot-flypanel { position: absolute; top: 0; bottom: 0; left: -301px; width: 300px; margin: 0; z-index: 1; background: #fff; border-right: 1px solid #ddd;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	        transition: all .2s; 
+}
+.hoot-flypanel-nav { position: absolute; left: 0; right: 0; height: 45px; padding: 0 15px; line-height: 45px; z-index: 10; background: #eee; }
+.hoot-flypanel-header { border-bottom: 1px solid #ddd; top: 0; }
+.hoot-flypanel-footer { border-top: 1px solid #ddd; bottom: 0; }
+.hoot-flypanel-back { background: #ddd; border-color: #ccc; color: #000; outline: 0; position: absolute; left: 0; top: 0; z-index: 99; width: 45px; height: 45px; padding-right: 2px; border-right: 1px solid #ddd; cursor: pointer; }
+.hoot-flypanel-back:before { font: 400 20px/45px dashicons; content: "\f341"; position: relative; top: 1px; left: 13px; }
+.hoot-flypanel-content { padding: 15px; overflow: auto; overflow-y: auto; overflow-x: hidden; position: absolute; top: 45px; left: 0; bottom: 45px; right: 0; }
+.hoot-flypanel-content img { max-width: 100%; height: auto; }
+
+
+/*** Hoot CSS ***/
+.customize-control-description hr { border: none; }
+#customize-controls .description.customize-section-description { color: #222; margin: 10px 0; padding: 5px 8px; background: #e2e2e2; }
+/* .customize-control-description code { background: #999; color: #E8E8E3; padding: 1px 5px; font-style: normal; } */
+.customize-control-title { line-height: 1.4285em; }

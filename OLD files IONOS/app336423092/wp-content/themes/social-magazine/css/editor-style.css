@@ -1,0 +1,40 @@
+@import url('../css/bootstrap.min.css');
+@import url('../css/bootstrap-theme.min.css');
+@import url('../style.css');
+
+html .mceContentBody {
+	background: #fff;
+	max-width: 600px;
+	margin: 20px;
+}
+.mceContentBody table {
+	width: 100%;
+}
+.mceContentBody table thead th{
+	background: #0080ff;
+	color: #fff;
+	height: 30px;
+	border: 1px solid #0080ff;
+	padding: 5px;
+}
+.mceContentBody table tbody tr td, .mceContentBody table tbody th{
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+.mceContentBody td {
+    border-top: 1px solid #EDEDED;
+    padding: 6px 15px 6px 0px;
+}
+.mceContentBody th{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #636363;
+    padding-right: 20px;
+}
+.mceContentBody ins {
+	background-color: Chartreuse;
+}
+.mceContentBody pre {
+	background: #00FFFF;
+}

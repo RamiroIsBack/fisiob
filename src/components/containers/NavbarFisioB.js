@@ -185,12 +185,8 @@ class NavbarFisioB extends React.Component {
                           width: "fit-content"
                         }}
                       >
-                        <div
-                          key={index}
-                          className="row"
-                          style={{ width: "180px" }}
-                        >
-                          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <div key={index} style={{ display: "inline-block" }}>
+                          <div style={{ display: "inline-block" }}>
                             <img
                               alt={servicio.nombre}
                               src={servicio.urlIcono}
@@ -200,8 +196,10 @@ class NavbarFisioB extends React.Component {
                             />
                           </div>
                           <div
-                            className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8"
-                            style={{ padding: 0, width: "auto" }}
+                            style={{
+                              display: "inline-block",
+                              paddingLeft: "8px"
+                            }}
                             id={servicio.nombre}
                             onClick={this.handleOnClick}
                           >
@@ -240,7 +238,4 @@ const dispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  stateToProps,
-  dispatchToProps
-)(NavbarFisioB);
+export default connect(stateToProps, dispatchToProps)(NavbarFisioB);

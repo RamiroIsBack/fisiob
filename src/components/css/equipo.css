@@ -11,6 +11,7 @@
   }
   .card__supercontainer {
     margin: 5px;
+    border-bottom: 3px solid #fdb813;
   }
 }
 @media screen and (max-width: 1250px) and (min-width: 700px) {

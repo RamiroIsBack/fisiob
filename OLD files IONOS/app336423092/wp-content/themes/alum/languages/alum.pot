@@ -1,0 +1,576 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: alum\n"
+"POT-Creation-Date: 2015-07-20 17:55+0530\n"
+"PO-Revision-Date: 2015-07-20 17:56+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:36
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:37
+msgid ""
+"Apologies, but the page you requested could not be found. Perhaps searching "
+"will help."
+msgstr ""
+
+#: archive.php:47
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:49
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:51
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:53
+msgid "Blog Archives"
+msgstr ""
+
+#: attachment.php:37
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#: attachment.php:40
+#, php-format
+msgid "<span>&larr;</span> %s"
+msgstr ""
+
+#: attachment.php:45
+#, php-format
+msgid "By %2$s"
+msgstr ""
+
+#: attachment.php:51
+#, php-format
+msgid "Published %2$s"
+msgstr ""
+
+#: attachment.php:57
+#, php-format
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: attachment.php:57
+msgid "Link to full-size image"
+msgstr ""
+
+#: attachment.php:62 attachment.php:102
+msgid "Edit"
+msgstr ""
+
+#: attachment.php:100
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: attachment.php:101
+msgid "Pages:"
+msgstr ""
+
+#: author.php:40
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: author.php:46
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: category.php:37
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:13
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: comments.php:16
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:25
+msgid "No Responses"
+msgstr ""
+
+#: comments.php:26
+msgid "One Response"
+msgstr ""
+
+#: comments.php:27
+msgid "% Responses"
+msgstr ""
+
+#: comments.php:28
+msgid "so far."
+msgstr ""
+
+#: comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:51
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:82
+msgid "LEAVE A COMMENT"
+msgstr ""
+
+#: comments.php:83
+msgid "Submit Comment"
+msgstr ""
+
+#: comments.php:87
+msgid "Your Name*"
+msgstr ""
+
+#: comments.php:92
+msgid "E-mail*"
+msgstr ""
+
+#: comments.php:97
+msgid "Website"
+msgstr ""
+
+#: comments.php:101
+msgid "Comment*"
+msgstr ""
+
+#: footer.php:13 footer.php:92
+msgid "Arinio"
+msgstr ""
+
+#: footer.php:20
+msgid ""
+"Nulla euismod malesuada lectus, non condimentum tellus commodo eu. Curabitur "
+"eget sapien arcu. Vivamus ut facilisis lectus. Curabitur velit neque."
+msgstr ""
+
+#: footer.php:24
+msgid "Contact"
+msgstr ""
+
+#: footer.php:30
+msgid ""
+"4567 Street name,\n"
+"                      <br>\n"
+"                      012 12 City name, Country"
+msgstr ""
+
+#: footer.php:41
+msgid "Recent Post"
+msgstr ""
+
+#: footer.php:74
+msgid "Sample Content"
+msgstr ""
+
+#: footer.php:75
+msgid ""
+"Pellentesque at tristique urna, ac finibus quam. Aenean nibh nunc, gravida "
+"at venenatis vel, cursus ut arcu. Maecenas maximus enim et ex mattis "
+"elementum. Sed a eros congue, scelerisque lorem nec, hendrerit."
+msgstr ""
+
+#: footer.php:90
+msgid "Copyright &#169; 2015 All Rights Reserved."
+msgstr ""
+
+#: footer.php:92
+msgid "Powered by"
+msgstr ""
+
+#: footer.php:92
+msgid "WordPress"
+msgstr ""
+
+#: footer.php:92
+msgid "Theme by"
+msgstr ""
+
+#: footer.php:105 header.php:30
+msgid "Toggle navigation"
+msgstr ""
+
+#: functions.php:30
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:31
+msgid "Secondary menu  for footer menu"
+msgstr ""
+
+#: functions.php:108
+msgid "Home"
+msgstr ""
+
+#: functions.php:112
+msgid "attachment:"
+msgstr ""
+
+#: functions.php:122
+msgid "Category By:"
+msgstr ""
+
+#: functions.php:141
+msgid "Search Results for..."
+msgstr ""
+
+#: functions.php:147 functions.php:148 functions.php:149
+msgid "Archive for "
+msgstr ""
+
+#: functions.php:150
+msgid "Author Archive for "
+msgstr ""
+
+#: functions.php:150
+#, php-format
+msgid " %s"
+msgstr ""
+
+#: functions.php:154
+msgid "Search Results for \""
+msgstr ""
+
+#: functions.php:195 functions.php:197
+msgid ", "
+msgstr ""
+
+#: functions.php:208
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: functions.php:214 functions.php:216
+#, php-format
+msgid ""
+"<div class=\"post-category\"> Posted in : %1$s  on %3$s </div><div class="
+"\"post-author\"> by : %4$s </div> <div class=\"post-comment\"> Comments: <a "
+"href=\"#\">"
+msgstr ""
+
+#: functions.php:218
+#, php-format
+msgid ""
+"<div class=\"post-category\"> Posted on : %3$s </div><div class=\"post-author"
+"\"> by : %4$s </div> <div class=\"post-comment\"> Comments: <a href=\"#\">"
+msgstr ""
+
+#: functions.php:246
+msgid "Content Sidebar"
+msgstr ""
+
+#: functions.php:248
+msgid "Additional sidebar that appears on the right."
+msgstr ""
+
+#: functions.php:256
+msgid "Footer Sidebar"
+msgstr ""
+
+#: functions.php:258
+msgid "Appears on footer side"
+msgstr ""
+
+#: functions.php:290
+msgid "Read more"
+msgstr ""
+
+#: functions.php:318
+msgid "Enter Your Comments"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Get Alum PRO Theme!  Just $19"
+msgstr ""
+
+#: inc/customizer.php:46
+msgid "Upgrade to Alum PRO Theme"
+msgstr ""
+
+#: inc/customizer.php:49
+msgid "View More our themes"
+msgstr ""
+
+#: inc/customizer.php:52
+msgid "View More Free themes"
+msgstr ""
+
+#: inc/customizer.php:55
+msgid "Free Support"
+msgstr ""
+
+#: inc/customizer.php:58
+msgid "View Demo"
+msgstr ""
+
+#: inc/customizer.php:61
+msgid "Get All Theme Just $29"
+msgstr ""
+
+#: inc/customizer.php:84
+msgid "Alum Support"
+msgstr ""
+
+#: inc/customizer.php:85
+msgid ""
+"You are using the Alum, Free Version of Alum Pro Theme. Upgrade to Pro for "
+"extra features like Home Page Unlimited Slider, Work Gallery, Team section, "
+"Client Section and Life time theme support and much more. "
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Alum Upgrade"
+msgstr ""
+
+#: inc/customizer.php:127
+msgid "Basic Setting"
+msgstr ""
+
+#: inc/customizer.php:128
+msgid "This Is a Basic Setting Section For Frontpage"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Site Logo"
+msgstr ""
+
+#: inc/customizer.php:145
+msgid "Favicon"
+msgstr ""
+
+#: inc/customizer.php:154
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer.php:162
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer.php:178
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:241
+msgid "Slider 1"
+msgstr ""
+
+#: inc/customizer.php:242
+msgid "Slider 2"
+msgstr ""
+
+#: inc/customizer.php:246
+msgid "Slider Setting"
+msgstr ""
+
+#: inc/customizer.php:247
+msgid "You can upload here images for slider"
+msgstr ""
+
+#: inc/customizer.php:273
+msgid "File Upload"
+msgstr ""
+
+#: inc/customizer.php:283 inc/customizer.php:392 inc/customizer.php:397
+msgid "Title"
+msgstr ""
+
+#: inc/customizer.php:288
+msgid "Slider Title"
+msgstr ""
+
+#: inc/customizer.php:298 inc/customizer.php:409 inc/customizer.php:513
+msgid "Description"
+msgstr ""
+
+#: inc/customizer.php:304
+msgid "Slider Description"
+msgstr ""
+
+#: inc/customizer.php:336 page_front-page.php:79
+msgid "Icon 1"
+msgstr ""
+
+#: inc/customizer.php:337 page_front-page.php:80
+msgid "Icon 2"
+msgstr ""
+
+#: inc/customizer.php:338 page_front-page.php:81
+msgid "Icon 3"
+msgstr ""
+
+#: inc/customizer.php:343
+msgid "Services Setting"
+msgstr ""
+
+#: inc/customizer.php:344
+msgid ""
+"This is a Services settings section to change the servise section Details."
+msgstr ""
+
+#: inc/customizer.php:377
+msgid "Class"
+msgstr ""
+
+#: inc/customizer.php:382
+msgid "Class Name"
+msgstr ""
+
+#: inc/customizer.php:415
+msgid "Services Description"
+msgstr ""
+
+#: inc/customizer.php:449
+msgid "Heading"
+msgstr ""
+
+#: inc/customizer.php:458
+msgid "Main Heading"
+msgstr ""
+
+#: inc/customizer.php:488
+msgid "Footer Setting"
+msgstr ""
+
+#: inc/customizer.php:489
+msgid "This is a settings section to change the Footer details."
+msgstr ""
+
+#: inc/customizer.php:495
+msgid "footer site title "
+msgstr ""
+
+#: inc/customizer.php:503
+msgid "Site Title"
+msgstr ""
+
+#: inc/customizer.php:523
+msgid "Footer Description"
+msgstr ""
+
+#: inc/customizer.php:537
+msgid "Contact widget Title "
+msgstr ""
+
+#: inc/customizer.php:545
+msgid "Footer Contact widget Title"
+msgstr ""
+
+#: inc/customizer.php:555 inc/customizer.php:565
+msgid "Address"
+msgstr ""
+
+#: inc/customizer.php:584
+msgid "Recent post widget Title "
+msgstr ""
+
+#: inc/customizer.php:592
+msgid "Footer Recent post widget Title"
+msgstr ""
+
+#: inc/customizer.php:600
+msgid "Sample Content Title "
+msgstr ""
+
+#: inc/customizer.php:608
+msgid "Footer Sample Content widget Title"
+msgstr ""
+
+#: inc/customizer.php:619
+msgid "Sample Content Description"
+msgstr ""
+
+#: inc/customizer.php:629
+msgid "Footer Sample Content widget Description"
+msgstr ""
+
+#: loop.php:46 single.php:66
+msgid "No Comments."
+msgstr ""
+
+#: loop.php:47 single.php:67
+msgid "Comment: 1"
+msgstr ""
+
+#: loop.php:48 single.php:68
+msgid "Comments: %"
+msgstr ""
+
+#: loop.php:66 single.php:82
+msgid "Sorry no post matched your criteria"
+msgstr ""
+
+#: page_front-page.php:13
+msgid "active"
+msgstr ""
+
+#: page_front-page.php:40
+msgid "Alum"
+msgstr ""
+
+#: page_front-page.php:40
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipis elit. Suspendisse venenatis "
+"mi et risus fringilla, sit amet posuere rhoncus."
+msgstr ""
+
+#: page_front-page.php:91
+msgid "Our Services"
+msgstr ""
+
+#: page_front-page.php:101
+msgid "Mobile Ready"
+msgstr ""
+
+#: page_front-page.php:102
+msgid ""
+"Pellentesque sed iaculis urna, faucibus gravida tortor. Sed imperdiet vitae "
+"tellus non finibus. Sed in nunc laoreet, rutrum risus."
+msgstr ""
+
+#: search.php:31
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: sidebar.php:6
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:12
+msgid "Categories"
+msgstr ""
+
+#: tag.php:39
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: tag.php:46
+msgid "Next Post <i class=\"fa fa-long-arrow-right\"></i>"
+msgstr ""
+
+#: tag.php:48
+msgid "<i class=\"fa fa-long-arrow-left\"></i> Previous Post"
+msgstr ""

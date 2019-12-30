@@ -63,7 +63,7 @@ class EquipoContainer extends Component {
             </div>
           ))}
         </div>
-        <div className="container" style={{ marginTop: 20 }}>
+        <div className="container" style={{ marginTop: 40 }}>
           {this.props.copy.equipoCopy.equipoTextoLargo
             .split("\n")
             .map((item, key) => {
@@ -92,7 +92,4 @@ const dispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  stateToProps,
-  dispatchToProps
-)(EquipoContainer);
+export default connect(stateToProps, dispatchToProps)(EquipoContainer);

@@ -22,7 +22,7 @@ class HomeServiciosDisplayContainer extends Component {
           {this.props.serviciosObject.servicios.map((servicio, index) => (
             <div
               key={index}
-              className="col-sm-4 row"
+              className="col-xs-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 row"
               id={servicio.nombre}
               onClick={this.handleClick.bind(this)}
               style={{ width: "auto", cursor: "pointer" }}

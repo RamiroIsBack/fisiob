@@ -13,7 +13,7 @@ class HomeContainer extends Component {
     history.push("/servicios");
     let whereTo = id;
     setTimeout(() => {
-      this.props.moveToSection(whereTo);
+      this.props.moveToSection(whereTo.toLowerCase());
     }, 400);
   };
   render() {
@@ -89,7 +89,4 @@ const dispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  stateToProps,
-  dispatchToProps
-)(HomeContainer);
+export default connect(stateToProps, dispatchToProps)(HomeContainer);

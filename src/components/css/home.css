@@ -1,19 +1,19 @@
 .carousel__container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1024px;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
   max-height: 600px;
   overflow: hidden;
 }
 .carousel__img__container {
   position: relative;
   overflow: hidden;
-  width: 1024px;
+  width: fit-content;
+  text-align: center;
   height: 600px;
 }
 .carousel__img {
   height: 600px;
-  max-width: 1024px;
 }
 .home__texto__super__container {
   margin: auto;
@@ -22,7 +22,6 @@
 .home__texto__border {
   margin: auto;
   width: 40%;
-
   border-top: 3px solid #004383;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -47,41 +46,40 @@
 
 @media screen and (max-width: 1024px) {
   .carousel__container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
+    margin: auto;
+    text-align: center;
     max-height: 350px;
+    width: fit-content;
     overflow: hidden;
   }
   .carousel__img__container {
     position: relative;
     overflow: hidden;
-    width: 700px;
+    text-align: center;
+    width: fit-content;
     height: 350px;
   }
   .carousel__img {
     height: 350px;
-    max-width: 700px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .carousel__container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
     max-height: 300px;
     overflow: hidden;
   }
   .carousel__img__container {
     position: relative;
     overflow: hidden;
-    width: 600px;
+    width: fit-content;
     height: 300px;
   }
   .carousel__img {
     height: 310px;
-    max-width: 700px;
   }
   .home__servicios__img {
     height: 100px;
@@ -90,21 +88,20 @@
 
 @media screen and (max-width: 550px) {
   .carousel__container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 400px;
+    margin: auto;
+    text-align: center;
     max-height: 300px;
     overflow: hidden;
   }
   .carousel__img__container {
     position: relative;
     overflow: hidden;
-    width: 400px;
+    text-align: center;
+    width: fit-content;
     height: 200px;
   }
   .carousel__img {
     height: 200px;
-    max-width: 400px;
   }
   .home__servicios__img {
     height: 60px;

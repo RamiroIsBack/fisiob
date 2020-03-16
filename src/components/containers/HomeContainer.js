@@ -24,7 +24,7 @@ class HomeContainer extends Component {
           {this.props.copy.inicioCopy && this.props.copy.inicioCopy.anuncio && (
             <ModalAnuncio
               anuncio={this.props.copy.inicioCopy.anuncio}
-              anuncioTexto={this.props.copy.inicioCopy.inicioTextoCorto}
+              anuncioTexto={this.props.copy.inicioCopy.anuncioTexto}
             />
           )}
         </div>

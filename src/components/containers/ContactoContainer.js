@@ -81,10 +81,13 @@ class ContactoContainer extends Component {
   render() {
     let leftJSX = "";
     let rightJSX = "";
+    let apiKey = "";
     if (this.props.contactoCopy) {
       leftJSX = this.getLeftPart(this.props.contactoCopy);
       rightJSX = this.getRightPart(this.props.contactoCopy.direccion);
+      apiKey = this.props.contactoCopy.direccion.apiKey;
     }
+    let gMapURL = `https://maps.googleapis.com/maps/api/js?key=${apiKey}.exp&libraries=geometry,drawing,places`;
     return (
       <div className="contacto__container">
         <div
@@ -95,7 +98,7 @@ class ContactoContainer extends Component {
           }}
         >
           <MapaContainer
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyClcb4B5oRktWDQWGU8Ev4hgYm5p_NXgL4&v=3.exp&libraries=geometry,drawing,places"
+            googleMapURL={gMapURL}
             mapHeigth={window.innerHeight / 2}
             normalColor={true}
             loadingElement={<div style={{ height: "100%" }} />}
@@ -117,7 +120,4 @@ class ContactoContainer extends Component {
   }
 }
 const stateToProps = ({ copy }) => copy;
-export default connect(
-  stateToProps,
-  null
-)(ContactoContainer);
+export default connect(stateToProps, null)(ContactoContainer);

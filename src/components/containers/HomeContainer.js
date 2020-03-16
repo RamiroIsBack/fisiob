@@ -7,6 +7,7 @@ import history from "../../utils/history";
 import Carousel from "../presentational/Carousel";
 //import { textoCortoHome, textoLargoHome } from "../../utils/homeCopy";
 import HomeServiciosDisplay from "../presentational/HomeServiciosDisplay";
+import ModalAnuncio from "../presentational/modalAnuncio";
 
 class HomeContainer extends Component {
   servicioSectionClicked = id => {
@@ -19,6 +20,14 @@ class HomeContainer extends Component {
   render() {
     return (
       <div>
+        <div>
+          {this.props.copy.inicioCopy && this.props.copy.inicioCopy.anuncio && (
+            <ModalAnuncio
+              anuncio={this.props.copy.inicioCopy.anuncio}
+              anuncioTexto={this.props.copy.inicioCopy.inicioTextoCorto}
+            />
+          )}
+        </div>
         <div className="home__texto__super__container">
           <div className="home__texto__border" />
           <div className="home__texto__corto__container">

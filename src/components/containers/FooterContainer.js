@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import history from "../../utils/history";
 
 import MapaContainer from "./MapaContainer";
 import "../css/footer.css"; // eslint-disable-line no-unused-vars
@@ -80,6 +81,7 @@ class FooterContainer extends Component {
               marginLeft: "5px",
               color: "white"
             }}
+            onClick={() => history.push("/avisoLegal")}
           >
             &#183; AVISO LEGAL
           </div>
@@ -89,5 +91,6 @@ class FooterContainer extends Component {
     );
   }
 }
+
 const stateToProps = ({ copy }) => copy;
 export default connect(stateToProps, null)(FooterContainer);

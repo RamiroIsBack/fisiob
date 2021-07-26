@@ -11,7 +11,8 @@ import {
   AsyncInstalaciones,
   AsyncServicios,
   AsyncContacto,
-  AsyncTarifas
+  AsyncTarifas,
+  AsyncAvisoLegal
 } from "./components/AsyncComponents";
 import NavbarFisioB from "./components/containers/NavbarFisioB";
 import LogoContainer from "./components/containers/LogoContainer";
@@ -41,6 +42,7 @@ class App extends Component {
               <Route path="/Tarifas" component={AsyncTarifas} />
               <Route path="/Contacto" component={AsyncContacto} />
               <Route path="/Instalaciones" component={AsyncInstalaciones} />
+              <Route path="/AvisoLegal" component={AsyncAvisoLegal} />
             </div>
             <div className="cookies__aviso__container">
               <CookiesAvisoContainer />

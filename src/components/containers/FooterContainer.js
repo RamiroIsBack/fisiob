@@ -74,6 +74,17 @@ class FooterContainer extends Component {
             {direccion.nombre}
           </a>
         </div>
+        <div className="footer__avisoLegal__container">
+          <div
+            style={{
+              marginLeft: "5px",
+              color: "white"
+            }}
+          >
+            &#183; AVISO LEGAL
+          </div>
+
+        </div>
       </div>
     );
   }

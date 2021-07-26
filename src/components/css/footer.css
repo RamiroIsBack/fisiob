@@ -10,7 +10,14 @@
     ". a a a a m m m m m m"
     ". t t t t m m m m m m"
     ". h h h h m m m m m m"
-    ". d d d d m m m m m m";
+    ". d d d d m m m m m m"
+    ". l l l l m m m m m m";
+}
+.footer__avisoLegal__container {
+  grid-area: l;
+  text-align: left;
+  color: white;
+  cursor: pointer;
 }
 
 .footer__horario__container {
@@ -96,7 +103,8 @@
       "a a a a m m m m m m"
       "t t t t m m m m m m"
       "h h h h m m m m m m"
-      "d d d d m m m m m m";
+      "d d d d m m m m m m"
+      "l l l l m m m m m m";
   }
   .footer__mail {
     font-size: 14px;
@@ -111,7 +119,8 @@
       "a a t t m m m m m m"
       "h h h h m m m m m m"
       "h h h h m m m m m m"
-      "d d d d m m m m m m";
+      "d d d d m m m m m m"
+      "l l l l m m m m m m";
   }
   .footer__horario__container {
     text-align: center;
@@ -126,6 +135,9 @@
     visibility: hidden;
   }
   .footer__direccion__container {
+    text-align: center;
+  }
+  .footer__avisoLegal__container {
     text-align: center;
   }
 }

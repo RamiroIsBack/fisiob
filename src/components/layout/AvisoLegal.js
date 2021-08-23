@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import "../css/layout.css";
 import actions from "../../actions";
-import TarifasContainer from "../containers/TarifasContainer";
+import AvisoLegalContainer from "../containers/AvisoLegalContainer";
 
 class AvisoLegal extends Component {
   closeMenuIfNeeded = () => {
@@ -24,7 +24,7 @@ class AvisoLegal extends Component {
         onClick={this.closeMenuIfNeeded}
         style={spaceForOpenTopMenu}
       >
-        <TarifasContainer />
+        <AvisoLegalContainer />
       </div>
     );
   }

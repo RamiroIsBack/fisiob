@@ -6,7 +6,8 @@ class AvisoLegalContainer extends Component {
   avisoLegalDatos(){
     return(
     <div>
-      <b>1. Datos identificativos:</b>
+      <b>1. Datos identificativos:</b> 
+      <p></p>
       <p>- Denominación social: JAVIER BUENDIA CAPELLA</p>
       <p>- Domicilio social: CALLE ARTISTAS N57 28020 MADRID</p>
       <p>- CIF: 51450520A</p>
@@ -16,7 +17,8 @@ class AvisoLegalContainer extends Component {
   avisoLegalDefiniciones(){
     return(
     <div>
-      <b>2. Definiciones:</b>
+      <b>2. Definiciones:</b> 
+      <p></p>
       <p>- “Página”, dominio www.fisioterapiabuendia.com que se pone a disposición de los Usuarios de Internet.</p>
       <p>- “Usuario”, persona física o jurídica que utiliza o navega por la Página.</p>
       <p>- “Contenido”, son las páginas que conforman la totalidad del dominio www.fisioterapiabuendia.com, las cuales conforman la información y los servicios que JAVIER BUENDIA CAPELLA pone a disposición de los Usuarios de Internet. En ellas se contienen los mensajes, textos, fotografías, gráficos, iconos, logos, tecnología, links, texturas, dibujos, archivos de sonido y/o imagen, grabaciones, software, aspecto, diseño gráfico y códigos fuente y, en general, cualquier clase de material contenido en
@@ -34,7 +36,8 @@ class AvisoLegalContainer extends Component {
     AvisoLegalUsuarios(){
     return(
       <div>
-        <b>3. Usuarios / Condiciones de uso:</b>
+        <b>3. Usuarios / Condiciones de uso:</b> 
+        <p></p>
         <p>
     El acceso y/o uso de este sitio web de www.fisioterapiabuendia.com atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, los presentes términos de uso, sin reservas de todas y cada una de las cláusulas y condiciones generales incluidas en el Aviso Legal. Si el Usuario no estuviera conforme con las cláusulas y condiciones de uso de este Aviso Legal, se abstendrá de utilizar la Página.
         </p>
@@ -44,7 +47,8 @@ class AvisoLegalContainer extends Component {
     AvisoLegalUso(){
       return(
       <div>
-      <b>4. Uso del sitio web</b>
+      <b>4. Uso del sitio web</b> 
+      <p></p>
       <p>
       www.fisioterapiabuendia.com proporciona el acceso a artículos, informaciones y datos (en adelante, “LOS CONTENIDOS”) propiedad de JAVIER BUENDIA CAPELLA . El USUARIO asume la responsabilidad del uso de la web.
       </p>
@@ -80,7 +84,8 @@ class AvisoLegalContainer extends Component {
     AvisoLegalPrivacidad(){
       return(
         <div>
-          <b>5. Política de privacidad. Protección de Datos:</b>
+          <b>5. Política de privacidad. Protección de Datos:</b> 
+          <p></p>
           <p>
           JAVIER BUENDIA CAPELLA es consciente de la importancia de la protección de datos, así como de la privacidad de EL USUARIO y por ello, ha implementado una política de tratamiento de
     datos orientada a proveer la máxima seguridad en el uso y recogida de los mismos, garantizando el cumplimiento de la normativa vigente en la materia y configurando dicha política como uno de los pilares básicos en las líneas de actuación de la entidad. Por ello, JAVIER BUENDIA CAPELLA insiste en la lectura obligada de su “Política de Privacidad”.
@@ -91,7 +96,8 @@ class AvisoLegalContainer extends Component {
       AvisoLegalHiperenlaces(){
         return(
           <div>
-            <b>6. Hiperenlaces</b>
+            <b>6. Hiperenlaces</b> 
+            <p></p>
             <p>
             Como un servicio a nuestros visitantes, nuestro sitio web puede incluir hipervínculos a otros sitios que no son operados o controlados por JAVIER BUENDIA CAPELLA . Por ello, JAVIER BUENDIA CAPELLA no garantiza, ni se hace responsable de la licitud, fiabilidad, utilidad, veracidad y actualidad de los contenidos de tales sitios web o de sus prácticas de privacidad. Por favor, antes de proporcionar su información personal a estos sitios web ajenos a www.fisioterapiabuendia.com, tenga en cuenta que sus prácticas de privacidad pueden diferir de las nuestras. Asimismo, aquellas personas que se propongan establecer hiperenlaces entre su página Web y la nuestra (www.fisioterapiabuendia.com) deberán observar y cumplir las condiciones siguientes:
             </p>
@@ -109,7 +115,8 @@ class AvisoLegalContainer extends Component {
         AvisoLegalModificacion(){
           return(
             <div>
-              <b>7. Modificación del Aviso Legal:</b>
+              <b>7. Modificación del Aviso Legal:</b> 
+              <p></p>
               <p>
               Con el fin de mejorar las prestaciones del sitio Web, JAVIER BUENDIA CAPELLA se reserva la facultad de efectuar, en cualquier momento y sin necesidad de previo aviso, modificaciones y actualizaciones de la información contenida en el sitio Web, de la configuración y diseño de éste y del presente aviso legal, así como de cualesquiera otras condiciones particulares. Por tanto, EL USUARIO debe leer el Aviso Legal en todas y cada una de las ocasiones en que acceda a la Página.
               </p>
@@ -118,7 +125,8 @@ class AvisoLegalContainer extends Component {
           AvisoLegalIntelectual(){
             return(
               <div>
-                <b>8. Propiedad intelectual / industrial:</b>
+                <b>8. Propiedad intelectual / industrial:</b> 
+                <p></p>
                 <p>
                 JAVIER BUENDIA CAPELLA es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo, imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.), titularidad de JAVIER BUENDIA CAPELLA o bien de sus licenciantes, estando todos los derechos reservados. Cualquier uso no autorizado previamente por JAVIER BUENDIA CAPELLA , será considerado un incumplimiento grave de los derechos de propiedad intelectual o industrial del autor. El USUARIO se compromete a respetar los derechos de Propiedad Intelectual e Industrial titularidad de JAVIER BUENDIA CAPELLA . Podrá visualizar los elementos de la web e incluso imprimirlos, copiarlos y almacenarlos en el disco duro de su ordenador o en cualquier otro soporte físico siempre y cuando sea, única y exclusivamente, para su uso personal y privado. El USUARIO deberá abstenerse de suprimir, alterar, eludir o manipular cualquier dispositivo de protección o sistema de seguridad que estuviera instalado en las páginas de JAVIER BUENDIA CAPELLA.
                 </p> 
@@ -131,7 +139,8 @@ class AvisoLegalContainer extends Component {
             AvisoLegalCookies(){
               return(
                 <div>
-                  <b>9. Cookies:</b>
+                  <b>9. Cookies:</b> 
+                  <p></p>
                   <p>
                   Las cookies son el medio técnico para la “trazabilidad” y seguimiento de la navegación en los Sitios Web. Son pequeños ficheros de texto que se escriben en el ordenador del Usuario. Este método tiene implicaciones sobre la privacidad, por lo que JAVIER BUENDIA CAPELLA informa de que podrá utilizar cookies con la finalidad de elaborar estadísticas de utilización del sitio web así como para identificar el PC del Usuario permitiendo reconocerle en sus próximas visitas. En todo caso, el usuario puede configurar su navegador para no permitir el uso de cookies en sus visitas al web site. JAVIER BUENDIA CAPELLA es consciente de la importancia de la protección de datos, así como de la privacidad de EL USUARIO y por ello, insiste en la lectura de la “Política de Cookies” de nuestra página web.
                   </p>
@@ -140,7 +149,8 @@ class AvisoLegalContainer extends Component {
               AvisoLegalDisponibilidad(){
                 return(
                   <div>
-                    <b>10. Disponibilidad de la página:</b>
+                    <b>10. Disponibilidad de la página:</b> 
+                    <p></p>
                     <p>
                     JAVIER BUENDIA CAPELLA no garantiza la inexistencia de interrupciones o errores en el acceso a la Página, a sus Contenidos, ni que éste se encuentren actualizados, aunque desarrollará sus mejores esfuerzos para, en su caso, evitarlos, subsanarlos o actualizarlos. Por consiguiente, JAVIER BUENDIA CAPELLA no se responsabiliza de los daños o perjuicios de cualquier tipo producidos en EL USUARIO que traigan causa de fallos o desconexiones en las redes de telecomunicaciones que produzcan la suspensión, cancelación o interrupción del servicio del Portal durante la prestación del mismo o con carácter previo. JAVIER BUENDIA CAPELLA excluye, con las excepciones contempladas en la legislación vigente, cualquier responsabilidad por los daños y perjuicios de toda naturaleza que puedan deberse a la falta de disponibilidad, continuidad o calidad del funcionamiento de la Página y de los Contenidos, al no cumplimiento de la expectativa de utilidad que los usuarios hubieren podido atribuir a la Página y a los Contenidos. La función de los Hiperenlaces que aparecen en esta Web es exclusivamente la de informar al usuario acerca de la existencia de otras Web que contienen información sobre la materia. Dichos Hiperenlaces no constituyen sugerencia ni recomendación alguna.</p>
                     
@@ -155,7 +165,8 @@ class AvisoLegalContainer extends Component {
               AvisoLegalCalidad(){
                 return(
                   <div>
-                    <b>11. Calidad de la Página:</b>
+                    <b>11. Calidad de la Página:</b> 
+                    <p></p>
                     <p>
                     Dado el entorno dinámico y cambiante de la información y servicios que se suministran por medio de la Página, JAVIER BUENDIA CAPELLA realiza su mejor esfuerzo, pero no garantiza la completa veracidad, exactitud, fiabilidad, utilidad y/o actualidad de los Contenidos. La información contenida en las páginas que componen este Portal sólo tiene carácter informativo, consultivo, divulgativo y publicitario. En ningún caso ofrecen ni tienen carácter de compromiso vinculante o contractual. JAVIER BUENDIA CAPELLA excluye toda responsabilidad por las decisiones que EL USUARIO pueda tomar basado en esta información, así como por los posibles errores tipográficos que puedan contener los documentos y gráficos de la Página. La información está sometida a posibles cambios periódicos sin previo aviso de su contenido por ampliación, mejora, corrección o actualización de los Contenidos.
                     </p>
@@ -164,7 +175,8 @@ class AvisoLegalContainer extends Component {
                 AvisoLegalContenidos(){
                   return(
                     <div>
-                      <b>12. Disponibilidad de los Contenidos:</b>
+                      <b>12. Disponibilidad de los Contenidos:</b> 
+                      <p></p>
                       <p>
                       La prestación del servicio de la Página y de los Contenidos tiene, en principio, duración indefinida. JAVIER BUENDIA CAPELLA , no obstante, queda autorizada para dar por terminada o suspender la prestación del servicio de la Página y/o de cualquiera de los Contenidos en cualquier momento. Cuando ello sea razonablemente posible, JAVIER BUENDIA CAPELLA advertirá previamente la terminación o suspensión de la Página.
                       </p>
@@ -173,7 +185,8 @@ class AvisoLegalContainer extends Component {
                   AvisoLegalJurisdiccion(){
                     return(
                       <div>
-                        <b>13. Jurisdicción:</b>
+                        <b>13. Jurisdicción:</b> 
+                        <p></p>
                         <p>
                         Para cuantas cuestiones se susciten sobre la interpretación, aplicación y cumplimiento de este Aviso Legal, así como de las reclamaciones que puedan derivarse de su uso, todas las partes intervinientes se someten a los Jueces y Tribunales de Madrid renunciando de forma expresa a cualquier otro fuero que pudiera corresponderles.
                         </p>
@@ -182,7 +195,8 @@ class AvisoLegalContainer extends Component {
                     AvisoLegallegislacion(){
                       return(
                         <div>
-                          <b>14. Legislación aplicable:</b>
+                          <b>14. Legislación aplicable:</b> 
+                          <p></p>
                           <p>
                           Las presentes condiciones se rigen por la legislación española. Reservados todos los derechos de autor por las leyes y tratados internacionales de propiedad intelectual. Queda expresamente prohibida su copia, reproducción o difusión, total o parcial, por cualquier medio.
                           </p>
@@ -197,19 +211,6 @@ class AvisoLegalContainer extends Component {
     BUENDIA CAPELLA en calidad de titular del sitio web wwwww, hace constar:`
     let avisolegalBody= `La presente información conforma y regula las condiciones de uso, las limitaciones de responsabilidad y las obligaciones que, los usuarios de la página Web que se publica bajo el nombre de dominio wwwww, asumen y se comprometen a respetar.`
     
-    var politicaDePrivacidad = `
-
-
-
-
-VII. AUTORIDAD DE CONTROL
-Desde BUENCAP FISIOGESTION S.L. ponemos el máximo empeño para cumplir con la
-normativa de protección de datos dado que es el activo más valioso para nosotros. No
-obstante, le informamos que en caso de que usted entienda que sus derechos se han visto
-menoscabados, puede presentar una reclamación ante la Agencia Española de Protección
-de Datos (AEPD), sita en C/ Jorge Juan, 6. 28001 – Madrid. Más información sobre la AEPD.
-http://www.agpd.es/`;
-
     return (
       <Container>
         <p>
@@ -237,13 +238,15 @@ http://www.agpd.es/`;
         <p>
         De conformidad con lo establecido en la legislación vigente sobre protección de datos, el Reglamento (UE) 2016/679, del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecto al tratamiento de datos personales y a la libre circulación de estos datos (en adelante, RGPD), así como en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y garantía de los derechos digitales (en adelante, LOPD-GDD), se informa al usuario de conformidad con lo establecido en los artículos 13 del RGPD y 11 de la LOPD-GDD:
         </p>
-        <b>¿Quién es el responsable de tratamiento de sus datos?</b>
+        <b>¿Quién es el responsable de tratamiento de sus datos?</b> 
+        <p></p>
         <p>- Razón social: JAVIER BUENDÍA CAPELLÁ</p>
         <p>- CIF: 51450520-A</p>
         <p>- Domicilio: C/ Artistas 57. 28020. Madrid</p>
         <p>- Teléfono: 915349476</p>
         <p>- Correo electrónico: info@fisioterapiabuendia.com</p>
-        <b>¿Con que finalidad trataremos sus datos personales?</b>
+        <b>¿Con que finalidad trataremos sus datos personales?</b> 
+        <p></p>
         <p>En BUENCAP FISIOGESTION S.L. trataremos su información para:</p>
         <p>1. Mantenimiento de la relación mercantil y prestación del servicio contratado.</p>
         <p>2. Prestación asistencial, sanitaria o que incluya el tratamiento de datos de salud para la prestación de los servicios contratados.</p>
@@ -256,7 +259,8 @@ http://www.agpd.es/`;
         <p>6. Gestión de los empleados y recursos humanos de la sociedad.  
         </p>
 
-        <b>¿Durante cuánto tiempo tendremos sus datos?</b>
+        <b>¿Durante cuánto tiempo tendremos sus datos?</b> 
+        <p></p>
         <p>
           Los datos personales que nos proporciones serán conservados mientras se mantenga la relación mercantil vigente. No obstante para tener la máxima transparencia con usted le indicamos que los cómputos generales con los que trabajamos son:
         </p>
@@ -266,7 +270,8 @@ http://www.agpd.es/`;
         <p>- Procesos de selección: dos (2) años desde la entrega del curriculum vitae.</p>
         <p>No obstante pese a la existencia de estos plazos generales, le informamos que de forma periódica revisaremos nuestros sistemas para proceder a eliminar aquellos datos que no sean legalmente necesarios.</p>
 
-        <b>¿Cuál es la legitimación para el tratamiento de sus datos?</b>
+        <b>¿Cuál es la legitimación para el tratamiento de sus datos?</b> 
+        <p></p>
         <p>Según las finalidades de la recogida de nuestros datos, el tratamiento de sus datos es necesario:</p>
         <p>1. Gestionar la relación mercantil que ha suscrito y contratado con nosotros.
 </p>
@@ -286,7 +291,8 @@ http://www.agpd.es/`;
         <p>a. Ejecución contractual (habilitado por el artículo 6.1.b RGPD)</p>
         <p>Asimismo, todos los datos recogidos son necesarios para la prestación del servicio. No obstante, aquellos datos que estén marcados con un asterisco (*) serán obligatorios. En el caso de que los datos obligatorios no fueran facilitados [RAZÓN SOCIAL] no podrá prestarle el servicio contratado.</p>
 
-        <b>¿Qué derechos tengo en materia de protección de datos?</b>
+        <b>¿Qué derechos tengo en materia de protección de datos?</b> 
+        <p></p>
         <p>Conforme a lo establecido en los artículos 13 RGPD y 11.2.c) LOPDGDD, puede ejercitar cualquiera de los siguientes derechos comunicándonoslo a la dirección postal [DIRECCIÓN] o a la dirección electrónica [EMAIL DEL RESPONSABLE DE PROTECCIÓN DE DATOS]. En todo caso, según la normativa vigente tiene reconocidos los siguientes derechos de acuerdo a lo contenido en los artículo 15 a 22 RGPD y 12 a 18 LOPDGDD:</p>
         <p>- Derecho a solicitar el acceso a los datos personales relativos al interesado.</p>
         <p>- Derecho a solicitar su rectificación o supresión.</p>
@@ -297,14 +303,17 @@ http://www.agpd.es/`;
         <p>Adicionalmente, puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD). Más información en el Apartado VII del presente documento.</p>
 
         <b>¿A qué destinatarios se comunicarán sus datos?
-        </b>
+        </b> 
+        <p></p>
         <p>Sus datos no serán comunicados a terceras empresas. Asimismo, le informamos que sus datos no se transferirán internacionalmente a ningún tercer país.</p>
 
-        <b>¿Cómo hemos obtenido sus datos?</b>
+        <b>¿Cómo hemos obtenido sus datos?</b> 
+        <p></p>
         <p>Los datos de carácter personal que utiliza [RAZÓN SOCIAL] proceden del propio interesado, dando así cumplimiento a lo establecido en los artículos 13 RGPD y 11 LOPDGDD ya mencionados.
         </p>
 
-        <b>¿Qué categorías de datos manejamos?</b>
+        <b>¿Qué categorías de datos manejamos?</b> 
+        <p></p>
         <p>Las categorías de datos de carácter personal que se tratan:</p>
         <p>- Datos de identificación, Nombre, Apellidos,DNI / NIE / Pasaporte o documento equivalente, Direcciones postales, Direcciones electrónicas, Sexo, Fecha de nacimiento, Lugar de nacimiento,Teléfono de contacto (móvil / fijo)</p>
         <p>- Información comercial</p>
@@ -312,7 +321,8 @@ http://www.agpd.es/`;
         <p>- Curriculum vitae, Datos académicos, Titulaciones, Aficiones, Pertenencia a asociaciones o clubes</p>
         <p>- Datos sensibles, Datos relativos a la salud</p>
         <p>En base a la prestación asistencial y/o médica prestada por BUENCAP FISIOGESTION S.L., se tratan datos especialmente protegidos siempre bajo el consentimiento explícito del interesado. Los datos recogidos son únicamente los derivados del servicio contratado y/o prestado al usuario.</p>
-        <b>AUTORIDAD DE CONTROL</b>
+        <b>AUTORIDAD DE CONTROL</b> 
+        <p></p>
         <p>Desde BUENCAP FISIOGESTION S.L. ponemos el máximo empeño para cumplir con la normativa de protección de datos dado que es el activo más valioso para nosotros. No obstante, le informamos que en caso de que usted entienda que sus derechos se han visto menoscabados, puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD), sita en C/ Jorge Juan, 6. 28001 – Madrid. Más información sobre la AEPD. http://www.agpd.es/
         </p>
 
